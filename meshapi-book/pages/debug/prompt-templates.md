@@ -3,7 +3,7 @@ type: Web Page
 title: Prompt Templates | Mesh API Docs
 description: Variable substitution, 422s, lookup scope, and parameter precedence.
 resource: https://developers.meshapi.ai/debug/prompt-templates
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 # Prompt Templates
@@ -11,7 +11,7 @@ timestamp: '2026-07-09T11:31:58.280663+00:00'
 Variable substitution, 422s, lookup scope, and parameter precedence.
 
 Prompt Templates inject `{{variable}}` values into a stored system prompt and
-base messages. See Prompt Templates for the full guide.
+base messages. See [Prompt Templates](/templates) for the full guide.
 
 ## 422 — missing variables at inference time
 
@@ -39,8 +39,8 @@ overriding it — e.g. a key default beating your template value.
 
 ## Still stuck?
 
-See the Mesh API error reference
-or email **contact@meshapi.ai**.
+See the [Mesh API error reference](/debug/mesh-api#error-code-reference)
+or email ** contact@meshapi.ai**.
 
 # Citations
 

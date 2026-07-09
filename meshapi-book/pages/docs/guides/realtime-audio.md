@@ -4,7 +4,7 @@ title: Realtime Audio | Mesh API Docs
 description: Bi-directional speech-to-speech over WebSocket using OpenAI's Realtime
   API through Mesh.
 resource: https://developers.meshapi.ai/docs/guides/realtime-audio
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 # Realtime Audio
@@ -53,7 +53,8 @@ Mesh is a **transparent proxy** for OpenAI’s Realtime API. Every event you
 send and receive is shaped exactly as upstream documents it — Mesh does not
 rewrite event types, field names, or payloads.
 
-See the OpenAI Realtime API reference for the full event catalog. The most common types you’ll exchange:
+See the [OpenAI Realtime API reference](https://platform.openai.com/docs/api-reference/realtime)
+for the full event catalog. The most common types you’ll exchange:
 
 Realtime uses OpenAI’s **GA** event protocol. `session.update` must use the GA
 shape (`{"type":"realtime","output_modalities":[...],"audio":{...}}`) — the
@@ -123,9 +124,9 @@ is informational only.
 
 ## Next steps
 
-- Review the Authentication guide for key rotation and scoping.
-- See the API reference entry for the OpenAPI stub.
-- Watch the upstream OpenAI Realtime API reference for new event types — Mesh forwards them without code changes.
+- Review the [Authentication guide](/authentication)for key rotation and scoping.
+- See the [API reference entry](/api-reference)for the OpenAPI stub.
+- Watch the upstream [OpenAI Realtime API reference](https://platform.openai.com/docs/api-reference/realtime)for new event types — Mesh forwards them without code changes.
 
 # Citations
 

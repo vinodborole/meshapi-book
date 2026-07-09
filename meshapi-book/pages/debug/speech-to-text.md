@@ -4,7 +4,7 @@ title: Speech-to-Text | Mesh API Docs
 description: Transcription request shape, input sources, translation support, and
   realtime WebSocket frames.
 resource: https://developers.meshapi.ai/debug/speech-to-text
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 Speech-to-Text
@@ -13,7 +13,7 @@ Speech-to-Text
 
 Transcription runs over `POST /v1/audio/transcriptions` (REST) and
 `WS /v1/audio/transcriptions/realtime` (streaming). See
-Speech-to-Text for the full reference.
+[Speech-to-Text](/speech-to-text) for the full reference.
 
 ## 422 — the endpoint expects multipart/form-data, not JSON
 
@@ -52,8 +52,8 @@ standard codes: `401`, `422`, `429`, `402`.
 
 ## Still stuck?
 
-See the Mesh API error reference
-or email **contact@meshapi.ai**.
+See the [Mesh API error reference](/debug/mesh-api#error-code-reference)
+or email ** contact@meshapi.ai**.
 
 # Citations
 

@@ -4,7 +4,7 @@ title: Images & Vision | Mesh API Docs
 description: Sending image input to multimodal models — URL vs base64, formats, and
   model support.
 resource: https://developers.meshapi.ai/debug/images-vision
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 Images & Vision
@@ -14,7 +14,7 @@ Images & Vision
 Sending image input to multimodal models — URL vs base64, formats, and model support.
 
 Image **input** goes through `POST /v1/chat/completions` as content parts. See
-Images & Vision for the full guide.
+[Images & Vision](/images) for the full guide.
 
 ## The model ignores or rejects my image URL
 
@@ -47,8 +47,8 @@ a URL in it won’t attach the image.
 
 ## Still stuck?
 
-See the Mesh API error reference
-or email **contact@meshapi.ai**.
+See the [Mesh API error reference](/debug/mesh-api#error-code-reference)
+or email ** contact@meshapi.ai**.
 
 # Citations
 

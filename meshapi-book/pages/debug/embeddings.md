@@ -3,14 +3,15 @@ type: Web Page
 title: Embeddings | Mesh API Docs
 description: Model support, dimensions, batch ordering, and input-size limits.
 resource: https://developers.meshapi.ai/debug/embeddings
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 # Embeddings
 
 Model support, dimensions, batch ordering, and input-size limits.
 
-Most embeddings issues are request-shape or model-capability mismatches. See Embeddings for the full reference.
+Most embeddings issues are request-shape or model-capability mismatches. See
+[Embeddings](/embeddings) for the full reference.
 
 ## 422 — model missing or unsupported field
 
@@ -38,8 +39,8 @@ gibberish, you’re probably reading `base64` output as floats.
 
 ## Still stuck?
 
-See the Mesh API error reference
-or email **contact@meshapi.ai**.
+See the [Mesh API error reference](/debug/mesh-api#error-code-reference)
+or email ** contact@meshapi.ai**.
 
 # Citations
 

@@ -4,7 +4,7 @@ title: Speech-to-Text | Mesh API Docs
 description: Text-to-speech, speech-to-text, voice management, and real-time streaming
   audio APIs.
 resource: https://developers.meshapi.ai/docs/guides/speech-to-text
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 Speech-to-Text
@@ -65,7 +65,7 @@ If the selected model doesn’t support translation, the API returns a `422` err
 
 Transcribe audio in real time. Send raw audio chunks as they are captured (e.g. from a microphone) and receive partial and final transcripts as they are produced.
 
-The wire protocol is selected automatically from the model you pass. Standard streaming models (e.g. `openai/whisper-large-v3`) use an OpenAI-compatible frame protocol. ElevenLabs models (`elevenlabs/scribe_v2_realtime`) use ElevenLabs’ Scribe v2 realtime frames — see the ElevenLabs models subsection below.
+The wire protocol is selected automatically from the model you pass. Standard streaming models (e.g. `openai/whisper-large-v3`) use an OpenAI-compatible frame protocol. ElevenLabs models (`elevenlabs/scribe_v2_realtime`) use ElevenLabs’ Scribe v2 realtime frames — see the [ElevenLabs models](/docs/guides/speech-to-text#elevenlabs-models) subsection below.
 
 ### Authentication
 

@@ -3,7 +3,7 @@ type: Web Page
 title: Audio (TTS & STT) | Mesh API Docs
 description: Text-to-speech, speech-to-text, and voice management with the Go SDK.
 resource: https://developers.meshapi.ai/sd-ks/go-sdk/audio-tts-stt
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 Audio (TTS & STT)
@@ -32,7 +32,7 @@ With keyterms (sent as repeated form fields):
 
 ## Translation (to English)
 
-`client.Audio.Translations` sends `POST /v1/audio/translations` — a dedicated translation endpoint that translates audio directly to English. Pick a translation-capable model from the Models list.
+`client.Audio.Translations` sends `POST /v1/audio/translations` — a dedicated translation endpoint that translates audio directly to English. Pick a translation-capable model from the [Models list](/sdks/go/models).
 
 `AudioTranslationParams` fields
 

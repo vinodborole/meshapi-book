@@ -3,12 +3,12 @@ type: Web Page
 title: Dashboard Guide | Mesh API Docs
 description: A guided tour of the Mesh API Control Panel.
 resource: https://developers.meshapi.ai/docs/guides/dashboard-guide
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 # Dashboard Guide
 
-The Mesh Dashboard is your central control center for managing AI models, keys, and billing. This guide walks through each section to help you make the most of the service.
+The [Mesh Dashboard](https://app.meshapi.ai/) is your central control center for managing AI models, keys, and billing. This guide walks through each section to help you make the most of the service.
 
 ## 1. API Keys
 

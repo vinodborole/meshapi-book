@@ -4,7 +4,7 @@ title: Video Generation | Mesh API Docs
 description: Async polling, task-level failures, input modality limits, size caps,
   and webhook delivery.
 resource: https://developers.meshapi.ai/debug/video-generation
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 # Video Generation
@@ -13,7 +13,7 @@ Async polling, task-level failures, input modality limits, size caps, and webhoo
 
 Video generation is **asynchronous** — the create call returns a task ID, not a
 video. Most issues come from treating it like a synchronous endpoint, or from
-input constraints on the model. See Video Generation for
+input constraints on the model. See [Video Generation](/video-generation) for
 the full reference.
 
 ## The POST response has no video, just an id
@@ -86,8 +86,8 @@ retried**.
 
 ## Still stuck?
 
-See the Mesh API error reference
-or email **contact@meshapi.ai**.
+See the [Mesh API error reference](/debug/mesh-api#error-code-reference)
+or email ** contact@meshapi.ai**.
 
 # Citations
 

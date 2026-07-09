@@ -4,7 +4,7 @@ title: RAG (Files & Search) | Mesh API Docs
 description: Upload, embedding, and search problems — expired URLs, not-ready files,
   and empty results.
 resource: https://developers.meshapi.ai/debug/rag
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 RAG (Files & Search)
@@ -14,7 +14,7 @@ RAG (Files & Search)
 Upload, embedding, and search problems — expired URLs, not-ready files, and empty results.
 
 RAG is a three-step flow — **upload → embed → search** — and most issues come
-from acting before a step finishes. See RAG for the full guide.
+from acting before a step finishes. See [RAG](/rag) for the full guide.
 
 ## Upload ‘works’ but the file is empty / not searchable
 
@@ -54,8 +54,8 @@ file-type detection.
 
 ## Still stuck?
 
-See the Mesh API error reference
-or email **contact@meshapi.ai**.
+See the [Mesh API error reference](/debug/mesh-api#error-code-reference)
+or email ** contact@meshapi.ai**.
 
 # Citations
 

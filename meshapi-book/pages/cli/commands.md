@@ -4,7 +4,7 @@ title: Commands & permission modes | Mesh API Docs
 description: The slash commands you'll use daily, the four permission modes, and how
   to stay up to date.
 resource: https://developers.meshapi.ai/cli/commands
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 Commands & permission modes
@@ -36,7 +36,7 @@ Confirm it worked:
 
 Check that the number went up. If it still shows the old version, close the window, open a new one, and check again.
 
-Running into errors? See Mesh CLI debugging.
+Running into errors? See [Mesh CLI debugging](/debug/mesh-cli).
 
 # Citations
 

@@ -4,7 +4,7 @@ title: BYOK | Mesh API Docs
 description: Common problems when bringing your own provider keys — configuration,
   permissions, fallback, and billing.
 resource: https://developers.meshapi.ai/debug/byok
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 # BYOK
@@ -13,7 +13,7 @@ Common problems when bringing your own provider keys — configuration, permissi
 
 Most BYOK failures are **configuration** problems: the credential is shaped
 wrong for the provider, the underlying account lacks a permission, or fallback
-is masking a broken key. See BYOK for the full setup reference.
+is masking a broken key. See [BYOK](/byok) for the full setup reference.
 
 BYOK errors surface with the **provider’s** HTTP status, not Mesh’s. A `401`
 here means *your provider key* was rejected — not your `rsk_` key.
@@ -69,8 +69,8 @@ A key that’s been broken for weeks can go unnoticed this way.
 ## Still stuck?
 
 Check Dashboard → **Logs** for the exact provider error, then see the
-Mesh API error reference or
-email **contact@meshapi.ai**.
+[Mesh API error reference](/debug/mesh-api#error-code-reference) or
+email ** contact@meshapi.ai**.
 
 # Citations
 

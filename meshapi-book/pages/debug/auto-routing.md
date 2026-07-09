@@ -4,14 +4,14 @@ title: Auto Routing | Mesh API Docs
 description: Why auto didn't route, which model actually ran, the extra classifier
   cost, and added latency.
 resource: https://developers.meshapi.ai/debug/auto-routing
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 # Auto Routing
 
 Auto Routing (`model: "auto"`) classifies each request and picks a model for
 you. Most confusion is about *which* model ran, *what* you were billed, and
-*where* it’s supported. See Auto Routing for the full guide.
+*where* it’s supported. See [Auto Routing](/auto-routing) for the full guide.
 
 ## ‘auto’ didn’t route on my endpoint
 
@@ -60,8 +60,8 @@ interactive use, pin a model rather than using `auto`.
 
 ## Still stuck?
 
-See the Mesh API error reference
-or email **contact@meshapi.ai**.
+See the [Mesh API error reference](/debug/mesh-api#error-code-reference)
+or email ** contact@meshapi.ai**.
 
 # Citations
 

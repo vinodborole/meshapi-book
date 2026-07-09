@@ -4,13 +4,13 @@ title: Image Generation | Mesh API Docs
 description: Parameter differences across providers, response formats, streaming,
   and edits.
 resource: https://developers.meshapi.ai/debug/image-generation
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 # Image Generation
 
 Image generation runs over `POST /v1/images/generations` (and
-`POST /v1/images/edits`). See Image Generation for the
+`POST /v1/images/edits`). See [Image Generation](/image-generation) for the
 full reference.
 
 ## size / quality value rejected
@@ -45,8 +45,8 @@ supported by the chosen model — an unsupported operation returns ** 501**.
 
 `inpaint` also requires a `mask`.## Still stuck?
 
-See the Mesh API error reference
-or email **contact@meshapi.ai**.
+See the [Mesh API error reference](/debug/mesh-api#error-code-reference)
+or email ** contact@meshapi.ai**.
 
 # Citations
 

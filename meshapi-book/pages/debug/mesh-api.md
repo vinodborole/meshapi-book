@@ -3,12 +3,15 @@ type: Web Page
 title: Mesh API | Mesh API Docs
 description: Diagnose and fix the most common issues when calling the Mesh API.
 resource: https://developers.meshapi.ai/debug/mesh-api
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 # Mesh API
 
-Most failures fall into one of a few buckets: auth, limits, bad requests, or a transient upstream error. This page maps the symptom you see to its cause and fix. Start with the first-response checklist, then jump to the section that matches your error.
+Most failures fall into one of a few buckets: auth, limits, bad requests, or a
+transient upstream error. This page maps the symptom you see to its cause and
+fix. Start with the [first-response checklist](/debug/mesh-api#first-response-checklist), then
+jump to the section that matches your error.
 
 Every request has a unique `req_...` ID returned in the response headers and
 visible in Dashboard → **Logs**. Include it in any support message — it lets us
@@ -42,7 +45,7 @@ The same ID is also returned in the `x-request-id` response header, so you can
 log it even before parsing the body.
 
 **2. What you see in Dashboard → Logs** — the matching row at
-app.meshapi.ai → **Logs**:
+[app.meshapi.ai](https://app.meshapi.ai/) → **Logs**:
 
 Filter Logs by **Status: error** to list only failed calls, then open a row for
 its full error code and message. The `req_...` ID is the link between what your
@@ -52,10 +55,10 @@ app saw and what we can trace — include it in any support message.
 
 Some features have their own gotchas. If your issue is with one of these, start on its page:
 
-- BYOK — provider key config, permissions, fallback, fees.
-- Structured Output — `response_format`not enforced, JSON parsing.
-- Auto Routing — which model ran, classifier cost, latency.
-- Video Generation — async polling, task failures, input limits.
+- [BYOK](/debug/byok)— provider key config, permissions, fallback, fees.
+- [Structured Output](/debug/structured-output)—- `response_format`not enforced, JSON parsing.
+- [Auto Routing](/debug/auto-routing)— which model ran, classifier cost, latency.
+- [Video Generation](/debug/video-generation)— async polling, task failures, input limits.
 
 ## Common problems
 
@@ -103,7 +106,7 @@ The model ID is wrong or not enabled for your account.
 
 - List what’s available: `GET /v1/models`.
 - Model IDs are case-sensitive and provider-prefixed (e.g. `openai/gpt-4o`).
-- Some models require BYOK or must be enabled first.
+- Some models require [BYOK](/byok)or must be enabled first.
 
 ### 422 validation_error — bad request body
 
@@ -115,7 +118,7 @@ Common culprits:
 - Missing required field (`model`,`messages`).
 - Wrong type — e.g. `temperature`as a string instead of a number.
 - Out-of-range value — e.g. `max_tokens`above the model’s context window.
-- `response_format`/ structured-output schema is malformed. See Structured Output.
+- `response_format`/ structured-output schema is malformed. See- [Structured Output](/structured-output).
 
 ### Sampling params rejected — temperature / top_p (upstream_error or 422)
 
@@ -135,7 +138,7 @@ reasoning models.
 These come from the upstream provider or a timeout, and are almost always transient.
 
 - **Retry with exponential backoff**— the SDKs do this for- `500`,- `502`,- `503`,- `504`.
-- If one model fails repeatedly, try Auto Routing or a different model.
+- If one model fails repeatedly, try [Auto Routing](/auto-routing)or a different model.
 - Persistent `provider_not_available`means no provider can serve that model right now — pick another.
 
 ### Streaming stops or drops mid-response
@@ -159,15 +162,15 @@ Calling the API directly from browser or mobile client code exposes your `rsk_`
 key and triggers CORS failures.
 
 **Never call Mesh API from client-side code.** Route requests through your own
-backend proxy that holds the key. See Authentication → Security Best
-Practices.
+backend proxy that holds the key. See [Authentication → Security Best
+Practices](/authentication).
 
 ### Responses are slow or latency is high
 
-- First token latency depends on the model and provider load — try a faster model or Auto Routing.
+- First token latency depends on the model and provider load — try a faster model or [Auto Routing](/auto-routing).
 - Use **streaming**so users see tokens as they generate instead of waiting for the full response.
-- For bulk, non-interactive work use the Batch API — cheaper and built for throughput.
-- Large RAG contexts add latency; trim retrieved chunks. See RAG.
+- For bulk, non-interactive work use the [Batch API](/batching)— cheaper and built for throughput.
+- Large RAG contexts add latency; trim retrieved chunks. See [RAG](/rag).
 
 ### Unexpected charges or usage
 
@@ -187,14 +190,14 @@ All official SDKs raise a typed error carrying the status, error code, and reque
 
 ## Still stuck?
 
-Email **contact@meshapi.ai** with:
+Email ** contact@meshapi.ai** with:
 
 - The **request ID**(`req_...`) from the response headers or Dashboard logs.
 - The **model**and**endpoint**you called.
 - The **error code and message**you received.
 - The **account email**tied to your API key.
 
-More options on the Support page.
+More options on the [Support](/support) page.
 
 # Citations
 

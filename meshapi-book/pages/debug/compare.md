@@ -3,13 +3,13 @@ type: Web Page
 title: Compare | Mesh API Docs
 description: Partial results, model limits, billing, and the two streaming modes.
 resource: https://developers.meshapi.ai/debug/compare
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 # Compare
 
 `POST /v1/chat/compare` runs one prompt across multiple models concurrently.
-See Compare for the full guide.
+See [Compare](/compare) for the full guide.
 
 ## Some models are missing from the result (partial: true)
 
@@ -42,8 +42,8 @@ model had to fall back.
 
 ## Still stuck?
 
-See the Mesh API error reference
-or email **contact@meshapi.ai**.
+See the [Mesh API error reference](/debug/mesh-api#error-code-reference)
+or email ** contact@meshapi.ai**.
 
 # Citations
 

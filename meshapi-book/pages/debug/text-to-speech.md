@@ -4,7 +4,7 @@ title: Text-to-Speech | Mesh API Docs
 description: Handling raw audio responses, voice/model matching, formats, and streaming
   frame protocols.
 resource: https://developers.meshapi.ai/debug/text-to-speech
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 Text-to-Speech
@@ -15,7 +15,7 @@ Handling raw audio responses, voice/model matching, formats, and streaming frame
 
 TTS runs over `POST /v1/audio/speech` (REST) and
 `WS /v1/audio/speech/stream/{voice_id}` (streaming). See
-Text-to-Speech for the full reference.
+[Text-to-Speech](/text-to-speech) for the full reference.
 
 ## The response won’t parse as JSON
 
@@ -46,8 +46,8 @@ Audio deltas are base64 — decode before playing or writing.
 
 ## Still stuck?
 
-See the Mesh API error reference
-or email **contact@meshapi.ai**.
+See the [Mesh API error reference](/debug/mesh-api#error-code-reference)
+or email ** contact@meshapi.ai**.
 
 # Citations
 

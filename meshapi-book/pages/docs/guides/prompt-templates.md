@@ -4,7 +4,7 @@ title: Prompt Templates | Mesh API Docs
 description: Store, version, and reuse prompt configurations — with variable substitution
   — across your team and apps.
 resource: https://developers.meshapi.ai/docs/guides/prompt-templates
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 # Prompt Templates
@@ -17,7 +17,7 @@ Template management (create, read, update, delete) accepts **either** authentica
 
 Using a template at inference time always uses your `rsk_...` key, the same as any other chat completion.
 
-See the Authentication guide for details on key types.
+See the [Authentication guide](/docs/guides/authentication) for details on key types.
 
 ## Creating a Template
 

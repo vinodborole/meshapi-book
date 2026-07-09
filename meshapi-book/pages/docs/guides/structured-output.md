@@ -4,7 +4,7 @@ title: Structured Output | Mesh API Docs
 description: Constrain chat completion output to valid JSON or a strict JSON schema
   with response_format.
 resource: https://developers.meshapi.ai/docs/guides/structured-output
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 # Structured Output
@@ -15,7 +15,9 @@ The `response_format` field on `POST /v1/chat/completions` controls the shape of
 
 **succeeds and returns ordinary text**— it does not error. Always parse/validate the response, and prefer a model with first-class support such as OpenAI models or Google Gemini (e.g.
 
-`google/gemini-2.5-flash`). See How it works across providers.## Output modes
+`google/gemini-2.5-flash`). See [How it works across providers](/docs/guides/structured-output#how-it-works-across-providers).
+
+## Output modes
 
 `response_format` is an object whose `type` selects the mode:
 

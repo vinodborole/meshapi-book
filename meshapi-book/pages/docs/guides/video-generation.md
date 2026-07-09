@@ -4,7 +4,7 @@ title: Video Generation | Mesh API Docs
 description: Generate videos from text, images, video clips, and audio using async
   video generation models.
 resource: https://developers.meshapi.ai/docs/guides/video-generation
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 # Video Generation
@@ -152,7 +152,7 @@ You can use both simultaneously: pass a `callback_url` for production delivery a
 
 Video generation pricing is token-based and varies by the type of output:
 
-The exact per-token rates for each model are listed on the Pricing page.
+The exact per-token rates for each model are listed on the [Pricing](/docs/guides/pricing) page.
 
 ## Error reference
 

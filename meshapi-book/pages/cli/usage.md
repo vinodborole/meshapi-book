@@ -4,12 +4,12 @@ title: Using the Mesh CLI | Mesh API Docs
 description: Add your key, send your first prompt, switch models, and let the CLI
   write and run code.
 resource: https://developers.meshapi.ai/cli/usage
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 # Using the Mesh CLI
 
-Once the CLI is installed, you’re one API key away from your
+Once the CLI is [installed](/cli/install), you’re one API key away from your
 first response. Commands are identical on macOS and Windows — the only
 difference is how you paste (**⌘+V** on Mac, **right-click** in PowerShell).
 
@@ -17,7 +17,7 @@ difference is how you paste (**⌘+V** on Mac, **right-click** in PowerShell).
 
 This is a one-time step.
 
-- Go to app.meshapi.ai and sign in (or create an account).
+- Go to [app.meshapi.ai](https://app.meshapi.ai/)and sign in (or create an account).
 - In the left menu, click **API Keys → Create key**and name it anything.
 - Click the copy icon. The key starts with `rsk_`. Keep it private — treat it like a password.
 
@@ -49,7 +49,7 @@ Over 1000 models are available.
 
 Don’t want to pick manually? Turn on automatic routing with `/route auto` and
 Mesh chooses the best model for each prompt. See
-Auto Routing.
+[Auto Routing](/auto-routing).
 
 ## 5. Let it write and run code
 
@@ -68,11 +68,11 @@ Press `y` to write the file, then `y` again when it asks to run it. The CLI
 runs the file and shows the output:
 
 How much the CLI can do without asking depends on the current **permission
-mode** — see Commands & permission modes.
+mode** — see [Commands & permission modes](/cli/commands#permission-modes).
 
 ## Next step
 
-Learn the commands and permission modes you’ll use every day.
+Learn the [commands and permission modes](/cli/commands) you’ll use every day.
 
 # Citations
 

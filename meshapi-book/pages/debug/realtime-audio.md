@@ -4,7 +4,7 @@ title: Realtime Audio | Mesh API Docs
 description: WebSocket connection, auth, event-shape, session limits, and error codes
   for speech-to-speech.
 resource: https://developers.meshapi.ai/debug/realtime-audio
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 # Realtime Audio
@@ -13,7 +13,7 @@ WebSocket connection, auth, event-shape, session limits, and error codes for spe
 
 Realtime audio is a WebSocket gateway at `wss://api.meshapi.ai/v1/realtime`.
 Most issues are connection, auth, or event-shape problems. See
-Realtime Audio for the full reference.
+[Realtime Audio](/realtime-audio) for the full reference.
 
 ## 426 Upgrade Required / can’t connect over HTTP
 
@@ -63,8 +63,8 @@ Close codes seen: `1008` (policy/auth/quota), `1011` (server/upstream), `4402`
 
 ## Still stuck?
 
-See the Mesh API error reference
-or email **contact@meshapi.ai**.
+See the [Mesh API error reference](/debug/mesh-api#error-code-reference)
+or email ** contact@meshapi.ai**.
 
 # Citations
 

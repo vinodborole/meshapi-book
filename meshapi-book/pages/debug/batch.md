@@ -3,14 +3,15 @@ type: Web Page
 title: Batch API | Mesh API Docs
 description: Async polling, model-mixing, concurrency limits, and matching results.
 resource: https://developers.meshapi.ai/debug/batch
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 # Batch API
 
 Async polling, model-mixing, concurrency limits, and matching results.
 
-The Batch API is asynchronous and built for throughput, not latency. See Batch API for the full guide.
+The Batch API is asynchronous and built for throughput, not latency. See
+[Batch API](/batching) for the full guide.
 
 ## 400 mixed_models — all requests must use one model
 
@@ -50,8 +51,8 @@ time it moves to `expired`. Don’t use batches for low-latency calls — use
 
 ## Still stuck?
 
-See the Mesh API error reference
-or email **contact@meshapi.ai**.
+See the [Mesh API error reference](/debug/mesh-api#error-code-reference)
+or email ** contact@meshapi.ai**.
 
 # Citations
 

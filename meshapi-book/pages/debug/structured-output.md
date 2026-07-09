@@ -4,7 +4,7 @@ title: Structured Output | Mesh API Docs
 description: Why response_format returns plain text, JSON won't parse, or the schema
   isn't enforced.
 resource: https://developers.meshapi.ai/debug/structured-output
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-07-09T12:17:20.455852+00:00'
 ---
 
 # Structured Output
@@ -13,7 +13,7 @@ Why response_format returns plain text, JSON won’t parse, or the schema isn’
 
 Structured output depends on the **model** honoring `response_format`. The most
 common surprise is that a model silently ignores it. See
-Structured Output for the full guide.
+[Structured Output](/structured-output) for the full guide.
 
 ## I get plain text instead of JSON (no error)
 
@@ -63,8 +63,8 @@ Sampling introduces variation even with a schema.
 
 ## Still stuck?
 
-See the Mesh API error reference
-or email **contact@meshapi.ai**.
+See the [Mesh API error reference](/debug/mesh-api#error-code-reference)
+or email ** contact@meshapi.ai**.
 
 # Citations
 
