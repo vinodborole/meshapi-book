@@ -1,0 +1,65 @@
+name: Build bundle
+on:
+  workflow_dispatch:
+    inputs:
+      url:        {description: "Site URL to crawl", required: true}
+      name:       {description: "Bundle name (kebab-case)", required: true, default: "my-bundle"}
+      max_depth:  {description: "Max crawl depth", required: true, default: "3"}
+      max_pages:  {description: "Max pages", required: true, default: "200"}
+      js:         {description: "Render JavaScript (true/false)", required: true, default: "false"}
+      path_prefix: {description: "Only crawl under this path (blank = auto from the URL)", required: false, default: ""}
+      all_paths:   {description: "Crawl the whole host (true/false)", required: false, default: "false"}
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: {python-version: "3.12"}
+      - run: pip install "${{ inputs.js == 'true' && 'okf-kit[js]' || 'okf-kit' }}"
+      - if: ${{ inputs.js == 'true' }}
+        run: python -m playwright install --with-deps chromium
+      - name: Build
+        run: |
+          okf build "${{ inputs.url }}" -o "${{ inputs.name }}" \
+            --max-depth ${{ inputs.max_depth }} --max-pages ${{ inputs.max_pages }} \
+            ${{ inputs.js == 'true' && '--js' || '' }} \
+            ${{ inputs.path_prefix != '' && format('--path-prefix {0}', inputs.path_prefix) || '' }} \
+            ${{ inputs.all_paths == 'true' && '--all-paths' || '' }}
+      - name: Write README
+        run: |
+          cat > README.md <<'EOF'
+          # ${{ inputs.name }}-okf
+
+          An **[OKF](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md) knowledge bundle** of [${{ inputs.url }}](${{ inputs.url }}) — ready for agents to read and for you to chat with.
+
+          ```bash
+          pip install okf-kit
+          okf get ${{ inputs.name }}
+          okf chat ${{ inputs.name }} --provider ollama
+          ```
+
+          Or use it straight from this repo (the bundle is in `${{ inputs.name }}/`):
+
+          ```bash
+          okf chat ${{ inputs.name }} --provider ollama
+          okf visualize ${{ inputs.name }}
+          ```
+
+          Built and kept fresh with [okf-kit](https://github.com/vinodborole/okf-kit).
+          Source: <${{ inputs.url }}> — see [NOTICE.md](NOTICE.md) for content licensing.
+          EOF
+      - name: Commit bundle
+        run: |
+          git config user.name okf-bot
+          git config user.email okf-bot@users.noreply.github.com
+          git add -A && git commit -m "build ${{ inputs.name }} from ${{ inputs.url }}" && git push
+      - name: Release zip
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          okf zip "${{ inputs.name }}" -o "${{ inputs.name }}-okf.zip"
+          gh release create v0.1.0 "${{ inputs.name }}-okf.zip" --title "${{ inputs.name }} v0.1.0" \
+            --notes "OKF bundle. Get it: okf get ${{ inputs.name }}" || \
+          gh release upload v0.1.0 "${{ inputs.name }}-okf.zip" --clobber
