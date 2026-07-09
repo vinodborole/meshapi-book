@@ -1,26 +1,19 @@
-# okf-bundle-template
+# meshapi-book-okf
 
-A GitHub template for publishing a website as a self-updating
-[OKF](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
-bundle you can add to the
-[awesome-okf-kit](https://github.com/vinodborole/awesome-okf-kit) registry.
+An **[OKF](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md) knowledge bundle** of [https://developers.meshapi.ai/docs](https://developers.meshapi.ai/docs) — ready for agents to read and for you to chat with.
 
-## Use it
+```bash
+pip install okf-kit
+okf get meshapi-book
+okf chat meshapi-book --provider ollama
+```
 
-1. **Create a repo from this template** (green “Use this template” button).
-2. **Run the _Build bundle_ action** (Actions tab → *Build bundle* → *Run
-   workflow*) with your site URL and a bundle name. It crawls the site,
-   commits the bundle, and publishes a `v0.1.0` release zip.
-3. **Edit `NOTICE.md`** with the source's license/attribution.
-4. **Add it to the registry**: open a PR to
-   [awesome-okf-kit](https://github.com/vinodborole/awesome-okf-kit) adding a
-   `registry.yaml` entry pointing at your release zip
-   (`…/releases/latest/download/<name>-okf.zip`).
+Or use it straight from this repo (the bundle is in `meshapi-book/`):
 
-The included **weekly sync** action keeps the bundle fresh — `okf sync` only
-rewrites changed pages, so commits stay small.
+```bash
+okf chat meshapi-book --provider ollama
+okf visualize meshapi-book
+```
 
-> Publish only content you may redistribute — your own site, or permissively
-> licensed content (CC-BY, CC-BY-SA, MIT/Apache project docs, public domain).
-
-Built with [okf-kit](https://github.com/vinodborole/okf-kit).
+Built and kept fresh with [okf-kit](https://github.com/vinodborole/okf-kit).
+Source: <https://developers.meshapi.ai/docs> — see [NOTICE.md](NOTICE.md) for content licensing.
