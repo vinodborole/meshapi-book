@@ -1,6 +1,6 @@
 # meshapi-book-okf
 
-An **[OKF](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md) knowledge bundle** of [https://developers.meshapi.ai/docs](https://developers.meshapi.ai/docs) — ready for agents to read and for you to chat with.
+An **[OKF](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md) knowledge bundle** of [https://developers.meshapi.ai/](https://developers.meshapi.ai/) — ready for agents to read and for you to chat with.
 
 ```bash
 pip install okf-kit
@@ -16,4 +16,4 @@ okf visualize meshapi-book
 ```
 
 Built and kept fresh with [okf-kit](https://github.com/vinodborole/okf-kit).
-Source: <https://developers.meshapi.ai/docs> — see [NOTICE.md](NOTICE.md) for content licensing.
+Source: <https://developers.meshapi.ai/> — see [NOTICE.md](NOTICE.md) for content licensing.

@@ -1,0 +1,18 @@
+# /pages/debug — directory listing
+
+- [Auto Routing | Mesh API Docs](/pages/debug/auto-routing.md)
+- [Batch API | Mesh API Docs](/pages/debug/batch.md)
+- [BYOK | Mesh API Docs](/pages/debug/byok.md)
+- [Compare | Mesh API Docs](/pages/debug/compare.md)
+- [Embeddings | Mesh API Docs](/pages/debug/embeddings.md)
+- [Image Generation | Mesh API Docs](/pages/debug/image-generation.md)
+- [Images & Vision | Mesh API Docs](/pages/debug/images-vision.md)
+- [Mesh API | Mesh API Docs](/pages/debug/mesh-api.md)
+- [Mesh CLI | Mesh API Docs](/pages/debug/mesh-cli.md)
+- [Prompt Templates | Mesh API Docs](/pages/debug/prompt-templates.md)
+- [RAG (Files & Search) | Mesh API Docs](/pages/debug/rag.md)
+- [Realtime Audio | Mesh API Docs](/pages/debug/realtime-audio.md)
+- [Speech-to-Text | Mesh API Docs](/pages/debug/speech-to-text.md)
+- [Structured Output | Mesh API Docs](/pages/debug/structured-output.md)
+- [Text-to-Speech | Mesh API Docs](/pages/debug/text-to-speech.md)
+- [Video Generation | Mesh API Docs](/pages/debug/video-generation.md)

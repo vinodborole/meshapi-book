@@ -1,0 +1,16 @@
+# /pages/sd-ks/go-sdk — directory listing
+
+- [Audio (TTS & STT) | Mesh API Docs](/pages/sd-ks/go-sdk/audio-tts-stt.md)
+- [Batches | Mesh API Docs](/pages/sd-ks/go-sdk/batch-api.md)
+- [Chat Completions | Mesh API Docs](/pages/sd-ks/go-sdk/chat-completions.md)
+- [Compare (Multi-model) | Mesh API Docs](/pages/sd-ks/go-sdk/compare-multi-model.md)
+- [Embeddings | Mesh API Docs](/pages/sd-ks/go-sdk/embeddings.md)
+- [Error Handling | Mesh API Docs](/pages/sd-ks/go-sdk/error-handling.md)
+- [Image Generation | Mesh API Docs](/pages/sd-ks/go-sdk/image-generation.md)
+- [Models | Mesh API Docs](/pages/sd-ks/go-sdk/models.md)
+- [Go SDK | Mesh API Docs](/pages/sd-ks/go-sdk/overview.md)
+- [Prompt Templates | Mesh API Docs](/pages/sd-ks/go-sdk/prompt-templates.md)
+- [RAG (Files & Search) | Mesh API Docs](/pages/sd-ks/go-sdk/rag-files-search.md)
+- [Realtime Audio | Mesh API Docs](/pages/sd-ks/go-sdk/realtime-audio.md)
+- [Responses API (Reasoning) | Mesh API Docs](/pages/sd-ks/go-sdk/responses-reasoning.md)
+- [Video Generation | Mesh API Docs](/pages/sd-ks/go-sdk/video-generation.md)

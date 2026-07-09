@@ -1,0 +1,16 @@
+# /pages/sd-ks/python-sdk — directory listing
+
+- [Audio (TTS & STT) | Mesh API Docs](/pages/sd-ks/python-sdk/audio-tts-stt.md)
+- [Batches | Mesh API Docs](/pages/sd-ks/python-sdk/batch-api.md)
+- [Chat Completions | Mesh API Docs](/pages/sd-ks/python-sdk/chat-completions.md)
+- [Compare (Multi-model) | Mesh API Docs](/pages/sd-ks/python-sdk/compare-multi-model.md)
+- [Embeddings | Mesh API Docs](/pages/sd-ks/python-sdk/embeddings.md)
+- [Error Handling | Mesh API Docs](/pages/sd-ks/python-sdk/error-handling.md)
+- [Image Generation | Mesh API Docs](/pages/sd-ks/python-sdk/image-generation.md)
+- [Models | Mesh API Docs](/pages/sd-ks/python-sdk/models.md)
+- [Python SDK Overview | Mesh API Docs](/pages/sd-ks/python-sdk/overview.md)
+- [Prompt Templates | Mesh API Docs](/pages/sd-ks/python-sdk/prompt-templates.md)
+- [RAG (Files & Search) | Mesh API Docs](/pages/sd-ks/python-sdk/rag-files-search.md)
+- [Realtime Audio | Mesh API Docs](/pages/sd-ks/python-sdk/realtime-audio.md)
+- [Responses API (Reasoning) | Mesh API Docs](/pages/sd-ks/python-sdk/responses-reasoning.md)
+- [Video Generation | Mesh API Docs](/pages/sd-ks/python-sdk/video-generation.md)
