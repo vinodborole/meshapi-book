@@ -1,8 +1,6 @@
 # /pages/debug — directory listing
 
-- [Auto Routing | Mesh API Docs](/pages/debug/auto-routing.md)
 - [Batch API | Mesh API Docs](/pages/debug/batch.md)
-- [BYOK | Mesh API Docs](/pages/debug/byok.md)
 - [Compare | Mesh API Docs](/pages/debug/compare.md)
 - [Embeddings | Mesh API Docs](/pages/debug/embeddings.md)
 - [Image Generation | Mesh API Docs](/pages/debug/image-generation.md)
