@@ -1,5 +1,6 @@
 # /pages/sd-ks/python-sdk — directory listing
 
+- [Audio (TTS & STT) | Mesh API Docs](/pages/sd-ks/python-sdk/audio-tts-stt.md)
 - [Batches | Mesh API Docs](/pages/sd-ks/python-sdk/batch-api.md)
 - [Chat Completions | Mesh API Docs](/pages/sd-ks/python-sdk/chat-completions.md)
 - [Compare (Multi-model) | Mesh API Docs](/pages/sd-ks/python-sdk/compare-multi-model.md)

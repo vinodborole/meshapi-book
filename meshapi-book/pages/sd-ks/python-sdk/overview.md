@@ -3,7 +3,7 @@ type: Web Page
 title: Python SDK Overview | Mesh API Docs
 description: Getting started with the MeshAPI Python SDK.
 resource: https://developers.meshapi.ai/sd-ks/python-sdk/overview
-timestamp: '2026-07-09T12:17:20.455852+00:00'
+timestamp: '2026-07-20T09:25:48.943332+00:00'
 ---
 
 # Python SDK Overview
@@ -13,6 +13,8 @@ timestamp: '2026-07-09T12:17:20.455852+00:00'
 Official Python SDK for [Mesh API](https://meshapi.ai/), an AI model gateway that gives you instant access to 1000+ LLMs through a single OpenAI-compatible API.
 
 Python 3.9+. Built on `httpx` and Pydantic v2. Sync and async clients with first-class type hints.
+
+**Source & package:** [github.com/aifiesta/meshapi-python-sdk](https://github.com/aifiesta/meshapi-python-sdk) · `meshapi` on PyPI
 
 ## Install
 
