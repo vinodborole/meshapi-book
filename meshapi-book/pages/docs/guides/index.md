@@ -18,4 +18,5 @@
 - [Speech-to-Text | Mesh API Docs](/pages/docs/guides/speech-to-text.md)
 - [Structured Output | Mesh API Docs](/pages/docs/guides/structured-output.md)
 - [Text-to-Speech | Mesh API Docs](/pages/docs/guides/text-to-speech.md)
+- [Usage & Monitoring API | Mesh API Docs](/pages/docs/guides/usage-monitoring-api.md)
 - [Video Generation | Mesh API Docs](/pages/docs/guides/video-generation.md)

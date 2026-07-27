@@ -19,3 +19,7 @@
 ## 2026-07-20
 
 - Sync: +30 added, ~1 changed, -0 removed.
+
+## 2026-07-27
+
+- Sync: +8 added, ~0 changed, -3 removed.

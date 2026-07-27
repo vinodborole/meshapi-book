@@ -1,5 +1,6 @@
 # /pages — directory listing
 
+- [agent/](/pages/agent/index.md)
 - [api-reference/](/pages/api-reference/index.md)
 - [cli/](/pages/cli/index.md)
 - [debug/](/pages/debug/index.md)

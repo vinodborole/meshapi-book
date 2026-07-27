@@ -1,6 +1,8 @@
 # /pages/api-reference/mesh-api — directory listing
 
 - [audio/](/pages/api-reference/mesh-api/audio/index.md)
+- [auto-router/](/pages/api-reference/mesh-api/auto-router/index.md)
+- [balance/](/pages/api-reference/mesh-api/balance/index.md)
 - [batch/](/pages/api-reference/mesh-api/batch/index.md)
 - [chat/](/pages/api-reference/mesh-api/chat/index.md)
 - [embeddings/](/pages/api-reference/mesh-api/embeddings/index.md)
@@ -9,7 +11,7 @@
 - [moderations/](/pages/api-reference/mesh-api/moderations/index.md)
 - [rag/](/pages/api-reference/mesh-api/rag/index.md)
 - [responses/](/pages/api-reference/mesh-api/responses/index.md)
-- [router/](/pages/api-reference/mesh-api/router/index.md)
 - [templates/](/pages/api-reference/mesh-api/templates/index.md)
+- [usage/](/pages/api-reference/mesh-api/usage/index.md)
 - [video/](/pages/api-reference/mesh-api/video/index.md)
 - [Web Search | Mesh API Docs](/pages/api-reference/mesh-api/web-search.md)

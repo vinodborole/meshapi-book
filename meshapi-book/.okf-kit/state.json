@@ -2,7 +2,7 @@
   "generator": "okf-kit",
   "okf_version": "0.1",
   "root_url": "https://developers.meshapi.ai/",
-  "updated_at": "2026-07-20T09:25:48.962508+00:00",
+  "updated_at": "2026-07-27T10:02:52.788788+00:00",
   "config": {
     "max_depth": 3,
     "max_pages": 200,
@@ -10,8 +10,14 @@
     "respect_robots": true,
     "path_prefix": "/"
   },
-  "page_count": 111,
+  "page_count": 116,
   "pages": [
+    {
+      "path": "pages/agent/mcp/mcp-server.md",
+      "url": "https://developers.meshapi.ai/agent/mcp/mcp-server",
+      "title": "MCP Server | Mesh API Docs",
+      "hash": "f541e0c6219b8959a25f6d29f36538140f2604c3cb33be4b4bc4fc110f9ca3a8"
+    },
     {
       "path": "pages/api-reference.md",
       "url": "https://developers.meshapi.ai/api-reference",
@@ -53,6 +59,18 @@
       "url": "https://developers.meshapi.ai/api-reference/mesh-api/audio/list-voices",
       "title": "List Voices | Mesh API Docs",
       "hash": "e753d13fa890f75dbef37425e91ef6a3cc6d7b313bf677c7918ddbe3eb4fd005"
+    },
+    {
+      "path": "pages/api-reference/mesh-api/auto-router/router-select.md",
+      "url": "https://developers.meshapi.ai/api-reference/mesh-api/auto-router/router-select",
+      "title": "Router Select | Mesh API Docs",
+      "hash": "a3404a4274f0748b22a0f0a09ddf47b4da586589d4c64548bcfe0e89f27c6742"
+    },
+    {
+      "path": "pages/api-reference/mesh-api/balance/get-balance.md",
+      "url": "https://developers.meshapi.ai/api-reference/mesh-api/balance/get-balance",
+      "title": "Get Balance | Mesh API Docs",
+      "hash": "a7c7a363125a644afe7aafa8607953b57a729c7a28bebeabe288985b2b555971"
     },
     {
       "path": "pages/api-reference/mesh-api/batch/cancel-batch.md",
@@ -193,12 +211,6 @@
       "hash": "b827f6bbbbb29156f2072286aa3e2d463dc5fe9586685ec0012d878c94c18de7"
     },
     {
-      "path": "pages/api-reference/mesh-api/router/select.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/router/select",
-      "title": "Router Select | Mesh API Docs",
-      "hash": "e447964c187d63934def216155132b139e86c886460f16429aa0c8b109975476"
-    },
-    {
       "path": "pages/api-reference/mesh-api/templates/create-template.md",
       "url": "https://developers.meshapi.ai/api-reference/mesh-api/templates/create-template",
       "title": "Create Template | Mesh API Docs",
@@ -217,16 +229,28 @@
       "hash": "07ad1ec428117843e64375dcfd64fecca2f4d498c045f24932e23f2766c38fe0"
     },
     {
-      "path": "pages/api-reference/mesh-api/templates/list-templates.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/templates/list-templates",
-      "title": "List Templates | Mesh API Docs",
-      "hash": "5065f69c6de6cf2abbc0d296759cab9783fff27164bb243b49aad22c7e92c4ca"
-    },
-    {
       "path": "pages/api-reference/mesh-api/templates/update-template.md",
       "url": "https://developers.meshapi.ai/api-reference/mesh-api/templates/update-template",
       "title": "Update Template | Mesh API Docs",
       "hash": "79b1ba50eaaf93998aba2860ee9ddea267ef361602183ea958e909918faafd38"
+    },
+    {
+      "path": "pages/api-reference/mesh-api/usage/get-rate-limits.md",
+      "url": "https://developers.meshapi.ai/api-reference/mesh-api/usage/get-rate-limits",
+      "title": "Get Rate Limits | Mesh API Docs",
+      "hash": "543d0f7ff5301de537a565124601b0e9a2882001b3d3a21f2e4e169505625c62"
+    },
+    {
+      "path": "pages/api-reference/mesh-api/usage/query-usage-events.md",
+      "url": "https://developers.meshapi.ai/api-reference/mesh-api/usage/query-usage-events",
+      "title": "Query Usage Events | Mesh API Docs",
+      "hash": "8c4da7da913d3d8a0232bd65f7f94c48573c3f67a4165b2362dc38458086fd30"
+    },
+    {
+      "path": "pages/api-reference/mesh-api/usage/query-usage-summary.md",
+      "url": "https://developers.meshapi.ai/api-reference/mesh-api/usage/query-usage-summary",
+      "title": "Query Usage Summary | Mesh API Docs",
+      "hash": "dfbcb50b9d2a59b6d7eae78d989c530dbbe6e4bdedc50a2e3207f81ff21a17db"
     },
     {
       "path": "pages/api-reference/mesh-api/video/create-video-generation.md",
@@ -475,6 +499,12 @@
       "hash": "284b646a2b49685c2d195674a1d7da659ac3bc0f59d3a778b13e7f50c308f609"
     },
     {
+      "path": "pages/docs/guides/usage-monitoring-api.md",
+      "url": "https://developers.meshapi.ai/docs/guides/usage-monitoring-api",
+      "title": "Usage & Monitoring API | Mesh API Docs",
+      "hash": "0df0b8225dd5d937d79ea478e52bcf92a596ad150a90ff2926ebd0aed4e0da4c"
+    },
+    {
       "path": "pages/docs/guides/video-generation.md",
       "url": "https://developers.meshapi.ai/docs/guides/video-generation",
       "title": "Video Generation | Mesh API Docs",
@@ -487,10 +517,10 @@
       "hash": "cc33b95c6edaaf3a5c645e28e322a0eaa31acbff41407dd19db99f0bdd681b5b"
     },
     {
-      "path": "pages/docs/introduction/available-models.md",
-      "url": "https://developers.meshapi.ai/docs/introduction/available-models",
-      "title": "Available Models | Mesh API Docs",
-      "hash": "eb136ea8458ecc414cffcb65f0d235e78dcefa5c7a39210929a9bee27d5dd427"
+      "path": "pages/docs/infrastructure/retry-fallback.md",
+      "url": "https://developers.meshapi.ai/docs/infrastructure/retry-fallback",
+      "title": "Retry & Fallback | Mesh API Docs",
+      "hash": "8e99248344a252711c66d5809379c349800ea2e5f9fd49c6c3099be3cb250ca5"
     },
     {
       "path": "pages/docs/introduction/model-explanation.md",
@@ -681,6 +711,10 @@
   ],
   "edges": [
     [
+      "pages/agent/mcp/mcp-server.md",
+      "pages/api-reference.md"
+    ],
+    [
       "pages/cli/commands.md",
       "pages/debug/mesh-cli.md"
     ],
@@ -831,13 +865,17 @@
     [
       "pages/docs/guides/realtime-audio.md",
       "pages/api-reference.md"
+    ],
+    [
+      "pages/docs/guides/usage-monitoring-api.md",
+      "pages/api-reference.md"
     ]
   ],
   "last_sync": {
-    "synced_at": "2026-07-20T09:25:48.953146+00:00",
-    "added": 30,
-    "changed": 1,
-    "removed": 0,
-    "pages": 111
+    "synced_at": "2026-07-27T10:02:52.772083+00:00",
+    "added": 8,
+    "changed": 0,
+    "removed": 3,
+    "pages": 116
   }
 }
