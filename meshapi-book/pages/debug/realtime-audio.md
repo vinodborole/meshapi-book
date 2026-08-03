@@ -4,7 +4,7 @@ title: Realtime Audio | Mesh API Docs
 description: WebSocket connection, auth, event-shape, session limits, and error codes
   for speech-to-speech.
 resource: https://developers.meshapi.ai/debug/realtime-audio
-timestamp: '2026-07-09T12:17:20.455852+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # Realtime Audio
@@ -26,7 +26,7 @@ rejected, use `wss://`.
 Two methods: the `Sec-WebSocket-Protocol: openai-realtime, Bearer <rsk_...>`
 subprotocol (preferred), or `?api_key=<rsk_...>` on the URL.
 
-- Browsers can’t set request headers on a WebSocket and can’t reliably send the space-separated `Bearer`subprotocol — use the`?api_key=`query fallback.
+- Browsers can’t set request headers on a WebSocket and can’t reliably send the space-separated `Bearer` subprotocol — use the`?api_key=` query fallback.
 - If both are present, the subprotocol wins.
 
 ## session.update is rejected
@@ -43,8 +43,8 @@ supported** — don’t send raw PCM as a binary frame.
 
 ## Session drops after a while
 
-- **30-minute cap**— sessions are capped upstream; Mesh doesn’t extend it. Reconnect and resume app-level state for long agents.
-- **60s idle timeout**— idle sockets (no client→server frames for 60s) are closed by ingress. Keep the audio buffer flowing or send a- `session.update`ping.
+- **30-minute cap** — sessions are capped upstream; Mesh doesn’t extend it. Reconnect and resume app-level state for long agents.
+- **60s idle timeout** — idle sockets (no client→server frames for 60s) are closed by ingress. Keep the audio buffer flowing or send a`session.update` ping.
 
 ## Reading errors — use error.code, not the close code
 
@@ -57,14 +57,14 @@ Close codes seen: `1008` (policy/auth/quota), `1011` (server/upstream), `4402`
 
 ## Session won’t open / billing surprises
 
-- You need at least **$10 account balance**to open a realtime session.
-- Sessions cut short (network drop, tab close) **still bill**for tokens already processed.
-- There’s no in-stream cost message — query `GET /v1/usage`after the session for canonical numbers.
+- You need at least **$10 account balance** to open a realtime session.
+- Sessions cut short (network drop, tab close) **still bill** for tokens already processed.
+- There’s no in-stream cost message — query `GET /v1/usage` after the session for canonical numbers.
 
 ## Still stuck?
 
 See the [Mesh API error reference](/debug/mesh-api#error-code-reference)
-or email ** contact@meshapi.ai**.
+or email **[contact@meshapi.ai](mailto:contact@meshapi.ai)**.
 
 # Citations
 

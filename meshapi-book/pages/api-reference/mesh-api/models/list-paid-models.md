@@ -3,7 +3,7 @@ type: Web Page
 title: List Paid Models | Mesh API Docs
 description: 'Shortcut: list only models that have a non-zero cost.'
 resource: https://developers.meshapi.ai/api-reference/mesh-api/models/list-paid-models
-timestamp: '2026-07-20T09:25:48.943332+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # List Paid Models
@@ -43,8 +43,6 @@ input_modalities
 output_modalities
 
 brand
-
-provider
 
 description
 

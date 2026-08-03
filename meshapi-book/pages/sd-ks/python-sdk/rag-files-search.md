@@ -3,10 +3,10 @@ type: Web Page
 title: RAG (Files & Search) | Mesh API Docs
 description: Upload files, embed them, and run vector search with the Python SDK.
 resource: https://developers.meshapi.ai/sd-ks/python-sdk/rag-files-search
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
-RAG (Files & Search)
+# RAG (Files & Search)
 
 RAG (Files & Search)
 

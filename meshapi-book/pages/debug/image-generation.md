@@ -4,7 +4,7 @@ title: Image Generation | Mesh API Docs
 description: Parameter differences across providers, response formats, streaming,
   and edits.
 resource: https://developers.meshapi.ai/debug/image-generation
-timestamp: '2026-07-09T12:17:20.455852+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # Image Generation
@@ -21,11 +21,11 @@ ratios (e.g. `1024x1024`, `1792x1024`) or `auto`. `n` must be **1–10**.
 
 ## I got base64 back when I asked for a URL (Vertex/Imagen)
 
-Vertex AI (Imagen) **always returns  b64_json** regardless of
+Vertex AI (Imagen) **always returns `b64_json`** regardless of
+`response_format`, and does **not** return token usage. Handle both encodings,
+and don’t rely on `usage` being present for Imagen.
 
-`response_format`, and does **not**return token usage. Handle both encodings, and don’t rely on
-
-`usage` being present for Imagen.## output_format has no effect
+## output_format has no effect
 
 `output_format` (`png` / `jpeg` / `webp`) and `output_compression` are
 **OpenAI-only**. Other providers ignore them.
@@ -41,12 +41,13 @@ the chunk carrying `data[].url` (or `b64_json`).
 
 `POST /v1/images/edits` is `multipart/form-data`, and the `operation` (`edit`,
 `remove_background`, `upscale`, `outpaint`, `inpaint`, `mix`, `reframe`) must be
-supported by the chosen model — an unsupported operation returns ** 501**.
+supported by the chosen model — an unsupported operation returns **`501`**.
+`inpaint` also requires a `mask`.
 
-`inpaint` also requires a `mask`.## Still stuck?
+## Still stuck?
 
 See the [Mesh API error reference](/debug/mesh-api#error-code-reference)
-or email ** contact@meshapi.ai**.
+or email **[contact@meshapi.ai](mailto:contact@meshapi.ai)**.
 
 # Citations
 

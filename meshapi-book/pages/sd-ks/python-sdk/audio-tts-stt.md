@@ -4,10 +4,10 @@ title: Audio (TTS & STT) | Mesh API Docs
 description: Text-to-speech, speech-to-text, and voice management with the Python
   SDK.
 resource: https://developers.meshapi.ai/sd-ks/python-sdk/audio-tts-stt
-timestamp: '2026-07-20T09:25:48.943332+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
-Audio (TTS & STT)
+# Audio (TTS & STT)
 
 Audio (TTS & STT)
 
@@ -19,13 +19,13 @@ Audio (TTS & STT)
 
 ### Async
 
-`SpeechParams` fields
+### `SpeechParams` fields
 
 ## Speech-to-Text (Transcription)
 
 `client.audio.transcribe` sends `POST /v1/audio/transcriptions` as a multipart upload and returns a `TranscriptionResponse`.
 
-`TranscriptionParams` key fields
+### `TranscriptionParams` key fields
 
 ## Translation
 
@@ -37,7 +37,7 @@ Audio (TTS & STT)
 
 ### Async
 
-`AudioTranslationsParams` fields
+### `AudioTranslationsParams` fields
 
 The response `.text` field contains the English translation.
 
@@ -45,7 +45,7 @@ The response `.text` field contains the English translation.
 
 `client.audio.list_voices` sends `GET /v1/audio/voices`.
 
-`ListVoicesParams` fields
+### `ListVoicesParams` fields
 
 ## Get Voice
 

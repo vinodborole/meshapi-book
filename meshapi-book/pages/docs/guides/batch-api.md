@@ -4,7 +4,7 @@ title: Batch API | Mesh API Docs
 description: Submit requests inline, create a batch, poll for completion, and read
   results inline.
 resource: https://developers.meshapi.ai/docs/guides/batch-api
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # Batch API
@@ -13,9 +13,9 @@ The Batch API is for asynchronous, high-volume inference jobs where you do not n
 
 ## Workflow
 
-- Prepare a request bundle
-- Create a batch with `POST /v1/batches`
-- Poll `GET /v1/batches/{batch_id}`— results are included inline once complete
+1. Prepare a request bundle
+2. Create a batch with `POST /v1/batches`
+3. Poll `GET /v1/batches/{batch_id}` — results are included inline once complete
 
 ## 1 & 2. Create the batch
 
@@ -39,8 +39,8 @@ The batch create call also accepts an optional `metadata` object (arbitrary key-
 
 ### Limits
 
-- A batch may not mix models — all requests must target the same model, or the create call returns `400 mixed_models`.
-- You can have at most **10 batches in a non-terminal state**at once; an eleventh returns`429 batch_limit_exceeded`.
+- A batch may not mix models — all requests must target the same model, or the create call returns `400 mixed_models` .
+- You can have at most **10 batches in a non-terminal state** at once; an eleventh returns`429 batch_limit_exceeded` .
 
 ## 3. Poll and read results
 
@@ -61,8 +61,8 @@ Common statuses:
 
 - All requests in a batch must use the same model.
 - Batch jobs are best for throughput, not low-latency interactive use.
-- Use `GET /v1/batches`to list recent batches and`POST /v1/batches/{batch_id}/cancel`to cancel one.
-- Results are matched by `custom_id`— the output order is not guaranteed.
+- Use `GET /v1/batches` to list recent batches and`POST /v1/batches/{batch_id}/cancel` to cancel one.
+- Results are matched by `custom_id` — the output order is not guaranteed.
 
 # Citations
 

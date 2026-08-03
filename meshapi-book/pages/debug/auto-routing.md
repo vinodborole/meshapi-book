@@ -4,7 +4,7 @@ title: Auto Routing | Mesh API Docs
 description: Why auto didn't route, which model actually ran, the extra classifier
   cost, and added latency.
 resource: https://developers.meshapi.ai/debug/auto-routing
-timestamp: '2026-07-20T09:25:48.943332+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # Auto Routing
@@ -25,8 +25,8 @@ route — use a concrete model ID there.
 Mesh injects the resolved model into the response, but **where** depends on
 streaming:
 
-- **Non-streaming**— in the body:- `x_resolved_model_id`and- `x_auto_routed`.
-- **Streaming**(- `stream: true`) — as- **HTTP response headers**- *before*the SSE stream:- `X-Auto-Routed`and- `X-Resolved-Model-Id`. They are- **not**in the body, which is why people miss them on streams.
+- **Non-streaming** — in the body:`x_resolved_model_id` and`x_auto_routed` .
+- **Streaming** (`stream: true` ) — as**HTTP response headers***before* the SSE stream:`X-Auto-Routed` and`X-Resolved-Model-Id` . They are**not** in the body, which is why people miss them on streams.
 
 ## It keeps picking a cheap/default model (e.g. gpt-4o-mini)
 
@@ -50,7 +50,7 @@ specific model instead.
 `auto` gives the gateway full discretion. If you need determinism:
 
 - Pin a single model ID, or
-- Supply a `models`fallback array to constrain the set of models a request may use, instead of`"auto"`.
+- Supply a `models` fallback array to constrain the set of models a request may use, instead of`"auto"` .
 
 ## First-token latency went up
 
@@ -61,7 +61,7 @@ interactive use, pin a model rather than using `auto`.
 ## Still stuck?
 
 See the [Mesh API error reference](/debug/mesh-api#error-code-reference)
-or email ** contact@meshapi.ai**.
+or email **[contact@meshapi.ai](mailto:contact@meshapi.ai)**.
 
 # Citations
 

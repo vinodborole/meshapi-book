@@ -4,10 +4,10 @@ title: Speech-to-Text | Mesh API Docs
 description: Transcription request shape, input sources, translation support, and
   realtime WebSocket frames.
 resource: https://developers.meshapi.ai/debug/speech-to-text
-timestamp: '2026-07-09T12:17:20.455852+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
-Speech-to-Text
+# Speech-to-Text
 
 Speech-to-Text
 
@@ -17,11 +17,11 @@ Transcription runs over `POST /v1/audio/transcriptions` (REST) and
 
 ## 422 — the endpoint expects multipart/form-data, not JSON
 
-`POST /v1/audio/transcriptions` uses ** multipart/form-data**, not a JSON body.
-Send fields as form parts (
+`POST /v1/audio/transcriptions` uses **`multipart/form-data`**, not a JSON body.
+Send fields as form parts (`-F` in curl, `files=`/`data=` in httpx). Posting
+JSON is the most common cause of a 422 here.
 
-`-F` in curl, `files=`/`data=` in httpx). Posting
-JSON is the most common cause of a 422 here.## No audio provided
+## No audio provided
 
 You must supply exactly one input source: a `file` upload, a `source_url`
 (public URL), or a `cloud_storage_url` (S3/GCS). Omitting all three fails.
@@ -40,9 +40,9 @@ the query parameter.
 
 ## Realtime transcripts are empty or garbled
 
-- `audio_format`must match what you actually send (default- `pcm_16000`; the standard protocol expects- **PCM**).- `s16le`, 16 kHz, mono
-- With `commit_strategy: manual`you must send`input_audio_buffer.commit`(or ElevenLabs`commit: true`) to get a final transcript;`auto`uses VAD.
-- **ElevenLabs realtime**only forwards- `input_audio_chunk`frames — any other message type is silently dropped.
+- `audio_format` must match what you actually send (default`pcm_16000` ; the standard protocol expects**PCM `s16le`, 16 kHz, mono** ).
+- With `commit_strategy: manual` you must send`input_audio_buffer.commit` (or ElevenLabs`commit: true` ) to get a final transcript;`auto` uses VAD.
+- **ElevenLabs realtime** only forwards`input_audio_chunk` frames — any other message type is silently dropped.
 
 ## WebSocket closed with an error
 
@@ -53,7 +53,7 @@ standard codes: `401`, `422`, `429`, `402`.
 ## Still stuck?
 
 See the [Mesh API error reference](/debug/mesh-api#error-code-reference)
-or email ** contact@meshapi.ai**.
+or email **[contact@meshapi.ai](mailto:contact@meshapi.ai)**.
 
 # Citations
 

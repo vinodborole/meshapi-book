@@ -3,14 +3,14 @@ type: Web Page
 title: Models | Mesh API Docs
 description: List and filter models with the Go SDK.
 resource: https://developers.meshapi.ai/sd-ks/go-sdk/models
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # Models
 
 # Models
 
-1 // List all models 2 all, _ := client.Models.List(ctx, meshapi.ListModelsParams{}) 3 4 // List free models only 5 free, _ := client.Models.Free(ctx) 6 7 // Filter by provider (Provider is *string) 8 provider := "amazon-bedrock" 9 bedrock, _ := client.Models.List(ctx, meshapi.ListModelsParams{ 10 Provider: &provider, 11 }) 12 13 for _, m := range bedrock { 14 fmt.Printf("%s: $%v/1k tokens\n", m.ID, m.Pricing.PromptUSDPer1K) 15 }
+Models billed in non-token units (speech, image, video) return `null` for the per-1M fields and publish their rate in `input_usd_per_unit` / `output_usd_per_unit`, labelled by `pricing_unit` (e.g. `per_second`, `per_image`). The SDK’s `ModelPricing` struct does not declare the per-unit fields yet, so they are dropped during decoding — call the endpoint with `net/http` and decode the raw JSON if you need them.
 
 # Citations
 

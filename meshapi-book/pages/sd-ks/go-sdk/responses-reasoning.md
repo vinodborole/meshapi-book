@@ -3,10 +3,10 @@ type: Web Page
 title: Responses API (Reasoning) | Mesh API Docs
 description: Query reasoning models with the Go SDK.
 resource: https://developers.meshapi.ai/sd-ks/go-sdk/responses-reasoning
-timestamp: '2026-07-20T09:25:48.943332+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
-Responses API (Reasoning)
+# Responses API (Reasoning)
 
 Responses API (Reasoning)
 

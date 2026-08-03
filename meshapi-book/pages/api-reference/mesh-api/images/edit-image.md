@@ -4,7 +4,7 @@ title: Edit an image | Mesh API Docs
 description: 'OpenAI-compatible image editing endpoint. Accepts EITHER multipart/form-data
   (binary uploads: image, optional'
 resource: https://developers.meshapi.ai/api-reference/mesh-api/images/edit-image
-timestamp: '2026-07-20T09:25:48.943332+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # Edit an image
@@ -16,10 +16,6 @@ Bearer authentication of the form `Bearer <token>`, where token is your auth tok
 ### Request
 
 ### Response
-
-The edited image(s).
-
-Bearer authentication of the form `Bearer <token>`, where token is your auth token.
 
 The edited image(s).
 
@@ -44,8 +40,9 @@ output.`reframe`: Gemini image models — image + aspect_ratio
 ratio; single output.`inpaint`: openai, vertex — image + mask (canonical WHITE=edit; mesh
 normalizes per provider). Optional mask_feather blends the result back
 through the mask (Pillow; 501 if unavailable).
-
-Note:The image response may not render in GitBook’s “Test it” panel. To view the edited image, try this endpoint with Postman, curl, or another HTTP client.
+**Note:** The image response may not render in GitBook’s “Test it” panel.
+To view the edited image, try this endpoint with Postman, curl, or another
+HTTP client.
 
 # Citations
 

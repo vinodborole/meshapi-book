@@ -3,7 +3,7 @@ type: Web Page
 title: Model Explanation | Mesh API Docs
 description: Understand the different types of AI models available through the API.
 resource: https://developers.meshapi.ai/docs/introduction/model-explanation
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # Model Explanation
@@ -28,16 +28,16 @@ For example:
 
 Each model handles a different maximum “context limit” – the number of tokens (words/characters) it can process in a single request.
 
-- Fast, small models (e.g. `llama-3`) may have smaller limits but respond instantly.
-- Large models (e.g. `gpt-4o`) can handle massive documents and are heavily optimized for reasoning but take slightly longer to generate tokens.
+- Fast, small models (e.g. `llama-3` ) may have smaller limits but respond instantly.
+- Large models (e.g. `gpt-4o` ) can handle massive documents and are heavily optimized for reasoning but take slightly longer to generate tokens.
 
 ## Choosing the Right Model
 
 When deciding what model to use for your application, consider these factors:
 
-- **Cost:**Do you need high intelligence, or just rapid categorization?
-- **Speed (Latency):**Lighter models offer much lower time-to-first-token.
-- **Context Length:**If you are passing an entire codebase or large PDF, ensure the model supports large contexts.
+- **Cost:** Do you need high intelligence, or just rapid categorization?
+- **Speed (Latency):** Lighter models offer much lower time-to-first-token.
+- **Context Length:** If you are passing an entire codebase or large PDF, ensure the model supports large contexts.
 
 You can view the full dynamic list of supported models in our live Model Catalog.
 
@@ -45,7 +45,7 @@ You can view the full dynamic list of supported models in our live Model Catalog
 
 ### Model object fields
 
-Each model includes `id`, `name`, `model_type`, `input_modalities`, `output_modalities`, `is_free`, and a `pricing` object (`prompt_usd_per_1k`, `completion_usd_per_1k`, and per-million-token variants).
+Each model includes `id`, `name`, `model_type`, `input_modalities`, `output_modalities`, `is_free`, and a `pricing` object. Token-priced models publish `prompt_usd_per_1m` and `completion_usd_per_1m` (USD per 1 million tokens), plus per-1M rates for caching, batch, and other modalities where applicable. Models billed in other units (speech, image, video) set those to `null` and publish their rate in `input_usd_per_unit` / `output_usd_per_unit`, labelled by `pricing_unit` (e.g. `per_second`, `per_image`) — see [Pricing](/docs/introduction/pricing) for the full breakdown.
 
 Capability is exposed via `supports_*` boolean flags, including `supports_thinking`, `supports_tools`, `supports_structured_output`, `supports_system_prompt` (defaults to `true`), `supports_completions_api`, `supports_responses_api`, `supports_realtime`, `supports_embeddings`, `supports_batching`, `supports_video_generation`, and the `supports_image_*` edit flags. Check these before sending a request that relies on a specific capability.
 

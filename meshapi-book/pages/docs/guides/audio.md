@@ -4,7 +4,7 @@ title: Audio | Mesh API Docs
 description: Send audio into chat completions and request audio output from supported
   models.
 resource: https://developers.meshapi.ai/docs/guides/audio
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # Audio
@@ -14,7 +14,7 @@ Mesh API supports audio through `POST /v1/chat/completions`.
 Use this page for:
 
 - audio input with `input_audio`
-- audio output with `modalities`and`audio`
+- audio output with `modalities` and`audio`
 
 ## Audio input
 
@@ -60,7 +60,7 @@ Optional parameters: `prompt` (context hint for the model), `response_format` (`
 ## Notes
 
 - Audio payloads are base64 encoded in the request body.
-- Check `GET /v1/models`to find models that accept or produce audio.
+- Check `GET /v1/models` to find models that accept or produce audio.
 - Keep payload sizes reasonable, especially for browser-based clients.
 
 # Citations

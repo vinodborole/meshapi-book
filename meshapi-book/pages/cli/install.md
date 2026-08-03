@@ -3,7 +3,7 @@ type: Web Page
 title: Install the Mesh CLI | Mesh API Docs
 description: Get the Mesh CLI running on macOS or Windows in about 10 minutes.
 resource: https://developers.meshapi.ai/cli/install
-timestamp: '2026-07-09T12:17:20.455852+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # Install the Mesh CLI
@@ -25,16 +25,16 @@ After the one-time setup, updating is a single command — see
 
 ### 1. Install Python
 
-- Open Safari (or any browser) and go to [python.org/downloads](https://python.org/downloads).
-- Click the yellow **Download Python 3.x**button (any recent 3.x is fine).
-- Open the downloaded file — named like `python-3.14.6-macos11.pkg`.
-- Click **Continue → Continue → Continue → Agree → Install**, enter your Mac login password, then**Install Software**.
-- Wait for *“The installation was successful”*and click**Close**.
+1. Open Safari (or any browser) and go to [python.org/downloads](https://python.org/downloads) .
+2. Click the yellow **Download Python 3.x** button (any recent 3.x is fine).
+3. Open the downloaded file — named like `python-3.14.6-macos11.pkg` .
+4. Click **Continue → Continue → Continue → Agree → Install** , enter your Mac login password, then**Install Software** .
+5. Wait for *“The installation was successful”* and click**Close** .
 
 ### 2. Check Python
 
-- Press **⌘ + Space**, type`Terminal`, press**Enter**.
-- Run:
+1. Press **⌘ + Space** , type`Terminal` , press**Enter** .
+2. Run:
 
 You should see `Python 3.` followed by numbers. ✅
 

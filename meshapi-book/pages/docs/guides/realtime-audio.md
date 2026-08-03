@@ -4,7 +4,7 @@ title: Realtime Audio | Mesh API Docs
 description: Bi-directional speech-to-speech over WebSocket using OpenAI's Realtime
   API through Mesh.
 resource: https://developers.meshapi.ai/docs/guides/realtime-audio
-timestamp: '2026-07-09T12:17:20.455852+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # Realtime Audio
@@ -15,8 +15,10 @@ timestamp: '2026-07-09T12:17:20.455852+00:00'
 realtime audio. It supports two modes: bidirectional speech-to-speech via
 OpenAI’s Realtime API, and realtime speech-to-text via ElevenLabs Scribe.
 
-- Same auth surface as the rest of Mesh — your `rsk_...`data-plane token.
-- Wire format is **identical**to OpenAI’s Realtime API. Mesh passes JSON event bodies through verbatim in both directions, so any client written against the upstream spec works against Mesh by switching the WebSocket URL.
+- Same auth surface as the rest of Mesh — your `rsk_...` data-plane token.
+- Wire format is **identical** to OpenAI’s Realtime API. Mesh passes JSON event
+bodies through verbatim in both directions, so any client written against
+the upstream spec works against Mesh by switching the WebSocket URL.
 - Billed on usage, metered at session close.
 
 It’s intended for voice agents, live transcription with response, and any half-duplex / full-duplex audio UX where round-trip latency matters.
@@ -87,8 +89,13 @@ session — no need to hard-code rates in the client.
 
 ## Billing
 
-- **Account balance required.**You need at least 10 USD account balance to open a realtime session. If your account balance is exhausted during a session, the connection is closed with an- `insufficient_quota`error. Top up to reconnect. Partial responses up to the point of disconnect are still billed.
-- **Session token caps.**Sessions configured with a max-token cap close with a- `session_token_cap_exceeded`error once the cap is reached.
+- **Account balance required.** You need at least 10 USD account balance to
+open a realtime session. If your account balance is exhausted during a
+session, the connection is closed with an`insufficient_quota` error.
+Top up to reconnect. Partial responses up to the point of disconnect
+are still billed.
+- **Session token caps.** Sessions configured with a max-token cap close
+with a`session_token_cap_exceeded` error once the cap is reached.
 
 Usage events are written to your account’s usage log at session close,
 accessible via `GET /v1/usage` and the dashboard. Sessions that get cut
@@ -97,10 +104,16 @@ were processed. Query `/v1/usage` for canonical numbers.
 
 ## Limits and known caveats
 
-- **Session length.**Sessions are capped at 30 minutes by upstream; Mesh doesn’t extend this. Long-running agents should reconnect and resume application-level state.
-- **Ingress timeout.**Idle sockets (no client→server frames for 60s) are closed by the L7 ingress. Send a- `session.update`ping or keep the audio buffer flowing.
-- **Browsers / Safari.**Browsers can’t set request headers on a WebSocket and can’t reliably send the space-separated- `Bearer <key>`subprotocol token. In the browser, authenticate with the- `?api_key=<rsk_...>`query fallback.
-- **No HTTP fallback.**This endpoint only exists as a WebSocket upgrade.- `GET /v1/realtime`over plain HTTP returns- `426 Upgrade Required`.
+- **Session length.** Sessions are capped at 30 minutes by upstream; Mesh
+doesn’t extend this. Long-running agents should reconnect and resume
+application-level state.
+- **Ingress timeout.** Idle sockets (no client→server frames for 60s) are
+closed by the L7 ingress. Send a`session.update` ping or keep the audio
+buffer flowing.
+- **Browsers / Safari.** Browsers can’t set request headers on a WebSocket and
+can’t reliably send the space-separated`Bearer <key>` subprotocol token. In
+the browser, authenticate with the`?api_key=<rsk_...>` query fallback.
+- **No HTTP fallback.** This endpoint only exists as a WebSocket upgrade.`GET /v1/realtime` over plain HTTP returns`426 Upgrade Required` .
 
 ## Errors
 
@@ -110,7 +123,7 @@ immediately before the WebSocket is closed. Use `error.code` for
 programmatic handling — it is the stable, semantic identifier. The
 WebSocket close code that follows is incidental.
 
-`error.code` reference
+### `error.code` reference
 
 In-band errors during a live session arrive as a regular `error` event
 with the OpenAI-shaped envelope shown above and are not accompanied by a
@@ -124,9 +137,9 @@ is informational only.
 
 ## Next steps
 
-- Review the [Authentication guide](/authentication)for key rotation and scoping.
-- See the [API reference entry](/api-reference)for the OpenAPI stub.
-- Watch the upstream [OpenAI Realtime API reference](https://platform.openai.com/docs/api-reference/realtime)for new event types — Mesh forwards them without code changes.
+- Review the [Authentication guide](/authentication) for key rotation and scoping.
+- See the [API reference entry](/api-reference) for the OpenAPI stub.
+- Watch the upstream [OpenAI Realtime API reference](https://platform.openai.com/docs/api-reference/realtime) for new event types — Mesh forwards them without code changes.
 
 # Citations
 

@@ -4,10 +4,10 @@ title: Commands & permission modes | Mesh API Docs
 description: The slash commands you'll use daily, the four permission modes, and how
   to stay up to date.
 resource: https://developers.meshapi.ai/cli/commands
-timestamp: '2026-07-09T12:17:20.455852+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
-Commands & permission modes
+# Commands & permission modes
 
 Commands & permission modes
 

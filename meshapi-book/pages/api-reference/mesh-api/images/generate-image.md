@@ -4,14 +4,16 @@ title: Generate Image | Mesh API Docs
 description: 'OpenAI-compatible image generation endpoint. > Note: The image response
   may not render in GitBook''s "Test it" panel.'
 resource: https://developers.meshapi.ai/api-reference/mesh-api/images/generate-image
-timestamp: '2026-07-20T09:25:48.943332+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # Generate Image
 
 OpenAI-compatible image generation endpoint.
 
-Note:The image response may not render in GitBook’s “Test it” panel. To view the generated image, try this endpoint with Postman, curl, or another HTTP client.
+**Note:** The image response may not render in GitBook’s “Test it” panel.
+To view the generated image, try this endpoint with Postman, curl, or
+another HTTP client.
 
 ### Authentication
 

@@ -4,10 +4,10 @@ title: Speech-to-Text | Mesh API Docs
 description: Text-to-speech, speech-to-text, voice management, and real-time streaming
   audio APIs.
 resource: https://developers.meshapi.ai/docs/guides/speech-to-text
-timestamp: '2026-07-09T12:17:20.455852+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
-Speech-to-Text
+# Speech-to-Text
 
 Speech-to-Text
 
@@ -71,9 +71,9 @@ The wire protocol is selected automatically from the model you pass. Standard st
 
 Pass your Mesh API key in one of these ways:
 
-- `Sec-WebSocket-Protocol: Bearer rsk_...`header
-- `?api_key=rsk_...`query parameter
-- `?token=rsk_...`query parameter
+- `Sec-WebSocket-Protocol: Bearer rsk_...` header
+- `?api_key=rsk_...` query parameter
+- `?token=rsk_...` query parameter
 
 ### Query parameters
 
@@ -108,7 +108,7 @@ Set `"commit": true` to trigger a VAD commit when using `commit_strategy: manual
 `GET /v1/audio/voices`
 
 Returns a unified voice catalog spanning every TTS model brand. The list can be
-large, so **filter by  brand or model** to narrow it to the voices you can
+large, so **filter by `brand` or `model`** to narrow it to the voices you can
 actually use with the model you plan to call.
 
 Each voice is returned with `voice_id`, `name`, `brand`, `provider`, `model`,

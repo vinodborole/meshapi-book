@@ -3,14 +3,12 @@ type: Web Page
 title: Prompt Templates | Mesh API Docs
 description: Manage and use prompt templates with the Go SDK.
 resource: https://developers.meshapi.ai/sd-ks/go-sdk/prompt-templates
-timestamp: '2026-07-20T09:25:48.943332+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # Prompt Templates
 
 # Prompt Templates
-
-Templates allow you to skip re-sending system prompts by storing them on the server.
 
 Templates allow you to skip re-sending system prompts by storing them on the server.
 

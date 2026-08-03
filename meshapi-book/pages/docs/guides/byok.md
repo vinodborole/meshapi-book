@@ -3,7 +3,7 @@ type: Web Page
 title: BYOK | Mesh API Docs
 description: Learn how to use your existing AI provider keys with Mesh API.
 resource: https://developers.meshapi.ai/docs/guides/byok
-timestamp: '2026-07-20T09:25:48.943332+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # BYOK
@@ -24,8 +24,8 @@ By default, requests will use your BYOK key. If your key fails (e.g., due to aut
 
 You can control the fallback behavior for each key:
 
-- **Fallback Enabled (Default)**: If your key fails or hits a rate limit, Mesh API will attempt to fulfill the request using shared platform credentials.
-- **Exclusive Use**: You can disable fallback to ensure that requests for that provider ONLY use your key. If your key fails, the request will fail.
+- **Fallback Enabled (Default)** : If your key fails or hits a rate limit, Mesh API will attempt to fulfill the request using shared platform credentials.
+- **Exclusive Use** : You can disable fallback to ensure that requests for that provider ONLY use your key. If your key fails, the request will fail.
 
 ## Platform Fee
 
@@ -63,9 +63,9 @@ Ensure the service account has the **Vertex AI User** (`roles/aiplatform.user`) 
 
 If your BYOK requests fail, you can debug the issue by checking the response or viewing logs. Common issues include:
 
-- **401 Unauthorized**: Your provider API key is invalid or revoked.
-- **403 Forbidden**: Your key lacks permissions for the requested model (e.g., AWS IAM policy missing- `bedrock:InvokeModel`,- `bedrock:InvokeModelWithResponseStream`, or- `bedrock:ListFoundationModels`).
-- **429 Too Many Requests**: You have hit the rate limit on your provider account.
+- **401 Unauthorized** : Your provider API key is invalid or revoked.
+- **403 Forbidden** : Your key lacks permissions for the requested model (e.g., AWS IAM policy missing`bedrock:InvokeModel` ,`bedrock:InvokeModelWithResponseStream` , or`bedrock:ListFoundationModels` ).
+- **429 Too Many Requests** : You have hit the rate limit on your provider account.
 
 # Citations
 

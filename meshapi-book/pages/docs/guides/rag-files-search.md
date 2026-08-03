@@ -4,10 +4,10 @@ title: RAG (Retrieval-Augmented Generation) | Mesh API Docs
 description: Upload your documents, search them semantically, and ground AI answers
   in your own content — all through the Mesh API.
 resource: https://developers.meshapi.ai/docs/guides/rag-files-search
-timestamp: '2026-07-20T09:25:48.943332+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
-RAG (Retrieval-Augmented Generation)
+# RAG (Retrieval-Augmented Generation)
 
 RAG (Retrieval-Augmented Generation)
 
@@ -15,9 +15,9 @@ RAG lets you upload files, automatically convert them into searchable chunks, an
 
 The full flow is three steps:
 
-- **Upload**a file and get a- `file_id`
-- **Wait**for embeddings to finish processing
-- **Search**with a natural-language query
+1. **Upload** a file and get a`file_id`
+2. **Wait** for embeddings to finish processing
+3. **Search** with a natural-language query
 
 ## Step 1 — Upload a file
 

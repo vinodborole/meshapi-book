@@ -3,7 +3,7 @@ type: Web Page
 title: Product Overview | Mesh API Docs
 description: Learn about the MeshAPI platform and what it offers.
 resource: https://developers.meshapi.ai/docs/introduction/product-overview
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # Product Overview
@@ -14,17 +14,17 @@ MeshAPI is an AI model gateway that gives you instant access to a massive variet
 
 ## Features
 
-- **One Universal API:**Code once. A single- `ChatCompletion`API request works for 1000+ different base models.
-- **Unified Billing:**Avoid managing dozens of subscriptions. Deposit funds into one account and consume any model.
-- **Provider Fallbacks:**If a specific model or provider experiences downtime, the gateway can automatically fall back to another supported mechanism to ensure reliable inferences.
-- **Built-in Rate Limiting:**Prevent run-away costs by applying robust rate limiting to your models and integrations.
-- **Prompt Templates:**Manage, version, and share prompts effectively via our secure templating system.
+- **One Universal API:** Code once. A single`ChatCompletion` API request works for 1000+ different base models.
+- **Unified Billing:** Avoid managing dozens of subscriptions. Deposit funds into one account and consume any model.
+- **Provider Fallbacks:** If a specific model or provider experiences downtime, the gateway can automatically fall back to another supported mechanism to ensure reliable inferences.
+- **Built-in Rate Limiting:** Prevent run-away costs by applying robust rate limiting to your models and integrations.
+- **Prompt Templates:** Manage, version, and share prompts effectively via our secure templating system.
 
 ## How It Works
 
-- **Authentication:**Create a single API Key (or Data-Plane Key).
-- **Integration:**Replace the Base URL of any OpenAI-compatible SDK with- `https://api.meshapi.ai`.
-- **Execution:**Pass the Model ID and standard parameters as you normally would. Your request is transparently routed out to the underlying host.
+1. **Authentication:** Create a single API Key (or Data-Plane Key).
+2. **Integration:** Replace the Base URL of any OpenAI-compatible SDK with`https://api.meshapi.ai` .
+3. **Execution:** Pass the Model ID and standard parameters as you normally would. Your request is transparently routed out to the underlying host.
 
 Enjoy the developer experience you already know, upgraded with universal model access.
 

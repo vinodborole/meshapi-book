@@ -3,10 +3,10 @@ type: Web Page
 title: Compare (Multi-model) | Mesh API Docs
 description: Fire one prompt at several models in parallel using the Python SDK.
 resource: https://developers.meshapi.ai/sd-ks/python-sdk/compare-multi-model
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
-Compare (Multi-model)
+# Compare (Multi-model)
 
 Compare (Multi-model)
 

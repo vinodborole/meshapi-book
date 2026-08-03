@@ -4,7 +4,7 @@ title: Video Generation | Mesh API Docs
 description: Async polling, task-level failures, input modality limits, size caps,
   and webhook delivery.
 resource: https://developers.meshapi.ai/debug/video-generation
-timestamp: '2026-07-09T12:17:20.455852+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # Video Generation
@@ -21,8 +21,8 @@ the full reference.
 That’s expected. `POST /v1/video/generations` returns `{"id": "t-..."}`
 immediately. The video isn’t ready yet.
 
-- Poll `GET /v1/video/generations/{id}`until`status`is terminal,**or**
-- Pass a `callback_url`to receive the result by webhook.
+- Poll `GET /v1/video/generations/{id}` until`status` is terminal,**or**
+- Pass a `callback_url` to receive the result by webhook.
 
 ## HTTP 200 but the task failed
 
@@ -44,16 +44,16 @@ call `GET /v1/video/generations/{id}` — that one forces an upstream sync.
 
 Input modality support is model-specific (BytePlus Seedance):
 
-- **Video**and- **audio**inputs are- **Seedance 2.0 series only**. Older Seedance models accept text and image only.
-- **Audio cannot be the sole input**— you must also include a reference image or video in the- `content`array.
-- Use `duration`**or**`frames`, not both.
+- **Video** and**audio** inputs are**Seedance 2.0 series only** . Older Seedance models accept text and image only.
+- **Audio cannot be the sole input** — you must also include a reference image or video in the`content` array.
+- Use `duration`**or**`frames` , not both.
 
 ## Request too large / Base64 failures
 
 Size caps (BytePlus Seedance; other providers may differ):
 
-- Video input: max **50 MB**. Audio: max**15 MB**,**2–15 s**per clip, up to**3 clips**, ≤**15 s**combined.
-- Total request body: **64 MB**.
+- Video input: max **50 MB** . Audio: max**15 MB** ,**2–15 s** per clip, up to**3 clips** , ≤**15 s** combined.
+- Total request body: **64 MB** .
 
 Do **not** Base64-encode large files — you’ll blow the 64 MB body limit. Use a
 public URL instead. That URL must be reachable by the provider **without
@@ -76,18 +76,18 @@ if you expect long jobs, or resubmit.
 Callbacks are **fire-and-forget** with a **10-second timeout** and are **not
 retried**.
 
-- Return a `2xx`quickly (do heavy work after responding). A slow or failing endpoint means you miss the event.
-- Only terminal states (`succeeded`,`failed`,`expired`) trigger a callback.
-- As a safety net, also poll `GET /v1/video/generations/{id}`— Mesh deduplicates usage logging, so you’re never billed twice.
+- Return a `2xx` quickly (do heavy work after responding). A slow or failing endpoint means you miss the event.
+- Only terminal states (`succeeded` ,`failed` ,`expired` ) trigger a callback.
+- As a safety net, also poll `GET /v1/video/generations/{id}` — Mesh deduplicates usage logging, so you’re never billed twice.
 
 ## 5xx from the video service
 
-- `502`— upstream provider error.- `503`— video service temporarily unavailable. Both are usually transient; retry with backoff.
+- `502` — upstream provider error.`503` — video service temporarily unavailable. Both are usually transient; retry with backoff.
 
 ## Still stuck?
 
 See the [Mesh API error reference](/debug/mesh-api#error-code-reference)
-or email ** contact@meshapi.ai**.
+or email **[contact@meshapi.ai](mailto:contact@meshapi.ai)**.
 
 # Citations
 

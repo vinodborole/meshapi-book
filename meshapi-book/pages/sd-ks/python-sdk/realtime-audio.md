@@ -3,7 +3,7 @@ type: Web Page
 title: Realtime Audio | Mesh API Docs
 description: Bidirectional speech-to-speech WebSocket sessions with the Python SDK.
 resource: https://developers.meshapi.ai/sd-ks/python-sdk/realtime-audio
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # Realtime Audio
@@ -16,10 +16,10 @@ Requires `websockets>=12.0`. Install with `pip install 'meshapi[realtime]'`.
 
 **Protocol.** Configure the session with the GA event shape: `session.type: "realtime"`,
 `output_modalities`, and an `audio` object (below). Input audio is sent as base64 —
-`send_audio()` handles that — and **output audio arrives as  response.output_audio.delta
-events**, which the SDK decodes into 
+`send_audio()` handles that — and **output audio arrives as `response.output_audio.delta`
+events**, which the SDK decodes into `msg.audio`. Audio is 24 kHz mono PCM16.
 
-`msg.audio`. Audio is 24 kHz mono PCM16.## Connect and close (sync)
+## Connect and close (sync)
 
 ## Connect and close (async)
 

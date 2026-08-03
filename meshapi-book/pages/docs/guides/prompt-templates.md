@@ -4,7 +4,7 @@ title: Prompt Templates | Mesh API Docs
 description: Store, version, and reuse prompt configurations — with variable substitution
   — across your team and apps.
 resource: https://developers.meshapi.ai/docs/guides/prompt-templates
-timestamp: '2026-07-20T09:25:48.943332+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # Prompt Templates
@@ -39,7 +39,7 @@ You can place variables in `system` and in any message `content` field:
 
 The `variables` field (list of strings) is informational — it documents which slots the template expects. It doesn’t enforce anything server-side, but it helps callers know what to pass.
 
-**Missing variables at inference time cause a  422 error.** Extra variables
+**Missing variables at inference time cause a `422` error.** Extra variables
 in the request are silently ignored.
 
 ## Using a Template in Chat Completions

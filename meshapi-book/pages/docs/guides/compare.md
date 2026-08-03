@@ -3,7 +3,7 @@ type: Web Page
 title: Compare | Mesh API Docs
 description: Compare multiple models with a single prompt.
 resource: https://developers.meshapi.ai/docs/guides/compare
-timestamp: '2026-07-20T09:25:48.943332+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # Compare
@@ -12,12 +12,12 @@ Use `POST /v1/chat/compare` when you want to run the same conversation across mu
 
 ## How it works
 
-- **Fan-out**: All requested models are called concurrently. The total wall-clock time is roughly that of the slowest model, not the sum of all models.
-- **Error isolation**: If a single model fails or times out (hard timeout of 120s), the others continue unaffected. Partial results are returned with a- `partial: true`flag.
-- **Synthesis (default)**: After all models respond, a separate comparison LLM analyzes the responses and produces a structured evaluation covering accuracy, completeness, clarity, and a recommendation.
-- **Skip synthesis (optional)**: By setting- `skip_comparison: true`, you can skip the synthesis step and receive only the raw model outputs. This is useful for parallel streaming UIs that perform their own comparison.
-- **Rate limiting and Billing**: The entire comparison counts as a single request against your rate limits (RPM/RPD). However, billing tracks each model call plus the comparison call as separate usage events (N+1 events).
-- **Streaming**: Two streaming modes are available by setting- `stream: true`. With synthesis enabled, fan-out is non-streaming, but the final comparison text is streamed token-by-token. If- `skip_comparison: true`is set, each fan-out model streams its tokens in real-time concurrently, tagged by model name.
+1. **Fan-out** : All requested models are called concurrently. The total wall-clock time is roughly that of the slowest model, not the sum of all models.
+2. **Error isolation** : If a single model fails or times out (hard timeout of 120s), the others continue unaffected. Partial results are returned with a`partial: true` flag.
+3. **Synthesis (default)** : After all models respond, a separate comparison LLM analyzes the responses and produces a structured evaluation covering accuracy, completeness, clarity, and a recommendation.
+4. **Skip synthesis (optional)** : By setting`skip_comparison: true` , you can skip the synthesis step and receive only the raw model outputs. This is useful for parallel streaming UIs that perform their own comparison.
+5. **Rate limiting and Billing** : The entire comparison counts as a single request against your rate limits (RPM/RPD). However, billing tracks each model call plus the comparison call as separate usage events (N+1 events).
+6. **Streaming** : Two streaming modes are available by setting`stream: true` . With synthesis enabled, fan-out is non-streaming, but the final comparison text is streamed token-by-token. If`skip_comparison: true` is set, each fan-out model streams its tokens in real-time concurrently, tagged by model name.
 
 ## Basic request
 

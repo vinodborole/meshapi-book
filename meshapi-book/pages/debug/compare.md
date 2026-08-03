@@ -3,7 +3,7 @@ type: Web Page
 title: Compare | Mesh API Docs
 description: Partial results, model limits, billing, and the two streaming modes.
 resource: https://developers.meshapi.ai/debug/compare
-timestamp: '2026-07-09T12:17:20.455852+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # Compare
@@ -34,8 +34,8 @@ drop the comparison call if you only need raw outputs.
 
 There are two modes:
 
-- **With comparison**(default) — fan-out models are- **non-streaming**; only the final comparison text streams token-by-token (- `comparison_chunk`).
-- `skip_comparison: true`- `model_chunk`/- `model_stream_done`).
+- **With comparison** (default) — fan-out models are**non-streaming** ; only the final comparison text streams token-by-token (`comparison_chunk` ).
+- **`skip_comparison: true`** — each model streams concurrently, tagged by model name (`model_chunk` /`model_stream_done` ).
 
 Watch for `comparison_fallback_used` in the `done` event if the comparison
 model had to fall back.
@@ -43,7 +43,7 @@ model had to fall back.
 ## Still stuck?
 
 See the [Mesh API error reference](/debug/mesh-api#error-code-reference)
-or email ** contact@meshapi.ai**.
+or email **[contact@meshapi.ai](mailto:contact@meshapi.ai)**.
 
 # Citations
 

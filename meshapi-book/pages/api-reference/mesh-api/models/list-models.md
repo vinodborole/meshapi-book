@@ -4,7 +4,7 @@ title: List Models | Mesh API Docs
 description: List available models with per-user discounted pricing when applicable.
   Only models registered in the models table with isenabled=true are
 resource: https://developers.meshapi.ai/api-reference/mesh-api/models/list-models
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # List Models
@@ -65,8 +65,6 @@ input_modalities
 output_modalities
 
 brand
-
-provider
 
 description
 

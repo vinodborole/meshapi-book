@@ -3,7 +3,7 @@ type: Web Page
 title: Batch API | Mesh API Docs
 description: Async polling, model-mixing, concurrency limits, and matching results.
 resource: https://developers.meshapi.ai/debug/batch
-timestamp: '2026-07-09T12:17:20.455852+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # Batch API
@@ -33,8 +33,8 @@ Output order is **not guaranteed**. Match each result to its request by the
 
 A `completed` batch can still contain failed items. Check two levels:
 
-- **Batch level**—- `status`and- `request_counts`(- `total`/- `completed`/- `failed`).
-- **Item level**— each result’s- `response.status_code`and- `error`field.
+- **Batch level** —`status` and`request_counts` (`total` /`completed` /`failed` ).
+- **Item level** — each result’s`response.status_code` and`error` field.
 
 ## It’s taking too long / expired
 
@@ -45,14 +45,14 @@ time it moves to `expired`. Don’t use batches for low-latency calls — use
 
 ## Managing in-flight batches
 
-- `GET /v1/batches`lists recent batches.
-- `POST /v1/batches/{batch_id}/cancel`cancels one (moves through- `cancelling`→- `cancelled`).
-- Statuses progress `validating → in_progress → finalizing → completed`.
+- `GET /v1/batches` lists recent batches.
+- `POST /v1/batches/{batch_id}/cancel` cancels one (moves through`cancelling` →`cancelled` ).
+- Statuses progress `validating → in_progress → finalizing → completed` .
 
 ## Still stuck?
 
 See the [Mesh API error reference](/debug/mesh-api#error-code-reference)
-or email ** contact@meshapi.ai**.
+or email **[contact@meshapi.ai](mailto:contact@meshapi.ai)**.
 
 # Citations
 

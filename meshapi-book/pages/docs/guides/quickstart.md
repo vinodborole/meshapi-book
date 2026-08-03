@@ -3,7 +3,7 @@ type: Web Page
 title: Quickstart | Mesh API Docs
 description: Get up and running with the Mesh API in under 5 minutes.
 resource: https://developers.meshapi.ai/docs/guides/quickstart
-timestamp: '2026-07-09T12:17:20.455852+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # Quickstart
@@ -22,8 +22,8 @@ Mesh uses a pre-paid model. Add a small balance (starting from ₹100 or $5) in 
 
 ## Next Steps
 
-- Take a look at the [Authentication guide](/authentication)to learn more about key management.
-- Check out the [API Reference](/api-reference/chat/post_chat_completions)for full request/response schemas.
+- Take a look at the [Authentication guide](/authentication) to learn more about key management.
+- Check out the [API Reference](/api-reference/chat/post_chat_completions) for full request/response schemas.
 
 # Citations
 

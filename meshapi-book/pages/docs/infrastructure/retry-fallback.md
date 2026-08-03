@@ -5,10 +5,10 @@ description: How Mesh API automatically retries and reroutes requests when an up
   provider returns a transient error — which status codes trigger it, and how same-provider
   retries, cross-provider fallback, and model fallback fit together.
 resource: https://developers.meshapi.ai/docs/infrastructure/retry-fallback
-timestamp: '2026-07-27T10:02:52.764636+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
-Retry & Fallback
+# Retry & Fallback
 
 Retry & Fallback
 

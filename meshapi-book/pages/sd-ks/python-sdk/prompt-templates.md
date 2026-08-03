@@ -3,14 +3,12 @@ type: Web Page
 title: Prompt Templates | Mesh API Docs
 description: Manage and use prompt templates with the Python SDK.
 resource: https://developers.meshapi.ai/sd-ks/python-sdk/prompt-templates
-timestamp: '2026-07-09T11:31:58.280663+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # Prompt Templates
 
 # Prompt Templates
-
-Server-stored prompts with `{{variable}}` interpolation. Reference them by name from `chat.completions` to skip re-sending system prompts every request.
 
 Server-stored prompts with `{{variable}}` interpolation. Reference them by name from `chat.completions` to skip re-sending system prompts every request.
 

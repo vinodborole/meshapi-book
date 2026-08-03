@@ -4,7 +4,7 @@ title: Video Generation | Mesh API Docs
 description: Generate videos from text, images, video clips, and audio using async
   video generation models.
 resource: https://developers.meshapi.ai/docs/guides/video-generation
-timestamp: '2026-07-20T09:25:48.943332+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # Video Generation
@@ -55,13 +55,13 @@ These limits apply to BytePlus Seedance models. Other providers may differ.
 
 **Video input**
 
-- Max file size: **50 MB**per video
+- Max file size: **50 MB** per video
 
 **Audio input**
 
-- Supported formats: `wav`,`mp3`
-- Duration per clip: **2–15 seconds**; up to**3 reference audio clips**allowed, with a total combined duration of no more than**15 seconds**
-- Max file size: **15 MB**per audio file
+- Supported formats: `wav` ,`mp3`
+- Duration per clip: **2–15 seconds** ; up to**3 reference audio clips** allowed, with a total combined duration of no more than**15 seconds**
+- Max file size: **15 MB** per audio file
 - Max total request body size: **64 MB**
 
 Do not use Base64 encoding for large files. Use a public URL instead to stay within the 64 MB request body limit.
@@ -126,9 +126,9 @@ Instead of polling, you can pass a `callback_url` in the create request. Mesh AP
 
 ### How it works
 
-- You pass `"callback_url": "https://yourapp.example.com/webhooks/video"`in the create request.
-- Mesh API intercepts the completion notification from the upstream provider, updates its database, and then forwards the completed task payload to your `callback_url`.
-- Your endpoint receives a `POST`with a JSON body containing the final task state.
+1. You pass `"callback_url": "https://yourapp.example.com/webhooks/video"` in the create request.
+2. Mesh API intercepts the completion notification from the upstream provider, updates its database, and then forwards the completed task payload to your `callback_url` .
+3. Your endpoint receives a `POST` with a JSON body containing the final task state.
 
 This means you never need to poll — just register a webhook endpoint and handle the event when it arrives.
 
@@ -140,9 +140,9 @@ The payload is identical to the response from `GET /v1/video/generations/{id}`:
 
 Your endpoint should:
 
-- Return a `2xx`response quickly. Mesh API fires the callback as fire-and-forget with a 10-second timeout — a slow response won’t block task completion on our side, but it will not be retried.
-- Identify the task from `id`in the payload.
-- Check `status`to decide what to do — download`content.video_url`on success, log or surface`error`on failure.
+1. Return a `2xx` response quickly. Mesh API fires the callback as fire-and-forget with a 10-second timeout — a slow response won’t block task completion on our side, but it will not be retried.
+2. Identify the task from `id` in the payload.
+3. Check `status` to decide what to do — download`content.video_url` on success, log or surface`error` on failure.
 
 ### Webhook vs polling — when to use each
 

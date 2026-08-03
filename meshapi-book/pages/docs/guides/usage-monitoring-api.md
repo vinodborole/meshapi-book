@@ -4,10 +4,10 @@ title: Usage & Monitoring API | Mesh API Docs
 description: Pull your usage, spend, rate-limit, and balance data programmatically
   — the same numbers the dashboard shows.
 resource: https://developers.meshapi.ai/docs/guides/usage-monitoring-api
-timestamp: '2026-07-27T10:02:52.764636+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
-Usage & Monitoring API
+# Usage & Monitoring API
 
 Usage & Monitoring API
 
@@ -66,9 +66,10 @@ to `reserved_usd`.
 
 ## Notes
 
-- **Money**is always a decimal string (never a float).
-- **Caching:**API-key reads are computed fresh (never cached).
-- **Errors**use the standard envelope —- `401`(bad credential),- `422`(bad UUID / invalid filter),- `429`(rate limited).
+- **Money** is always a decimal string (never a float).
+- **Caching:** API-key reads are computed fresh (never cached).
+- **Errors** use the standard envelope —`401` (bad credential),`422` (bad
+UUID / invalid filter),`429` (rate limited).
 
 # Citations
 

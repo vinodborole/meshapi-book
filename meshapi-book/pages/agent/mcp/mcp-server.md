@@ -4,12 +4,12 @@ title: MCP Server | Mesh API Docs
 description: Connect any MCP-compatible agent or client to Mesh and call models, tools,
   RAG, and more — authenticated with your Mesh API key.
 resource: https://developers.meshapi.ai/agent/mcp/mcp-server
-timestamp: '2026-07-27T10:02:52.764636+00:00'
+timestamp: '2026-08-03T09:56:31.586687+00:00'
 ---
 
 # MCP Server
 
-Mesh runs a built-in ** Model Context Protocol (MCP)** server, so any MCP-compatible agent or client — Claude Code, Claude Desktop, Cursor, or your own agent framework — can use Mesh’s models and tools directly, without writing any Mesh-specific HTTP code.
+Mesh runs a built-in **[Model Context Protocol (MCP)](https://modelcontextprotocol.io/)** server, so any MCP-compatible agent or client — Claude Code, Claude Desktop, Cursor, or your own agent framework — can use Mesh’s models and tools directly, without writing any Mesh-specific HTTP code.
 
 The server exposes the Mesh API surface as MCP **tools**: an agent can run chat completions, reason with the Responses API, generate and edit images, create embeddings, moderate content, search the web, query your RAG files, manage prompt templates, and check your balance — all authenticated with your existing Mesh API key.
 
@@ -17,9 +17,9 @@ The MCP server is a thin layer over the same routes as the REST API. Every tool 
 
 ## Connection details
 
-You connect with the **same  rsk_ API key** you use for the REST API — no separate credential or OAuth flow. Pass it in the 
+You connect with the **same `rsk_` API key** you use for the REST API — no separate credential or OAuth flow. Pass it in the `Authorization` header when registering the server with your client.
 
-`Authorization` header when registering the server with your client.## Connect a client
+## Connect a client
 
 ###### Claude Code
 
@@ -51,10 +51,10 @@ A typical agent flow — upload a file, wait for embeddings, then answer questio
 
 ## Authentication & billing
 
-- **Auth:**the- `Authorization: Bearer rsk_...`header is validated before any tool runs. A missing or invalid key returns- **401**; a suspended key returns- **403**.
-- **Limits & billing:**billed tool calls inherit the key’s per-key rate limits, spend cap, model allow-list, and credit balance — exactly as a direct REST call. If a call would exceed a limit or your balance is insufficient, the tool returns an error carrying the Mesh message (e.g.- *“Insufficient balance.”*).
-- **Free tools:**the catalog/account reads (- `list_models`,- `list_voices`,- `get_balance`), the RAG file reads (- `list_files`,- `get_file`,- `upload_file`), template management, and- `router_select`are not billed. Everything under- **Inference**, plus- `web_search`and- `file_search`, is billed.
-- **Usage tracking:**every billed tool call is logged to your usage history just like a REST request, so MCP traffic shows up in the dashboard and usage reports.
+- **Auth:** the`Authorization: Bearer rsk_...` header is validated before any tool runs. A missing or invalid key returns**401** ; a suspended key returns**403** .
+- **Limits & billing:** billed tool calls inherit the key’s per-key rate limits, spend cap, model allow-list, and credit balance — exactly as a direct REST call. If a call would exceed a limit or your balance is insufficient, the tool returns an error carrying the Mesh message (e.g.*“Insufficient balance.”* ).
+- **Free tools:** the catalog/account reads (`list_models` ,`list_voices` ,`get_balance` ), the RAG file reads (`list_files` ,`get_file` ,`upload_file` ), template management, and`router_select` are not billed. Everything under**Inference** , plus`web_search` and`file_search` , is billed.
+- **Usage tracking:** every billed tool call is logged to your usage history just like a REST request, so MCP traffic shows up in the dashboard and usage reports.
 
 ## Limitations
 
