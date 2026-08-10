@@ -2,7 +2,7 @@
   "generator": "okf-kit",
   "okf_version": "0.1",
   "root_url": "https://developers.meshapi.ai/",
-  "updated_at": "2026-08-03T09:56:31.657577+00:00",
+  "updated_at": "2026-08-10T07:50:31.381032+00:00",
   "config": {
     "max_depth": 3,
     "max_pages": 200,
@@ -10,827 +10,535 @@
     "respect_robots": true,
     "path_prefix": "/"
   },
-  "page_count": 127,
+  "page_count": 77,
   "pages": [
     {
-      "path": "pages/agent/mcp/mcp-server.md",
-      "url": "https://developers.meshapi.ai/agent/mcp/mcp-server",
-      "title": "MCP Server | Mesh API Docs",
-      "hash": "87fdab0f70a60ed17c8915a7eefebbab4967359e3326b4c3cb518ca5d0591900"
+      "path": "pages/agent/mcp.md",
+      "url": "https://developers.meshapi.ai/agent/mcp",
+      "title": "MCP Server - Mesh API",
+      "hash": "2f9d1e51f9241344a6a4c57a320903af4034dee85f3edcadf0caed8b774912ea"
     },
     {
-      "path": "pages/api-reference.md",
-      "url": "https://developers.meshapi.ai/api-reference",
-      "title": "API reference | Mesh API Docs",
-      "hash": "00166c2fc1e67235d52da939b9da31ed89909c1a1aad850a56a15bf06f7b05dd"
+      "path": "pages/api/chat/chat-compare.md",
+      "url": "https://developers.meshapi.ai/api/chat/chat-compare",
+      "title": "Chat Compare - Mesh API",
+      "hash": "3ac6693570a843d05d50a8d5845b735adc6457be312a8cad616dee125369a3ed"
     },
     {
-      "path": "pages/api-reference/mesh-api/audio/create-speech.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/audio/create-speech",
-      "title": "Create Speech | Mesh API Docs",
-      "hash": "ea9bf2e2d4fbe73b0314a262c985f3b158f69b0752c65d4cc82c2a4bb102d330"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/audio/create-transcription-translate.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/audio/create-transcription-translate",
-      "title": "Create Transcription Translate | Mesh API Docs",
-      "hash": "419d95c4dd22b00adaedbf1aa1299784cb20cce909baeb7a2bc984ac3ca63467"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/audio/create-transcription.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/audio/create-transcription",
-      "title": "Create Transcription | Mesh API Docs",
-      "hash": "a032ed3710f0e473f4c7eb3118ec40a92c8da9587370ad0b2ca63c9f4f6873b9"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/audio/create-translation.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/audio/create-translation",
-      "title": "Create Translation | Mesh API Docs",
-      "hash": "a5fec60c00469bd5987c40ddeddf6af546059598b6852af35d597ac1e5072af0"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/audio/get-voice.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/audio/get-voice",
-      "title": "Get Voice | Mesh API Docs",
-      "hash": "c31741a09779a6fbbeb2e81b7a3c52febb6900ae805faa8f9cd5292a57ba305d"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/audio/list-voices.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/audio/list-voices",
-      "title": "List Voices | Mesh API Docs",
-      "hash": "e753d13fa890f75dbef37425e91ef6a3cc6d7b313bf677c7918ddbe3eb4fd005"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/auto-router/router-select.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/auto-router/router-select",
-      "title": "Router Select | Mesh API Docs",
-      "hash": "a3404a4274f0748b22a0f0a09ddf47b4da586589d4c64548bcfe0e89f27c6742"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/balance/get-balance.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/balance/get-balance",
-      "title": "Get Balance | Mesh API Docs",
-      "hash": "a7c7a363125a644afe7aafa8607953b57a729c7a28bebeabe288985b2b555971"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/batch/cancel-batch.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/batch/cancel-batch",
-      "title": "Cancel Batch | Mesh API Docs",
-      "hash": "39a0027aada9ae6037fd1cd60a8885a51f3ac119e8e83ce219eea3ec833959d3"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/batch/create-batch.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/batch/create-batch",
-      "title": "Create Batch | Mesh API Docs",
-      "hash": "605d62990ddababfd4924916eafd1ae1535156f7e5098c147bcaf897e6911c9f"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/batch/get-batch.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/batch/get-batch",
-      "title": "Get Batch | Mesh API Docs",
-      "hash": "49207b5290dd20f3962a26fdd85dffd27a62e36d1f46cb698030d86c734d4792"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/batch/list-batches.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/batch/list-batches",
-      "title": "List Batches | Mesh API Docs",
-      "hash": "2629d9fad1787337a4d7471051dedbe68f227aa982edb60132bd19080e56fa47"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/chat/compare.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/chat/compare",
-      "title": "Chat Compare | Mesh API Docs",
-      "hash": "8f1a12326abc61367c1069496369e254d8e37ccaed41a3d4a306d585c16def3b"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/chat/completions.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/chat/completions",
-      "title": "Chat Completions | Mesh API Docs",
-      "hash": "b5981cb6310dce812d15cbc037dd3c327af37554e41aa96cf4f9e70bddde99c6"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/embeddings/create-embeddings.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/embeddings/create-embeddings",
-      "title": "Create Embeddings | Mesh API Docs",
-      "hash": "3154e3d5ba9a541ec0c53e1cc5b87b9e27d3285ff3c54e1b8e841c1e574d33e5"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/images/edit-image.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/images/edit-image",
-      "title": "Edit an image | Mesh API Docs",
-      "hash": "fe31523cfa08eb8bacb871e88e3fac1cd06ab8f03c7ea0734142ae2955ed9681"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/images/generate-image.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/images/generate-image",
-      "title": "Generate Image | Mesh API Docs",
-      "hash": "8d4312b2dbc7662e3cb0ee69e98043619490d3066d5e62a8cf765e953cf319ec"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/models/get-model.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/models/get-model",
-      "title": "Get Model | Mesh API Docs",
-      "hash": "49f304d246fbdf32904ce26a2913a4ac6446361f47dea140091b269047fa2f3f"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/models/list-free-models.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/models/list-free-models",
-      "title": "List Free Models | Mesh API Docs",
-      "hash": "8434e410e4811f03c93cbc4add8434180c3cd985535686d16baceda4b2764853"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/models/list-models.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/models/list-models",
-      "title": "List Models | Mesh API Docs",
-      "hash": "a9885ea1d0865b14fc900ed2a1686c0e2b8fdc7f772a97c2496fde9014a485e3"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/models/list-paid-models.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/models/list-paid-models",
-      "title": "List Paid Models | Mesh API Docs",
-      "hash": "1b4c92a11d418b9e5ca7c0d41cd59c664c0eb25ce744513b12b23afa2e403001"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/models/list-public-models.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/models/list-public-models",
-      "title": "List models (public) | Mesh API Docs",
-      "hash": "b121c4dea974e6992f5029cbbbf9e482254c9da53d711b792d5bd652c81661c2"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/models/search-models.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/models/search-models",
-      "title": "Search Models | Mesh API Docs",
-      "hash": "5ba19b92c107c3d33b74a6f4067146c95c2f760a11e3e4f1dab2c6e670368f24"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/moderations/create-moderation.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/moderations/create-moderation",
-      "title": "Classify content against the content policy | Mesh API Docs",
-      "hash": "477c278d2278f231d1712d21eb146de9ebf5cd10b489d7e526b01ace97414dae"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/rag/get-file-status.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/rag/get-file-status",
-      "title": "Get File Status | Mesh API Docs",
-      "hash": "8517bdcc08e9a06e62fcde508a1a0340b09d194af3f3bbbce87c9931f2baccc6"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/rag/init-upload.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/rag/init-upload",
-      "title": "Init Upload | Mesh API Docs",
-      "hash": "2f54bbcc94deded11d5e98b993b1feea8edcab6ec6e122187320b6d97e01b883"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/rag/list-files.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/rag/list-files",
-      "title": "List Files | Mesh API Docs",
-      "hash": "de06b71f1f94604edfcebdfa843d57b89e2add2150dbb13bb0c73f3a55b08b88"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/rag/trigger-embedding-bulk.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/rag/trigger-embedding-bulk",
-      "title": "Trigger Embedding Bulk | Mesh API Docs",
-      "hash": "abd35ca288d1253aef54e46c2e63bdb1615d158e891a27eea94873fef84c6d73"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/rag/vector-search.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/rag/vector-search",
-      "title": "Vector Search | Mesh API Docs",
-      "hash": "18e9d7b70be05a2b9ed99be8923ff0edd94a2bb3ffced32c4099c1bd0360a93b"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/responses/create-response.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/responses/create-response",
-      "title": "Create Response | Mesh API Docs",
-      "hash": "1d7cf42eb9ad5c63f436e4abdc4b0002d632a44dfacbac4c691cb9f61c9acd2e"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/responses/get-response.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/responses/get-response",
-      "title": "Get Response | Mesh API Docs",
-      "hash": "a8df6a9ef8768ff083bfed7b358f7f3a02de9376b4d75d05b9a65f4535e541df"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/responses/list-responses.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/responses/list-responses",
-      "title": "List Responses | Mesh API Docs",
-      "hash": "b827f6bbbbb29156f2072286aa3e2d463dc5fe9586685ec0012d878c94c18de7"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/templates/create-template.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/templates/create-template",
-      "title": "Create Template | Mesh API Docs",
-      "hash": "df5d2adf5eb4908a086b50a9b3e03ca14236a1fadb504058dcd98d9ed1b2aba4"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/templates/delete-template.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/templates/delete-template",
-      "title": "Delete Template | Mesh API Docs",
-      "hash": "cb71777f18772e216680de40085e7766d2e601a24a187e294f93104003faad7d"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/templates/get-template.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/templates/get-template",
-      "title": "Get Template | Mesh API Docs",
-      "hash": "07ad1ec428117843e64375dcfd64fecca2f4d498c045f24932e23f2766c38fe0"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/templates/list-templates.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/templates/list-templates",
-      "title": "List Templates | Mesh API Docs",
-      "hash": "5065f69c6de6cf2abbc0d296759cab9783fff27164bb243b49aad22c7e92c4ca"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/templates/update-template.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/templates/update-template",
-      "title": "Update Template | Mesh API Docs",
-      "hash": "79b1ba50eaaf93998aba2860ee9ddea267ef361602183ea958e909918faafd38"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/usage/get-rate-limits.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/usage/get-rate-limits",
-      "title": "Get Rate Limits | Mesh API Docs",
-      "hash": "543d0f7ff5301de537a565124601b0e9a2882001b3d3a21f2e4e169505625c62"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/usage/query-usage-events.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/usage/query-usage-events",
-      "title": "Query Usage Events | Mesh API Docs",
-      "hash": "8c4da7da913d3d8a0232bd65f7f94c48573c3f67a4165b2362dc38458086fd30"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/usage/query-usage-summary.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/usage/query-usage-summary",
-      "title": "Query Usage Summary | Mesh API Docs",
-      "hash": "dfbcb50b9d2a59b6d7eae78d989c530dbbe6e4bdedc50a2e3207f81ff21a17db"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/video/create-video-generation.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/video/create-video-generation",
-      "title": "Create Video Generation | Mesh API Docs",
-      "hash": "c99b6bdb0f1efbd69da68b897f2f1d977e2a0c6ba37b46f0d5c2a45bba9ea0e7"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/video/get-video-generation.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/video/get-video-generation",
-      "title": "Get Video Generation | Mesh API Docs",
-      "hash": "0f8b09bfdfa3d7b1125dd4fc0394721279f2b100113838083756aa5c2ecc85ef"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/video/list-video-generations.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/video/list-video-generations",
-      "title": "List Video Generations | Mesh API Docs",
-      "hash": "7885da496392f7791c1bef7dea0fe52ccb4cd58c96b3a3d2c6994858bda4c9f4"
-    },
-    {
-      "path": "pages/api-reference/mesh-api/web-search.md",
-      "url": "https://developers.meshapi.ai/api-reference/mesh-api/web-search",
-      "title": "Web Search | Mesh API Docs",
-      "hash": "678c21c83551b3b403fe36e86d9f38613faf662fdecdfc156bbe840a5bddfdd1"
-    },
-    {
-      "path": "pages/cli/commands.md",
-      "url": "https://developers.meshapi.ai/cli/commands",
-      "title": "Commands & permission modes | Mesh API Docs",
-      "hash": "01974e8f2de5abb4b4058affde050693df32bca2b8e431ee5ab74977cd86c253"
-    },
-    {
-      "path": "pages/cli/install.md",
-      "url": "https://developers.meshapi.ai/cli/install",
-      "title": "Install the Mesh CLI | Mesh API Docs",
-      "hash": "d61278f6e5b8b9745c04d22357f2c125d5b248703f35f23a1f4f2298a2eadfa6"
-    },
-    {
-      "path": "pages/cli/usage.md",
-      "url": "https://developers.meshapi.ai/cli/usage",
-      "title": "Using the Mesh CLI | Mesh API Docs",
-      "hash": "defcabc45e3ceadcec3cb18168fcc5f8eb957b713f5a9eb3c166db62bea1754d"
+      "path": "pages/api/chat/chat-completions.md",
+      "url": "https://developers.meshapi.ai/api/chat/chat-completions",
+      "title": "Chat Completions - Mesh API",
+      "hash": "48b899c99eea4881c07c61274b2a572208c954751931b4ad8e6e62f6f7988f3f"
     },
     {
       "path": "pages/debug/auto-routing.md",
       "url": "https://developers.meshapi.ai/debug/auto-routing",
-      "title": "Auto Routing | Mesh API Docs",
-      "hash": "cde76dc21bba95ff7080b6ba4cb8aaad5e2ae2986a706a38ff5ffd7bf17ab917"
+      "title": "Auto Routing - Mesh API",
+      "hash": "eb65a0d0c8ef6efc82ee5359f6a42d6636ddf774b07fbe6f632e990b9d1c0210"
     },
     {
       "path": "pages/debug/batch.md",
       "url": "https://developers.meshapi.ai/debug/batch",
-      "title": "Batch API | Mesh API Docs",
-      "hash": "3ab5399e979bc65ca4092b36677ba6ca1c0fe54c0a0f7a018c975c162891677e"
+      "title": "Batch API - Mesh API",
+      "hash": "f2197bdc1fa959a2be11a6e4d6e9a3a8b40a054e08a36fb3fbd7fd093369facd"
     },
     {
       "path": "pages/debug/byok.md",
       "url": "https://developers.meshapi.ai/debug/byok",
-      "title": "BYOK | Mesh API Docs",
-      "hash": "07fe71de10dd4dac2b714de7feeedddd7b4db44e530bc61fa392692f55a9343d"
+      "title": "BYOK - Mesh API",
+      "hash": "c60fa1d85ebf64c8b37a21754ef66e2418ef473eef20a9459dc3c5a731958b91"
     },
     {
       "path": "pages/debug/compare.md",
       "url": "https://developers.meshapi.ai/debug/compare",
-      "title": "Compare | Mesh API Docs",
-      "hash": "30f083056d38004f368431afd4c34b56dee4eccbf1cc465538108968993cb1bf"
+      "title": "Compare - Mesh API",
+      "hash": "585d3d523d944590ab2d4faed327ff06319cf920561d1b0c6252304737ff44b1"
     },
     {
       "path": "pages/debug/embeddings.md",
       "url": "https://developers.meshapi.ai/debug/embeddings",
-      "title": "Embeddings | Mesh API Docs",
-      "hash": "927b1d68b440c5f37ced971b96fa9b74438b26a385e26910e86f5276b35a4a3a"
+      "title": "Embeddings - Mesh API",
+      "hash": "6da6d3bc83c680952734ba557e26db13c18949be71078e580b2117d338fce323"
     },
     {
       "path": "pages/debug/image-generation.md",
       "url": "https://developers.meshapi.ai/debug/image-generation",
-      "title": "Image Generation | Mesh API Docs",
-      "hash": "1bed89c9315f4c7f303cdf78beffb39a7d44b4799f866ced8a926389d6a549e9"
+      "title": "Image Generation - Mesh API",
+      "hash": "526112628183498753549d2f26f9ad005a4b4c562144bd61bcabd93358513bb1"
     },
     {
       "path": "pages/debug/images-vision.md",
       "url": "https://developers.meshapi.ai/debug/images-vision",
-      "title": "Images & Vision | Mesh API Docs",
-      "hash": "9a0908b9bbe5cf88c2c74dd3feec136ac1f0698babdfc3bba65d8f6b798533d6"
+      "title": "Images & Vision - Mesh API",
+      "hash": "d35c123d61a9dd46ccdb206ed5275d741e9e768d1485019c15bd25c2c6c8ba2a"
     },
     {
       "path": "pages/debug/mesh-api.md",
       "url": "https://developers.meshapi.ai/debug/mesh-api",
-      "title": "Mesh API | Mesh API Docs",
-      "hash": "91bbe69b671bacdf61448d8ce5094268d7ff380ad6253c682092a24687a241bf"
+      "title": "Mesh API - Mesh API",
+      "hash": "6178dc91ba9b42912d76dc379bed4ef83fec10c8ddf32c038882f247d7226db4"
     },
     {
       "path": "pages/debug/mesh-cli.md",
       "url": "https://developers.meshapi.ai/debug/mesh-cli",
-      "title": "Mesh CLI | Mesh API Docs",
-      "hash": "19ac5c0d39babe3a3654aef860f70ceec349e871fcf1464cf04d742ded725ee9"
+      "title": "Mesh CLI - Mesh API",
+      "hash": "99832e26e742e40d2ddaefd70048f0fbcac72ff52810ab9d3572988276ca7e5c"
     },
     {
       "path": "pages/debug/prompt-templates.md",
       "url": "https://developers.meshapi.ai/debug/prompt-templates",
-      "title": "Prompt Templates | Mesh API Docs",
-      "hash": "16e506fd1c5bf4379ae8d784b01184efba4a42db14725fd5556640cb684d1860"
+      "title": "Prompt Templates - Mesh API",
+      "hash": "e8e32023b10c0ba18f457099d36cdcb61f98a5985beafa4e245603e5f70e4be9"
     },
     {
       "path": "pages/debug/rag.md",
       "url": "https://developers.meshapi.ai/debug/rag",
-      "title": "RAG (Files & Search) | Mesh API Docs",
-      "hash": "a61f4d5c7f40a89511b3ea837981d180761481db205a4053ae5f286582c77ae6"
+      "title": "RAG (Files & Search) - Mesh API",
+      "hash": "eae9168259e5a153c7fbb3f90a78dadbe345105674afc477c77ea8611ec16a32"
     },
     {
       "path": "pages/debug/realtime-audio.md",
       "url": "https://developers.meshapi.ai/debug/realtime-audio",
-      "title": "Realtime Audio | Mesh API Docs",
-      "hash": "bbbe4bbb24304a2b5e6fdea722ecc4d50ac70e174f4636cde4f19236c00331ad"
+      "title": "Realtime Audio - Mesh API",
+      "hash": "477f95a9a63f09f9ca39175490408bc386a1ff3a556127c9e673b9514743f6a0"
     },
     {
       "path": "pages/debug/speech-to-text.md",
       "url": "https://developers.meshapi.ai/debug/speech-to-text",
-      "title": "Speech-to-Text | Mesh API Docs",
-      "hash": "5440c891c9b1e1f0c8496219f108d8969335406f64a30522008e332e523d91b7"
+      "title": "Speech-to-Text - Mesh API",
+      "hash": "96fbc596ed48f8306b95a9bbcb8bd78ec09eb1e1d4f791af074ce823e8c1d1a9"
     },
     {
       "path": "pages/debug/structured-output.md",
       "url": "https://developers.meshapi.ai/debug/structured-output",
-      "title": "Structured Output | Mesh API Docs",
-      "hash": "359a0d28edc7eb15463b46f254f0df62a86bcf71e196009e9b982828d615085e"
+      "title": "Structured Output - Mesh API",
+      "hash": "52dc9ba3fd14f1251d93ce191a69ea4a9a63a373de7d24bf84c62aaaee76038f"
     },
     {
       "path": "pages/debug/text-to-speech.md",
       "url": "https://developers.meshapi.ai/debug/text-to-speech",
-      "title": "Text-to-Speech | Mesh API Docs",
-      "hash": "41b5c987cd9970fdaa7bafeba9a62d80f464bf01c22299d2cefa3f270b61e079"
+      "title": "Text-to-Speech - Mesh API",
+      "hash": "a55d1ada7e1af9424943ff0d3533979be8b93efc79eb332642e5947a42782dd4"
     },
     {
       "path": "pages/debug/video-generation.md",
       "url": "https://developers.meshapi.ai/debug/video-generation",
-      "title": "Video Generation | Mesh API Docs",
-      "hash": "2a8911f3082a1be9bae2f9306b6f2a315aef542ad4cd0012fd92bc138a997673"
+      "title": "Video Generation - Mesh API",
+      "hash": "473f29ddc448c4c9d764b26529a478515cf4dde73958fe79d66c50afffbfefe4"
     },
     {
-      "path": "pages/docs/guides/account-configuration-checklist.md",
-      "url": "https://developers.meshapi.ai/docs/guides/account-configuration-checklist",
-      "title": "Account Configuration Checklist | Mesh API Docs",
-      "hash": "ce04cc49b7bdb7515cbf0c0087665e9864ceb17e65d2c5ff47490e7891e75ac4"
+      "path": "pages/docs/capabilities/audio.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/audio",
+      "title": "Audio - Mesh API",
+      "hash": "d54c382cc45fd75265cdcb9911fe253e27b62cbc296d876d007dbb71689dfda6"
     },
     {
-      "path": "pages/docs/guides/api-keys.md",
-      "url": "https://developers.meshapi.ai/docs/guides/api-keys",
-      "title": "API Keys | Mesh API Docs",
-      "hash": "68938775a39369d400224ab85df8859c6d1aa4609536a23a1c1b8c9b2f9d1b8a"
+      "path": "pages/docs/capabilities/auto-routing.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/auto-routing",
+      "title": "Auto Routing - Mesh API",
+      "hash": "dc5476302b0846643d74c3b1d3299855b63dd4841f00c7cf4649125dcf67a11c"
     },
     {
-      "path": "pages/docs/guides/audio.md",
-      "url": "https://developers.meshapi.ai/docs/guides/audio",
-      "title": "Audio | Mesh API Docs",
-      "hash": "d9c71459b80854bf0124464b5fb68336c15672704e316750bc10db41919f1756"
+      "path": "pages/docs/capabilities/batch-api.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/batch-api",
+      "title": "Batch API - Mesh API",
+      "hash": "2bc1f4e460551866213e4bf1d6ddd6841dd8b8a42205b9eabe6f0407a5465f2f"
     },
     {
-      "path": "pages/docs/guides/authentication.md",
-      "url": "https://developers.meshapi.ai/docs/guides/authentication",
-      "title": "Authentication | Mesh API Docs",
-      "hash": "5f9122cb4d720d6fd707f4e245327d043444ce9c51ffe8a8a82b0975ce9cc6d3"
+      "path": "pages/docs/capabilities/byok.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/byok",
+      "title": "Bring Your Own Keys (BYOK) - Mesh API",
+      "hash": "a175414da4ff714419e37fb38b9f9904f43255063cbe4c62efaf17c979e18ee1"
     },
     {
-      "path": "pages/docs/guides/auto-routing.md",
-      "url": "https://developers.meshapi.ai/docs/guides/auto-routing",
-      "title": "Auto Routing | Mesh API Docs",
-      "hash": "61a20666daa19085a9b2a41a61b9f666625ffb6e6250e110fb7d3ae67056892c"
+      "path": "pages/docs/capabilities/caching.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/caching",
+      "title": "Caching - Mesh API",
+      "hash": "73b81aa3678258a6cbe3cdb0d9f0595d91b003b8f284bf076cad977f84fe03ba"
     },
     {
-      "path": "pages/docs/guides/batch-api.md",
-      "url": "https://developers.meshapi.ai/docs/guides/batch-api",
-      "title": "Batch API | Mesh API Docs",
-      "hash": "369679cd83addc1cf327b49d2966a9fce166465c9ad6cc0083d05027add62a5d"
+      "path": "pages/docs/capabilities/embeddings.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/embeddings",
+      "title": "Embeddings - Mesh API",
+      "hash": "09e8f488f61956986b50f5182631d99b78e324f531ff6ab1f29ed9ba8f4d3e5b"
     },
     {
-      "path": "pages/docs/guides/byok.md",
-      "url": "https://developers.meshapi.ai/docs/guides/byok",
-      "title": "BYOK | Mesh API Docs",
-      "hash": "7590acf3e2c57bbe594614d67bdafbe1babe407d8e68a38f06c23ca3a5e29759"
+      "path": "pages/docs/capabilities/image-generation.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/image-generation",
+      "title": "Image Generation - Mesh API",
+      "hash": "8720a1873d0be8035f3384acc8cbfd6ee51f4bb11012dfe6246e4675d252b293"
     },
     {
-      "path": "pages/docs/guides/caching.md",
-      "url": "https://developers.meshapi.ai/docs/guides/caching",
-      "title": "Caching | Mesh API Docs",
-      "hash": "34027db4537d89988c6d3df618760ffd01ba9e6c5bf83d75a54139f6bc4cf711"
+      "path": "pages/docs/capabilities/images-vision.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/images-vision",
+      "title": "Images & Vision - Mesh API",
+      "hash": "a49a432731110d96ece25ee3f630987e7f6e62bda08a1777e5be8e032db9d2dc"
     },
     {
-      "path": "pages/docs/guides/compare.md",
-      "url": "https://developers.meshapi.ai/docs/guides/compare",
-      "title": "Compare | Mesh API Docs",
-      "hash": "8b57ef7e21e72f2c41dcfba1942f0a43d069173d776473144517f66d1ec96702"
+      "path": "pages/docs/capabilities/memory.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/memory",
+      "title": "Memory - Mesh API",
+      "hash": "c958a9b9922a4992c0cd4ae9f03a04a758ff3eb9d7f24b7f6e307b7f43f6a0ba"
     },
     {
-      "path": "pages/docs/guides/dashboard-guide.md",
-      "url": "https://developers.meshapi.ai/docs/guides/dashboard-guide",
-      "title": "Dashboard Guide | Mesh API Docs",
-      "hash": "860ac885d07f63626d8842d9f8816ef8ee96848e944f2493ef4bb46a42f00316"
+      "path": "pages/docs/capabilities/messages-api.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/messages-api",
+      "title": "Messages API (Anthropic-compatible) - Mesh API",
+      "hash": "6dcc9fbaee7c6ed8981982fba05c284bebce01218c652ff8be034e472b990d83"
     },
     {
-      "path": "pages/docs/guides/embeddings.md",
-      "url": "https://developers.meshapi.ai/docs/guides/embeddings",
-      "title": "Embeddings | Mesh API Docs",
-      "hash": "683f68922d85e65cd7ee162752aac93040928f9edf565d191337b73d31886a65"
+      "path": "pages/docs/capabilities/model-compare.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/model-compare",
+      "title": "Model Compare - Mesh API",
+      "hash": "a4227055237312980efafc887414738d03979bc98b7a11e724d234c2d63d2d07"
     },
     {
-      "path": "pages/docs/guides/image-generation.md",
-      "url": "https://developers.meshapi.ai/docs/guides/image-generation",
-      "title": "Image Generation | Mesh API Docs",
-      "hash": "5b709d4bd53077560a4248dc554cd082dcfa9b6a89eba579cd7fe00cc18760cf"
+      "path": "pages/docs/capabilities/prompt-templates.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/prompt-templates",
+      "title": "Prompt Templates - Mesh API",
+      "hash": "500565e05e7742735c0297c2aed4e5daeeafa1df85b1a4d7f0c54ee274ef474e"
     },
     {
-      "path": "pages/docs/guides/images-vision.md",
-      "url": "https://developers.meshapi.ai/docs/guides/images-vision",
-      "title": "Images & Vision | Mesh API Docs",
-      "hash": "f3e2926d2a25076ce7c30fdd89bfc9f76591c1410d202ccf32ae82233955a102"
+      "path": "pages/docs/capabilities/rag.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/rag",
+      "title": "Files & RAG - Mesh API",
+      "hash": "961be6d75ea55924acc5a4e9369c8cc8047b4733054cb23c5fc2210e4349e10a"
     },
     {
-      "path": "pages/docs/guides/memory.md",
-      "url": "https://developers.meshapi.ai/docs/guides/memory",
-      "title": "Memory | Mesh API Docs",
-      "hash": "0530cfabd50219344942ac7885b86ab1fb34332205bb936b5f927857a075f853"
+      "path": "pages/docs/capabilities/realtime-audio.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/realtime-audio",
+      "title": "Realtime Audio - Mesh API",
+      "hash": "2265054f8fe33c71db89940b8702c86769457d588f5cab80a1f0beef397f9f11"
     },
     {
-      "path": "pages/docs/guides/organizations-teams.md",
-      "url": "https://developers.meshapi.ai/docs/guides/organizations-teams",
-      "title": "Organizations & Teams | Mesh API Docs",
-      "hash": "957657b6276cc5a7a7412a3c6e9759fec97585c88b78da8ac9e3855ba27125dc"
+      "path": "pages/docs/capabilities/responses-api.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/responses-api",
+      "title": "Responses API - Mesh API",
+      "hash": "e1fafec26afcd24a288b7745c85e0e590e75fba61daafd4b235238e141f22008"
     },
     {
-      "path": "pages/docs/guides/prompt-templates.md",
-      "url": "https://developers.meshapi.ai/docs/guides/prompt-templates",
-      "title": "Prompt Templates | Mesh API Docs",
-      "hash": "c70cd5184841c22e9b6213b69d54f247a767ac9cfd5b370161e6f83dcc85a175"
+      "path": "pages/docs/capabilities/speech-to-text.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/speech-to-text",
+      "title": "Speech to Text - Mesh API",
+      "hash": "a0eef1fe256ad5dffbc9835ee50552172d6d9b2e0c0f7ec15927bbc58d561d27"
     },
     {
-      "path": "pages/docs/guides/quickstart.md",
-      "url": "https://developers.meshapi.ai/docs/guides/quickstart",
-      "title": "Quickstart | Mesh API Docs",
-      "hash": "b2e2692616f695fe7db3cddcce3605fa397a415d7fcaba52e156b50ee44e39dd"
+      "path": "pages/docs/capabilities/structured-output.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/structured-output",
+      "title": "Structured Output - Mesh API",
+      "hash": "1a93ce3c6de15f2a442415ac8f254831ead0e78e92f3fb6494701926703277c3"
     },
     {
-      "path": "pages/docs/guides/rag-files-search.md",
-      "url": "https://developers.meshapi.ai/docs/guides/rag-files-search",
-      "title": "RAG (Retrieval-Augmented Generation) | Mesh API Docs",
-      "hash": "89460796b3ea09a3b9f9754995dd2e142bae18e57343f24b354555b2741f6617"
+      "path": "pages/docs/capabilities/text-to-speech.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/text-to-speech",
+      "title": "Text to Speech - Mesh API",
+      "hash": "70d890474a4f70e3b3945157ca35f559ff68bab30b6796db8e699a5ef02488a4"
     },
     {
-      "path": "pages/docs/guides/rate-limits-spend-caps.md",
-      "url": "https://developers.meshapi.ai/docs/guides/rate-limits-spend-caps",
-      "title": "Rate Limits & Spend Caps | Mesh API Docs",
-      "hash": "292590e2f9f44deb8c37078ca047fa17e7cf92b74a13285807ab50b7be696d08"
+      "path": "pages/docs/capabilities/tool-calling.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/tool-calling",
+      "title": "Tool Calling - Mesh API",
+      "hash": "835cd7ee866abf48c9d76b02d43612d727b22f64f71d46cdc740f0f8f428e4bb"
     },
     {
-      "path": "pages/docs/guides/realtime-audio.md",
-      "url": "https://developers.meshapi.ai/docs/guides/realtime-audio",
-      "title": "Realtime Audio | Mesh API Docs",
-      "hash": "3b5b7387ea829bd49d61642d9902505d9f622c5cea8340372b8ed174f1ae56de"
+      "path": "pages/docs/capabilities/video-generation.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/video-generation",
+      "title": "Video Generation - Mesh API",
+      "hash": "08d8029e79485e1d6ac560ed249c64333fafe386f82c7fe4a6b82ee90848a32e"
     },
     {
-      "path": "pages/docs/guides/responses-api.md",
-      "url": "https://developers.meshapi.ai/docs/guides/responses-api",
-      "title": "Responses API | Mesh API Docs",
-      "hash": "5673632a03c4a6c6e634c81e9e446462f93f9488dee571b4d52d93f735e075fb"
+      "path": "pages/docs/capabilities/web-search.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/web-search",
+      "title": "Web Search - Mesh API",
+      "hash": "e23e6e933e286c0f5c5713f515b86eb2bbaed56a67e3e01c8d7b81a6644b013f"
     },
     {
-      "path": "pages/docs/guides/speech-to-text.md",
-      "url": "https://developers.meshapi.ai/docs/guides/speech-to-text",
-      "title": "Speech-to-Text | Mesh API Docs",
-      "hash": "667e9cf330b8620872e8594345a4ff5c9861eaeb6520b9fd1013c5bec9d2d64a"
+      "path": "pages/docs/capabilities/webhooks.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/webhooks",
+      "title": "Webhooks - Mesh API",
+      "hash": "7f1c574a368d0944502f375fdcad5453bf03e4234d4b047a0da14ae994f31a14"
     },
     {
-      "path": "pages/docs/guides/structured-output.md",
-      "url": "https://developers.meshapi.ai/docs/guides/structured-output",
-      "title": "Structured Output | Mesh API Docs",
-      "hash": "c0c5abdf8ba148cac9a40aa8c0c5c7b09482dc6874849a36903df4fbd3489d96"
+      "path": "pages/docs/cli/commands.md",
+      "url": "https://developers.meshapi.ai/docs/cli/commands",
+      "title": "Commands & permission modes - Mesh API",
+      "hash": "47073b47af98b8999f1a2a42be574d1bdb1dc7d29797e2e5f43c1cb5d13ba705"
     },
     {
-      "path": "pages/docs/guides/text-to-speech.md",
-      "url": "https://developers.meshapi.ai/docs/guides/text-to-speech",
-      "title": "Text-to-Speech | Mesh API Docs",
-      "hash": "ccef5c1cccacfc086bc195daee3055bdbd7b0a895c103db1e59ddfe69e1bccdc"
+      "path": "pages/docs/cli/install.md",
+      "url": "https://developers.meshapi.ai/docs/cli/install",
+      "title": "Install the Mesh CLI - Mesh API",
+      "hash": "ac51c8eaaf74af4801b21eebcdd622d94c43f79f13e6cbbe9bdb7a5232c0fcde"
     },
     {
-      "path": "pages/docs/guides/tool-calling.md",
-      "url": "https://developers.meshapi.ai/docs/guides/tool-calling",
-      "title": "Tool Calling | Mesh API Docs",
-      "hash": "0e394ab434de0138b2f1dfc386d9d8812d82db7380ad2bf7b34e2b26fbdb37c5"
+      "path": "pages/docs/cli/usage.md",
+      "url": "https://developers.meshapi.ai/docs/cli/usage",
+      "title": "Using the Mesh CLI - Mesh API",
+      "hash": "6802e444faae63055e87136b20520f81ab4a1694e0c6f64013367ebb808bb591"
     },
     {
-      "path": "pages/docs/guides/usage-monitoring-api.md",
-      "url": "https://developers.meshapi.ai/docs/guides/usage-monitoring-api",
-      "title": "Usage & Monitoring API | Mesh API Docs",
-      "hash": "7064b2097100dd4b02ef0a1de38714596779a602ecf260266681c14b26d2a87d"
+      "path": "pages/docs/getting-started/account-checklist.md",
+      "url": "https://developers.meshapi.ai/docs/getting-started/account-checklist",
+      "title": "Account Configuration Checklist - Mesh API",
+      "hash": "e5552b5e140fdb551e094327555c4c80f1939d0adbd9b676868756e84716cdf8"
     },
     {
-      "path": "pages/docs/guides/video-generation.md",
-      "url": "https://developers.meshapi.ai/docs/guides/video-generation",
-      "title": "Video Generation | Mesh API Docs",
-      "hash": "ac08871905e0a3a97b51c165718da36083bcb1ad34a6f6a45289fad2d1d6e309"
+      "path": "pages/docs/getting-started/api-keys.md",
+      "url": "https://developers.meshapi.ai/docs/getting-started/api-keys",
+      "title": "API Keys - Mesh API",
+      "hash": "312e47799f5f97420483c16e83b08f79bc90e875875ef470acddcfb5c7af9fb8"
     },
     {
-      "path": "pages/docs/guides/web-search.md",
-      "url": "https://developers.meshapi.ai/docs/guides/web-search",
-      "title": "Web Search | Mesh API Docs",
-      "hash": "043a1e2a8debc4cfa426d19a34f4f8706cba5c8113e15d9e64f39c4896d771a2"
+      "path": "pages/docs/getting-started/authentication.md",
+      "url": "https://developers.meshapi.ai/docs/getting-started/authentication",
+      "title": "Authentication - Mesh API",
+      "hash": "2b961a43211d6f808cf5d001b769a6a818afb036d41175453e2014bb51bfcf4b"
     },
     {
-      "path": "pages/docs/infrastructure/architecture.md",
-      "url": "https://developers.meshapi.ai/docs/infrastructure/architecture",
-      "title": "Architecture | Mesh API Docs",
-      "hash": "8276e912643e2a5f1e17ce00fb7f6c9b4160412cbf2a4d2ff136e4a4b839596f"
+      "path": "pages/docs/getting-started/dashboard.md",
+      "url": "https://developers.meshapi.ai/docs/getting-started/dashboard",
+      "title": "Dashboard - Mesh API",
+      "hash": "6fadc970e67f59c94d7f4401ae81efd24e5ec3a0051e6804fabd858e7a381745"
     },
     {
-      "path": "pages/docs/infrastructure/retry-fallback.md",
-      "url": "https://developers.meshapi.ai/docs/infrastructure/retry-fallback",
-      "title": "Retry & Fallback | Mesh API Docs",
-      "hash": "e89964e334c08abaf8ea0c55972071be4a68e079619aa2ba70aa7a7a87dbcb3d"
+      "path": "pages/docs/getting-started/organizations.md",
+      "url": "https://developers.meshapi.ai/docs/getting-started/organizations",
+      "title": "Organizations & Access Control - Mesh API",
+      "hash": "b07a98cd45e0c479e744f04348ca03658042dc4597cbcc8a0606f5e17aa892a7"
     },
     {
-      "path": "pages/docs/introduction/available-models.md",
-      "url": "https://developers.meshapi.ai/docs/introduction/available-models",
-      "title": "Available Models | Mesh API Docs",
-      "hash": "49517091d6842402c6e0f97f3461ed2c37a72db39d7d2566a75de455612247e6"
+      "path": "pages/docs/getting-started/pricing.md",
+      "url": "https://developers.meshapi.ai/docs/getting-started/pricing",
+      "title": "Pricing - Mesh API",
+      "hash": "7cf3a2f7afc212b573ce7ae4e20f2b067976dcbbd7d8d4c10cc5fb088886ae97"
     },
     {
-      "path": "pages/docs/introduction/model-explanation.md",
-      "url": "https://developers.meshapi.ai/docs/introduction/model-explanation",
-      "title": "Model Explanation | Mesh API Docs",
-      "hash": "7d6d8693adb27a40a755fd10674b67e6e9b5add5937a591bcc417497177dc61c"
+      "path": "pages/docs/getting-started/quickstart.md",
+      "url": "https://developers.meshapi.ai/docs/getting-started/quickstart",
+      "title": "Quickstart - Mesh API",
+      "hash": "c4432e3c784643d01f942ac91b4ff2bd82a80a0312449e2b01d15404fa624a1f"
     },
     {
-      "path": "pages/docs/introduction/pricing.md",
-      "url": "https://developers.meshapi.ai/docs/introduction/pricing",
-      "title": "Pricing Details | Mesh API Docs",
-      "hash": "b928a80f5cd70830ce08c36be06ed477304366987ab44a24496764c0d791a29d"
+      "path": "pages/docs/getting-started/rate-limits.md",
+      "url": "https://developers.meshapi.ai/docs/getting-started/rate-limits",
+      "title": "Rate Limits & Spend Caps - Mesh API",
+      "hash": "d6fd56f39cf3732a8b6a3f955d74b07fb81546c3173ccb007b4fc0bdb1245193"
     },
     {
-      "path": "pages/docs/introduction/product-overview.md",
-      "url": "https://developers.meshapi.ai/docs/introduction/product-overview",
-      "title": "Product Overview | Mesh API Docs",
-      "hash": "e3954986088144f6048f49748921f7a3363ec41f02ccb4a49d13231c74563d92"
+      "path": "pages/docs/platform/architecture.md",
+      "url": "https://developers.meshapi.ai/docs/platform/architecture",
+      "title": "Architecture - Mesh API",
+      "hash": "416afb10457cddcc982cd2876acbb52889eea04e7917b3424ed24da0c3822f6c"
     },
     {
-      "path": "pages/sd-ks/go-sdk/audio-tts-stt.md",
-      "url": "https://developers.meshapi.ai/sd-ks/go-sdk/audio-tts-stt",
-      "title": "Audio (TTS & STT) | Mesh API Docs",
-      "hash": "0e276bf885dd46b35876a551aa956416ab23d54a987362344c54a1c2738512ca"
+      "path": "pages/docs/platform/retry-and-fallback.md",
+      "url": "https://developers.meshapi.ai/docs/platform/retry-and-fallback",
+      "title": "Retry & Fallback - Mesh API",
+      "hash": "d085998b78185967261e8a9d8c7a3bc135f1b4a11687dc33264c562d1cbe545f"
     },
     {
-      "path": "pages/sd-ks/go-sdk/batch-api.md",
-      "url": "https://developers.meshapi.ai/sd-ks/go-sdk/batch-api",
-      "title": "Batches | Mesh API Docs",
-      "hash": "de3fe456b5ce006ef1fe44b874e1f256a89d8b4ce2396cbc4bff0e10a7967da9"
+      "path": "pages/docs/reference/api-overview.md",
+      "url": "https://developers.meshapi.ai/docs/reference/api-overview",
+      "title": "API reference - Mesh API",
+      "hash": "5671ee00763d11d70d942fd30f4668c882f3cb398ee87f41748e7424171f68b6"
     },
     {
-      "path": "pages/sd-ks/go-sdk/chat-completions.md",
-      "url": "https://developers.meshapi.ai/sd-ks/go-sdk/chat-completions",
-      "title": "Chat Completions | Mesh API Docs",
-      "hash": "e0c52b1e11c82a485f6980fd824e90d08485836ff067c790090d2bba54f8ef79"
+      "path": "pages/docs/reference/models-list.md",
+      "url": "https://developers.meshapi.ai/docs/reference/models-list",
+      "title": "Every model, one transparent price list. - Mesh API",
+      "hash": "5a66b5351402d4063e6c22752ff782d6f541bc24dae21dc44cfadffc76b0bd2f"
     },
     {
-      "path": "pages/sd-ks/go-sdk/compare-multi-model.md",
-      "url": "https://developers.meshapi.ai/sd-ks/go-sdk/compare-multi-model",
-      "title": "Compare (Multi-model) | Mesh API Docs",
-      "hash": "3479085797afec397830bd541f30ee2fb933934dd89e455be073192a0f64d831"
+      "path": "pages/docs/reference/models.md",
+      "url": "https://developers.meshapi.ai/docs/reference/models",
+      "title": "Models - Mesh API",
+      "hash": "d1b07056fa10e322b057cce3d8bbe3888bef8a7ddbd34289eeec1ae046448b54"
     },
     {
-      "path": "pages/sd-ks/go-sdk/embeddings.md",
-      "url": "https://developers.meshapi.ai/sd-ks/go-sdk/embeddings",
-      "title": "Embeddings | Mesh API Docs",
-      "hash": "e64c8f898b0b040ab58f2133e010ffe072191859c2700e381ac782054ec39af3"
+      "path": "pages/docs/reference/support.md",
+      "url": "https://developers.meshapi.ai/docs/reference/support",
+      "title": "Support - Mesh API",
+      "hash": "89d3585c12e05fad442682da5af1ed3d78bbdbfe1fa368f66073970b0baa32a8"
     },
     {
-      "path": "pages/sd-ks/go-sdk/error-handling.md",
-      "url": "https://developers.meshapi.ai/sd-ks/go-sdk/error-handling",
-      "title": "Error Handling | Mesh API Docs",
-      "hash": "22cc744e5bd70ec7624f2c996bf913313fc1d20de44bc0b4cd58adce5d1b8e38"
+      "path": "pages/docs/reference/usage-api.md",
+      "url": "https://developers.meshapi.ai/docs/reference/usage-api",
+      "title": "Usage & Monitoring API - Mesh API",
+      "hash": "bcfcdd826bf71fd92d5f9aa46299ddf5da7b56515d0b1c992fa556ecd50b9713"
     },
     {
-      "path": "pages/sd-ks/go-sdk/image-generation.md",
-      "url": "https://developers.meshapi.ai/sd-ks/go-sdk/image-generation",
-      "title": "Image Generation | Mesh API Docs",
-      "hash": "26dcaa7dc3fdfe20d7e80f47b025a28a415265dc0afeb27e78aebd8c552d1c83"
+      "path": "pages/home.md",
+      "url": "https://developers.meshapi.ai/",
+      "title": "Welcome to Mesh API - Mesh API",
+      "hash": "5f5169f490d841e77f821a19fc16bb4e7e0dc55945ffd5f53f69c1a8f402a972"
     },
     {
-      "path": "pages/sd-ks/go-sdk/models.md",
-      "url": "https://developers.meshapi.ai/sd-ks/go-sdk/models",
-      "title": "Models | Mesh API Docs",
-      "hash": "ea09ac11b3164a8cbaa2f98086369725750f016b7b2ba43962c239dc37837680"
+      "path": "pages/sdk/audio.md",
+      "url": "https://developers.meshapi.ai/sdk/audio",
+      "title": "Audio - Mesh API",
+      "hash": "a0eb31e904ba384d0b53ad084881555ee85106478c65ad2e13ce6bbe2f8c970f"
     },
     {
-      "path": "pages/sd-ks/go-sdk/overview.md",
-      "url": "https://developers.meshapi.ai/sd-ks/go-sdk/overview",
-      "title": "Go SDK | Mesh API Docs",
-      "hash": "3af507ac25bd31ea26999f24858454007f508d5113b9c8ad777c501578269880"
+      "path": "pages/sdk/batches.md",
+      "url": "https://developers.meshapi.ai/sdk/batches",
+      "title": "Batches - Mesh API",
+      "hash": "55be9118c7675a77164a5508bd579d5e2428eb4b4cca38f66b8870485a7a76a6"
     },
     {
-      "path": "pages/sd-ks/go-sdk/prompt-templates.md",
-      "url": "https://developers.meshapi.ai/sd-ks/go-sdk/prompt-templates",
-      "title": "Prompt Templates | Mesh API Docs",
-      "hash": "4d3dc03ddd4abc70ec211a32a1d2f71931fa07155dd296059d3ffd85dcc1016a"
+      "path": "pages/sdk/chat.md",
+      "url": "https://developers.meshapi.ai/sdk/chat",
+      "title": "Chat Completions - Mesh API",
+      "hash": "ca4d45e7dc0b86bc89f5f647d0ba90d353c3c7aa41c644c87757cd1bf3e10408"
     },
     {
-      "path": "pages/sd-ks/go-sdk/rag-files-search.md",
-      "url": "https://developers.meshapi.ai/sd-ks/go-sdk/rag-files-search",
-      "title": "RAG (Files & Search) | Mesh API Docs",
-      "hash": "886b4e4ad7821ad4596c8f57a428a4189503e2407562b958ea69980867f2725c"
+      "path": "pages/sdk/compare.md",
+      "url": "https://developers.meshapi.ai/sdk/compare",
+      "title": "Model Compare - Mesh API",
+      "hash": "15387d8f71891b22ca590797dfc6988b28c7d665b5a24ccd8e420f17748c9393"
     },
     {
-      "path": "pages/sd-ks/go-sdk/realtime-audio.md",
-      "url": "https://developers.meshapi.ai/sd-ks/go-sdk/realtime-audio",
-      "title": "Realtime Audio | Mesh API Docs",
-      "hash": "4576b8008215857590e520b3600b18d2a1e9bc4038764fe3d423e3d66a45a1d4"
+      "path": "pages/sdk/embeddings.md",
+      "url": "https://developers.meshapi.ai/sdk/embeddings",
+      "title": "Embeddings - Mesh API",
+      "hash": "be73cd37f761e67dc7b14d0859d143b20a6419182d9b7d8e4978218fa9af6bef"
     },
     {
-      "path": "pages/sd-ks/go-sdk/responses-reasoning.md",
-      "url": "https://developers.meshapi.ai/sd-ks/go-sdk/responses-reasoning",
-      "title": "Responses API (Reasoning) | Mesh API Docs",
-      "hash": "07a04b08f07c84a713cff5829c5a178cef90fbd1beb996d3ef95f129f0909a27"
+      "path": "pages/sdk/error-handling.md",
+      "url": "https://developers.meshapi.ai/sdk/error-handling",
+      "title": "Error Handling - Mesh API",
+      "hash": "3e5314b2f88492740a7f83fcb804841988fca244d0de947d7e32842be050d377"
     },
     {
-      "path": "pages/sd-ks/go-sdk/video-generation.md",
-      "url": "https://developers.meshapi.ai/sd-ks/go-sdk/video-generation",
-      "title": "Video Generation | Mesh API Docs",
-      "hash": "7e736389bdd0cd70270bd101b9e109b445284ef2216d6e85ee1886067f293f92"
+      "path": "pages/sdk/images.md",
+      "url": "https://developers.meshapi.ai/sdk/images",
+      "title": "Image Generation - Mesh API",
+      "hash": "4b0e8cd7d7fa0bbe5fb754967813861cc038461fbae6da328188a20c662e62c8"
     },
     {
-      "path": "pages/sd-ks/python-sdk/audio-tts-stt.md",
-      "url": "https://developers.meshapi.ai/sd-ks/python-sdk/audio-tts-stt",
-      "title": "Audio (TTS & STT) | Mesh API Docs",
-      "hash": "8f1b56d41ad2c0148ac16341135bd1abc6e9245aa7536d5ebf420ec8f1f1a829"
+      "path": "pages/sdk/models.md",
+      "url": "https://developers.meshapi.ai/sdk/models",
+      "title": "Models - Mesh API",
+      "hash": "8648958dad72691d2a5b23508370aa7f0260fa8188b60b0cd2819a09c24fcdb9"
     },
     {
-      "path": "pages/sd-ks/python-sdk/batch-api.md",
-      "url": "https://developers.meshapi.ai/sd-ks/python-sdk/batch-api",
-      "title": "Batches | Mesh API Docs",
-      "hash": "cd7dc19baca9744d42b0b4231a6bf8528c4af7945e8e550780c9068d315f3ee3"
+      "path": "pages/sdk/overview.md",
+      "url": "https://developers.meshapi.ai/sdk/overview",
+      "title": "SDK Reference - Mesh API",
+      "hash": "a928e3f6cd673505421278df0cac0b29cac68d5302a5a5a853324a757a3e1455"
     },
     {
-      "path": "pages/sd-ks/python-sdk/chat-completions.md",
-      "url": "https://developers.meshapi.ai/sd-ks/python-sdk/chat-completions",
-      "title": "Chat Completions | Mesh API Docs",
-      "hash": "add9406150c970c9621a39965b33a2ab28795f8b4f7e4d98e7acb695a4ef5833"
+      "path": "pages/sdk/rag.md",
+      "url": "https://developers.meshapi.ai/sdk/rag",
+      "title": "RAG (Files & Search) - Mesh API",
+      "hash": "bb73eb5edd4c643c359ddcc7e50c37c0cd83993c3e8e4399ea75d0cc5713abd8"
     },
     {
-      "path": "pages/sd-ks/python-sdk/compare-multi-model.md",
-      "url": "https://developers.meshapi.ai/sd-ks/python-sdk/compare-multi-model",
-      "title": "Compare (Multi-model) | Mesh API Docs",
-      "hash": "62162137dd1a3d8110d757bb0fcc2cef045328632e255089b89e5a343bbff692"
+      "path": "pages/sdk/realtime.md",
+      "url": "https://developers.meshapi.ai/sdk/realtime",
+      "title": "Realtime Audio - Mesh API",
+      "hash": "1b56e16a828ecbfcebe33d3e2cb87bd294252a9396173736997780ee46d4eb95"
     },
     {
-      "path": "pages/sd-ks/python-sdk/embeddings.md",
-      "url": "https://developers.meshapi.ai/sd-ks/python-sdk/embeddings",
-      "title": "Embeddings | Mesh API Docs",
-      "hash": "2699f2ffc2c0e41611373e50f1e3cec2f307c4d52d546c3b938a4cefa7882a4e"
+      "path": "pages/sdk/resilience.md",
+      "url": "https://developers.meshapi.ai/sdk/resilience",
+      "title": "Resilience - Mesh API",
+      "hash": "e98609236e5ef3f7392e9f8f6c559b889d031bb76f98a0763c8a2f25465e3da6"
     },
     {
-      "path": "pages/sd-ks/python-sdk/error-handling.md",
-      "url": "https://developers.meshapi.ai/sd-ks/python-sdk/error-handling",
-      "title": "Error Handling | Mesh API Docs",
-      "hash": "15e3fafee35be479486d84852a00443e4ee8ff3ab1f517d3abb74eef4a76fe69"
+      "path": "pages/sdk/responses.md",
+      "url": "https://developers.meshapi.ai/sdk/responses",
+      "title": "Responses API - Mesh API",
+      "hash": "04167e3d4b4f3228afdfa327988b43a0bb7df37ce0b4403864e63528684566c1"
     },
     {
-      "path": "pages/sd-ks/python-sdk/image-generation.md",
-      "url": "https://developers.meshapi.ai/sd-ks/python-sdk/image-generation",
-      "title": "Image Generation | Mesh API Docs",
-      "hash": "8f5f69356f1b07b425659546a1288ec68910eb0d424b02eaf7a5a7a31c9c4e1b"
+      "path": "pages/sdk/streaming.md",
+      "url": "https://developers.meshapi.ai/sdk/streaming",
+      "title": "Streaming - Mesh API",
+      "hash": "3dcb558fef3894673af00ca0d58ef48341bd6ff2b10e1fcc2581c27f6bfdcc7e"
     },
     {
-      "path": "pages/sd-ks/python-sdk/models.md",
-      "url": "https://developers.meshapi.ai/sd-ks/python-sdk/models",
-      "title": "Models | Mesh API Docs",
-      "hash": "9c56d125112c758c5e9a6b8fc433caffbcdda683722fef2e2b2952c6c2b4fca6"
+      "path": "pages/sdk/structured-output.md",
+      "url": "https://developers.meshapi.ai/sdk/structured-output",
+      "title": "Structured Output - Mesh API",
+      "hash": "e14865cd1725e0d8a95e6f238845f3da01ccd4cbbe4d622ef77ac0921b2fb21b"
     },
     {
-      "path": "pages/sd-ks/python-sdk/overview.md",
-      "url": "https://developers.meshapi.ai/sd-ks/python-sdk/overview",
-      "title": "Python SDK Overview | Mesh API Docs",
-      "hash": "d325adc07d49b529d2345753d8a3e39047603525cfd5b891127208de62224439"
+      "path": "pages/sdk/templates.md",
+      "url": "https://developers.meshapi.ai/sdk/templates",
+      "title": "Prompt Templates - Mesh API",
+      "hash": "7f9ce60a04877237812e1dd8791dc4d30be82718b1006765fc1b300595dbf2f1"
     },
     {
-      "path": "pages/sd-ks/python-sdk/prompt-templates.md",
-      "url": "https://developers.meshapi.ai/sd-ks/python-sdk/prompt-templates",
-      "title": "Prompt Templates | Mesh API Docs",
-      "hash": "b8e7518473f870b6bd030b367a160159922d7ec1ea21af332252c7fc8f72f0c3"
-    },
-    {
-      "path": "pages/sd-ks/python-sdk/rag-files-search.md",
-      "url": "https://developers.meshapi.ai/sd-ks/python-sdk/rag-files-search",
-      "title": "RAG (Files & Search) | Mesh API Docs",
-      "hash": "1ad8ed72ac380161391f7d53551df5b34de83774a754b0b14eb646c9a7267313"
-    },
-    {
-      "path": "pages/sd-ks/python-sdk/realtime-audio.md",
-      "url": "https://developers.meshapi.ai/sd-ks/python-sdk/realtime-audio",
-      "title": "Realtime Audio | Mesh API Docs",
-      "hash": "1ebddfc57c373789ebc4a339a52a32b9071ed8e4f2294168bd12b803cf5739fd"
-    },
-    {
-      "path": "pages/sd-ks/python-sdk/responses-reasoning.md",
-      "url": "https://developers.meshapi.ai/sd-ks/python-sdk/responses-reasoning",
-      "title": "Responses API (Reasoning) | Mesh API Docs",
-      "hash": "cbd6efc4b73b8579005c64ba4fca124c5f79b65c83bc60de01942dee1ee60898"
-    },
-    {
-      "path": "pages/sd-ks/python-sdk/video-generation.md",
-      "url": "https://developers.meshapi.ai/sd-ks/python-sdk/video-generation",
-      "title": "Video Generation | Mesh API Docs",
-      "hash": "cd098312b594cfbc58f350756e109563be11064baa60f71b367187225913aa48"
+      "path": "pages/sdk/video.md",
+      "url": "https://developers.meshapi.ai/sdk/video",
+      "title": "Video Generation - Mesh API",
+      "hash": "63494880aecc29104a1c44ac6019c37df676df4f5a9e253badafc0554741cd25"
     }
   ],
   "edges": [
     [
-      "pages/agent/mcp/mcp-server.md",
-      "pages/api-reference.md"
+      "pages/agent/mcp.md",
+      "pages/docs/reference/api-overview.md"
     ],
     [
-      "pages/cli/commands.md",
-      "pages/debug/mesh-cli.md"
-    ],
-    [
-      "pages/cli/install.md",
-      "pages/cli/commands.md"
-    ],
-    [
-      "pages/cli/install.md",
-      "pages/cli/usage.md"
-    ],
-    [
-      "pages/cli/install.md",
-      "pages/debug/mesh-cli.md"
-    ],
-    [
-      "pages/cli/usage.md",
-      "pages/cli/commands.md"
-    ],
-    [
-      "pages/cli/usage.md",
-      "pages/cli/install.md"
+      "pages/agent/mcp.md",
+      "pages/home.md"
     ],
     [
       "pages/debug/auto-routing.md",
       "pages/debug/mesh-api.md"
     ],
     [
+      "pages/debug/auto-routing.md",
+      "pages/docs/capabilities/auto-routing.md"
+    ],
+    [
       "pages/debug/batch.md",
       "pages/debug/mesh-api.md"
+    ],
+    [
+      "pages/debug/batch.md",
+      "pages/docs/capabilities/batch-api.md"
     ],
     [
       "pages/debug/byok.md",
       "pages/debug/mesh-api.md"
     ],
     [
+      "pages/debug/byok.md",
+      "pages/docs/capabilities/byok.md"
+    ],
+    [
       "pages/debug/compare.md",
       "pages/debug/mesh-api.md"
+    ],
+    [
+      "pages/debug/compare.md",
+      "pages/docs/capabilities/model-compare.md"
     ],
     [
       "pages/debug/embeddings.md",
       "pages/debug/mesh-api.md"
     ],
     [
+      "pages/debug/embeddings.md",
+      "pages/docs/capabilities/embeddings.md"
+    ],
+    [
       "pages/debug/image-generation.md",
       "pages/debug/mesh-api.md"
     ],
     [
+      "pages/debug/image-generation.md",
+      "pages/docs/capabilities/image-generation.md"
+    ],
+    [
       "pages/debug/images-vision.md",
       "pages/debug/mesh-api.md"
+    ],
+    [
+      "pages/debug/images-vision.md",
+      "pages/docs/capabilities/images-vision.md"
     ],
     [
       "pages/debug/mesh-api.md",
@@ -849,207 +557,587 @@
       "pages/debug/video-generation.md"
     ],
     [
-      "pages/debug/mesh-cli.md",
-      "pages/cli/commands.md"
+      "pages/debug/mesh-api.md",
+      "pages/docs/capabilities/auto-routing.md"
     ],
     [
-      "pages/debug/mesh-cli.md",
-      "pages/cli/install.md"
+      "pages/debug/mesh-api.md",
+      "pages/docs/capabilities/batch-api.md"
     ],
     [
-      "pages/debug/mesh-cli.md",
-      "pages/cli/usage.md"
+      "pages/debug/mesh-api.md",
+      "pages/docs/capabilities/byok.md"
+    ],
+    [
+      "pages/debug/mesh-api.md",
+      "pages/docs/capabilities/rag.md"
+    ],
+    [
+      "pages/debug/mesh-api.md",
+      "pages/docs/capabilities/structured-output.md"
+    ],
+    [
+      "pages/debug/mesh-api.md",
+      "pages/docs/getting-started/authentication.md"
+    ],
+    [
+      "pages/debug/mesh-api.md",
+      "pages/docs/reference/support.md"
+    ],
+    [
+      "pages/debug/mesh-api.md",
+      "pages/home.md"
+    ],
+    [
+      "pages/debug/mesh-api.md",
+      "pages/sdk/error-handling.md"
     ],
     [
       "pages/debug/mesh-cli.md",
       "pages/debug/mesh-api.md"
+    ],
+    [
+      "pages/debug/mesh-cli.md",
+      "pages/docs/capabilities/auto-routing.md"
+    ],
+    [
+      "pages/debug/mesh-cli.md",
+      "pages/docs/cli/commands.md"
+    ],
+    [
+      "pages/debug/mesh-cli.md",
+      "pages/docs/cli/install.md"
+    ],
+    [
+      "pages/debug/mesh-cli.md",
+      "pages/docs/cli/usage.md"
+    ],
+    [
+      "pages/debug/mesh-cli.md",
+      "pages/docs/reference/support.md"
+    ],
+    [
+      "pages/debug/mesh-cli.md",
+      "pages/home.md"
     ],
     [
       "pages/debug/prompt-templates.md",
       "pages/debug/mesh-api.md"
     ],
     [
+      "pages/debug/prompt-templates.md",
+      "pages/docs/capabilities/prompt-templates.md"
+    ],
+    [
       "pages/debug/rag.md",
       "pages/debug/mesh-api.md"
+    ],
+    [
+      "pages/debug/rag.md",
+      "pages/docs/capabilities/rag.md"
     ],
     [
       "pages/debug/realtime-audio.md",
       "pages/debug/mesh-api.md"
     ],
     [
+      "pages/debug/realtime-audio.md",
+      "pages/docs/capabilities/realtime-audio.md"
+    ],
+    [
       "pages/debug/speech-to-text.md",
       "pages/debug/mesh-api.md"
+    ],
+    [
+      "pages/debug/speech-to-text.md",
+      "pages/docs/capabilities/speech-to-text.md"
     ],
     [
       "pages/debug/structured-output.md",
       "pages/debug/mesh-api.md"
     ],
     [
+      "pages/debug/structured-output.md",
+      "pages/docs/capabilities/structured-output.md"
+    ],
+    [
       "pages/debug/text-to-speech.md",
       "pages/debug/mesh-api.md"
+    ],
+    [
+      "pages/debug/text-to-speech.md",
+      "pages/docs/capabilities/text-to-speech.md"
     ],
     [
       "pages/debug/video-generation.md",
       "pages/debug/mesh-api.md"
     ],
     [
-      "pages/docs/guides/account-configuration-checklist.md",
-      "pages/docs/guides/authentication.md"
+      "pages/debug/video-generation.md",
+      "pages/docs/capabilities/video-generation.md"
     ],
     [
-      "pages/docs/guides/account-configuration-checklist.md",
-      "pages/docs/guides/auto-routing.md"
+      "pages/debug/video-generation.md",
+      "pages/docs/getting-started/rate-limits.md"
     ],
     [
-      "pages/docs/guides/account-configuration-checklist.md",
-      "pages/docs/guides/batch-api.md"
+      "pages/docs/capabilities/byok.md",
+      "pages/debug/byok.md"
     ],
     [
-      "pages/docs/guides/account-configuration-checklist.md",
-      "pages/docs/guides/byok.md"
+      "pages/docs/capabilities/byok.md",
+      "pages/docs/platform/retry-and-fallback.md"
     ],
     [
-      "pages/docs/guides/account-configuration-checklist.md",
-      "pages/docs/guides/dashboard-guide.md"
+      "pages/docs/capabilities/byok.md",
+      "pages/home.md"
     ],
     [
-      "pages/docs/guides/account-configuration-checklist.md",
-      "pages/docs/guides/prompt-templates.md"
+      "pages/docs/capabilities/caching.md",
+      "pages/docs/capabilities/memory.md"
     ],
     [
-      "pages/docs/guides/account-configuration-checklist.md",
-      "pages/docs/guides/quickstart.md"
+      "pages/docs/capabilities/caching.md",
+      "pages/docs/getting-started/account-checklist.md"
     ],
     [
-      "pages/docs/guides/account-configuration-checklist.md",
-      "pages/docs/introduction/pricing.md"
+      "pages/docs/capabilities/caching.md",
+      "pages/docs/getting-started/pricing.md"
     ],
     [
-      "pages/docs/guides/api-keys.md",
-      "pages/docs/guides/account-configuration-checklist.md"
+      "pages/docs/capabilities/caching.md",
+      "pages/docs/reference/usage-api.md"
     ],
     [
-      "pages/docs/guides/api-keys.md",
-      "pages/docs/guides/authentication.md"
+      "pages/docs/capabilities/embeddings.md",
+      "pages/docs/capabilities/rag.md"
     ],
     [
-      "pages/docs/guides/api-keys.md",
-      "pages/docs/guides/organizations-teams.md"
+      "pages/docs/capabilities/image-generation.md",
+      "pages/docs/getting-started/rate-limits.md"
     ],
     [
-      "pages/docs/guides/api-keys.md",
-      "pages/docs/guides/rate-limits-spend-caps.md"
+      "pages/docs/capabilities/memory.md",
+      "pages/docs/capabilities/caching.md"
     ],
     [
-      "pages/docs/guides/caching.md",
-      "pages/docs/guides/account-configuration-checklist.md"
+      "pages/docs/capabilities/memory.md",
+      "pages/docs/capabilities/prompt-templates.md"
     ],
     [
-      "pages/docs/guides/caching.md",
-      "pages/docs/guides/memory.md"
+      "pages/docs/capabilities/memory.md",
+      "pages/docs/reference/usage-api.md"
     ],
     [
-      "pages/docs/guides/caching.md",
-      "pages/docs/guides/usage-monitoring-api.md"
+      "pages/docs/capabilities/messages-api.md",
+      "pages/docs/capabilities/responses-api.md"
     ],
     [
-      "pages/docs/guides/caching.md",
-      "pages/docs/introduction/pricing.md"
+      "pages/docs/capabilities/messages-api.md",
+      "pages/docs/capabilities/tool-calling.md"
     ],
     [
-      "pages/docs/guides/memory.md",
-      "pages/docs/guides/caching.md"
+      "pages/docs/capabilities/messages-api.md",
+      "pages/docs/getting-started/quickstart.md"
     ],
     [
-      "pages/docs/guides/memory.md",
-      "pages/docs/guides/prompt-templates.md"
+      "pages/docs/capabilities/messages-api.md",
+      "pages/docs/reference/models-list.md"
     ],
     [
-      "pages/docs/guides/memory.md",
-      "pages/docs/guides/usage-monitoring-api.md"
+      "pages/docs/capabilities/prompt-templates.md",
+      "pages/docs/getting-started/authentication.md"
     ],
     [
-      "pages/docs/guides/organizations-teams.md",
-      "pages/docs/guides/api-keys.md"
+      "pages/docs/capabilities/realtime-audio.md",
+      "pages/debug/realtime-audio.md"
     ],
     [
-      "pages/docs/guides/organizations-teams.md",
-      "pages/docs/guides/rate-limits-spend-caps.md"
+      "pages/docs/capabilities/realtime-audio.md",
+      "pages/docs/capabilities/speech-to-text.md"
     ],
     [
-      "pages/docs/guides/organizations-teams.md",
-      "pages/docs/guides/usage-monitoring-api.md"
+      "pages/docs/capabilities/realtime-audio.md",
+      "pages/docs/getting-started/authentication.md"
     ],
     [
-      "pages/docs/guides/prompt-templates.md",
-      "pages/docs/guides/authentication.md"
+      "pages/docs/capabilities/realtime-audio.md",
+      "pages/docs/reference/api-overview.md"
     ],
     [
-      "pages/docs/guides/rate-limits-spend-caps.md",
-      "pages/docs/guides/account-configuration-checklist.md"
+      "pages/docs/capabilities/responses-api.md",
+      "pages/docs/capabilities/structured-output.md"
     ],
     [
-      "pages/docs/guides/rate-limits-spend-caps.md",
-      "pages/docs/guides/api-keys.md"
+      "pages/docs/capabilities/responses-api.md",
+      "pages/docs/capabilities/tool-calling.md"
     ],
     [
-      "pages/docs/guides/rate-limits-spend-caps.md",
-      "pages/docs/guides/memory.md"
+      "pages/docs/capabilities/responses-api.md",
+      "pages/docs/capabilities/web-search.md"
     ],
     [
-      "pages/docs/guides/rate-limits-spend-caps.md",
-      "pages/docs/guides/usage-monitoring-api.md"
+      "pages/docs/capabilities/structured-output.md",
+      "pages/home.md"
     ],
     [
-      "pages/docs/guides/realtime-audio.md",
-      "pages/api-reference.md"
+      "pages/docs/capabilities/structured-output.md",
+      "pages/sdk/chat.md"
     ],
     [
-      "pages/docs/guides/responses-api.md",
-      "pages/docs/guides/structured-output.md"
+      "pages/docs/capabilities/tool-calling.md",
+      "pages/docs/capabilities/caching.md"
     ],
     [
-      "pages/docs/guides/responses-api.md",
-      "pages/docs/guides/tool-calling.md"
+      "pages/docs/capabilities/tool-calling.md",
+      "pages/docs/capabilities/structured-output.md"
     ],
     [
-      "pages/docs/guides/responses-api.md",
-      "pages/docs/guides/web-search.md"
+      "pages/docs/capabilities/video-generation.md",
+      "pages/docs/getting-started/pricing.md"
     ],
     [
-      "pages/docs/guides/tool-calling.md",
-      "pages/docs/guides/caching.md"
+      "pages/docs/capabilities/video-generation.md",
+      "pages/docs/getting-started/rate-limits.md"
     ],
     [
-      "pages/docs/guides/tool-calling.md",
-      "pages/docs/guides/structured-output.md"
+      "pages/docs/capabilities/web-search.md",
+      "pages/docs/capabilities/responses-api.md"
     ],
     [
-      "pages/docs/guides/usage-monitoring-api.md",
-      "pages/api-reference.md"
+      "pages/docs/capabilities/web-search.md",
+      "pages/docs/getting-started/api-keys.md"
     ],
     [
-      "pages/docs/guides/web-search.md",
-      "pages/docs/guides/api-keys.md"
+      "pages/docs/capabilities/web-search.md",
+      "pages/docs/getting-started/pricing.md"
     ],
     [
-      "pages/docs/guides/web-search.md",
-      "pages/docs/guides/responses-api.md"
+      "pages/docs/cli/commands.md",
+      "pages/debug/mesh-cli.md"
     ],
     [
-      "pages/docs/guides/web-search.md",
-      "pages/docs/introduction/pricing.md"
+      "pages/docs/cli/install.md",
+      "pages/debug/mesh-cli.md"
     ],
     [
-      "pages/docs/introduction/model-explanation.md",
-      "pages/docs/introduction/pricing.md"
+      "pages/docs/cli/install.md",
+      "pages/docs/cli/commands.md"
+    ],
+    [
+      "pages/docs/cli/install.md",
+      "pages/docs/cli/usage.md"
+    ],
+    [
+      "pages/docs/cli/install.md",
+      "pages/home.md"
+    ],
+    [
+      "pages/docs/cli/usage.md",
+      "pages/docs/capabilities/auto-routing.md"
+    ],
+    [
+      "pages/docs/cli/usage.md",
+      "pages/docs/cli/commands.md"
+    ],
+    [
+      "pages/docs/cli/usage.md",
+      "pages/docs/cli/install.md"
+    ],
+    [
+      "pages/docs/cli/usage.md",
+      "pages/home.md"
+    ],
+    [
+      "pages/docs/getting-started/account-checklist.md",
+      "pages/docs/capabilities/auto-routing.md"
+    ],
+    [
+      "pages/docs/getting-started/account-checklist.md",
+      "pages/docs/capabilities/batch-api.md"
+    ],
+    [
+      "pages/docs/getting-started/account-checklist.md",
+      "pages/docs/capabilities/byok.md"
+    ],
+    [
+      "pages/docs/getting-started/account-checklist.md",
+      "pages/docs/capabilities/prompt-templates.md"
+    ],
+    [
+      "pages/docs/getting-started/account-checklist.md",
+      "pages/docs/getting-started/authentication.md"
+    ],
+    [
+      "pages/docs/getting-started/account-checklist.md",
+      "pages/docs/getting-started/dashboard.md"
+    ],
+    [
+      "pages/docs/getting-started/account-checklist.md",
+      "pages/docs/getting-started/pricing.md"
+    ],
+    [
+      "pages/docs/getting-started/account-checklist.md",
+      "pages/docs/getting-started/quickstart.md"
+    ],
+    [
+      "pages/docs/getting-started/api-keys.md",
+      "pages/docs/getting-started/account-checklist.md"
+    ],
+    [
+      "pages/docs/getting-started/api-keys.md",
+      "pages/docs/getting-started/authentication.md"
+    ],
+    [
+      "pages/docs/getting-started/api-keys.md",
+      "pages/docs/getting-started/organizations.md"
+    ],
+    [
+      "pages/docs/getting-started/api-keys.md",
+      "pages/docs/getting-started/rate-limits.md"
+    ],
+    [
+      "pages/docs/getting-started/authentication.md",
+      "pages/docs/capabilities/byok.md"
+    ],
+    [
+      "pages/docs/getting-started/dashboard.md",
+      "pages/docs/capabilities/byok.md"
+    ],
+    [
+      "pages/docs/getting-started/dashboard.md",
+      "pages/docs/capabilities/prompt-templates.md"
+    ],
+    [
+      "pages/docs/getting-started/dashboard.md",
+      "pages/home.md"
+    ],
+    [
+      "pages/docs/getting-started/organizations.md",
+      "pages/docs/getting-started/api-keys.md"
+    ],
+    [
+      "pages/docs/getting-started/organizations.md",
+      "pages/docs/getting-started/dashboard.md"
+    ],
+    [
+      "pages/docs/getting-started/organizations.md",
+      "pages/docs/getting-started/rate-limits.md"
+    ],
+    [
+      "pages/docs/getting-started/organizations.md",
+      "pages/docs/reference/usage-api.md"
+    ],
+    [
+      "pages/docs/getting-started/organizations.md",
+      "pages/home.md"
+    ],
+    [
+      "pages/docs/getting-started/pricing.md",
+      "pages/docs/capabilities/web-search.md"
+    ],
+    [
+      "pages/docs/getting-started/pricing.md",
+      "pages/docs/reference/usage-api.md"
+    ],
+    [
+      "pages/docs/getting-started/pricing.md",
+      "pages/home.md"
+    ],
+    [
+      "pages/docs/getting-started/quickstart.md",
+      "pages/docs/capabilities/auto-routing.md"
+    ],
+    [
+      "pages/docs/getting-started/quickstart.md",
+      "pages/docs/capabilities/prompt-templates.md"
+    ],
+    [
+      "pages/docs/getting-started/quickstart.md",
+      "pages/docs/getting-started/authentication.md"
+    ],
+    [
+      "pages/docs/getting-started/quickstart.md",
+      "pages/docs/getting-started/dashboard.md"
+    ],
+    [
+      "pages/docs/getting-started/quickstart.md",
+      "pages/home.md"
+    ],
+    [
+      "pages/docs/getting-started/rate-limits.md",
+      "pages/docs/capabilities/memory.md"
+    ],
+    [
+      "pages/docs/getting-started/rate-limits.md",
+      "pages/docs/capabilities/rag.md"
+    ],
+    [
+      "pages/docs/getting-started/rate-limits.md",
+      "pages/docs/getting-started/account-checklist.md"
+    ],
+    [
+      "pages/docs/getting-started/rate-limits.md",
+      "pages/docs/getting-started/api-keys.md"
+    ],
+    [
+      "pages/docs/getting-started/rate-limits.md",
+      "pages/docs/reference/usage-api.md"
+    ],
+    [
+      "pages/docs/platform/retry-and-fallback.md",
+      "pages/docs/capabilities/byok.md"
+    ],
+    [
+      "pages/docs/platform/retry-and-fallback.md",
+      "pages/home.md"
+    ],
+    [
+      "pages/docs/platform/retry-and-fallback.md",
+      "pages/sdk/resilience.md"
+    ],
+    [
+      "pages/docs/reference/models.md",
+      "pages/docs/capabilities/auto-routing.md"
+    ],
+    [
+      "pages/docs/reference/models.md",
+      "pages/docs/getting-started/pricing.md"
+    ],
+    [
+      "pages/docs/reference/models.md",
+      "pages/docs/reference/models-list.md"
+    ],
+    [
+      "pages/docs/reference/support.md",
+      "pages/debug/mesh-api.md"
+    ],
+    [
+      "pages/home.md",
+      "pages/docs/getting-started/account-checklist.md"
+    ],
+    [
+      "pages/home.md",
+      "pages/docs/getting-started/authentication.md"
+    ],
+    [
+      "pages/home.md",
+      "pages/docs/getting-started/dashboard.md"
+    ],
+    [
+      "pages/home.md",
+      "pages/docs/getting-started/quickstart.md"
+    ],
+    [
+      "pages/home.md",
+      "pages/docs/platform/retry-and-fallback.md"
+    ],
+    [
+      "pages/home.md",
+      "pages/docs/reference/models-list.md"
+    ],
+    [
+      "pages/sdk/audio.md",
+      "pages/sdk/models.md"
+    ],
+    [
+      "pages/sdk/chat.md",
+      "pages/docs/capabilities/caching.md"
+    ],
+    [
+      "pages/sdk/chat.md",
+      "pages/docs/capabilities/tool-calling.md"
+    ],
+    [
+      "pages/sdk/chat.md",
+      "pages/sdk/templates.md"
+    ],
+    [
+      "pages/sdk/error-handling.md",
+      "pages/sdk/resilience.md"
+    ],
+    [
+      "pages/sdk/error-handling.md",
+      "pages/sdk/streaming.md"
+    ],
+    [
+      "pages/sdk/overview.md",
+      "pages/sdk/audio.md"
+    ],
+    [
+      "pages/sdk/overview.md",
+      "pages/sdk/batches.md"
+    ],
+    [
+      "pages/sdk/overview.md",
+      "pages/sdk/chat.md"
+    ],
+    [
+      "pages/sdk/overview.md",
+      "pages/sdk/compare.md"
+    ],
+    [
+      "pages/sdk/overview.md",
+      "pages/sdk/embeddings.md"
+    ],
+    [
+      "pages/sdk/overview.md",
+      "pages/sdk/error-handling.md"
+    ],
+    [
+      "pages/sdk/overview.md",
+      "pages/sdk/images.md"
+    ],
+    [
+      "pages/sdk/overview.md",
+      "pages/sdk/models.md"
+    ],
+    [
+      "pages/sdk/overview.md",
+      "pages/sdk/rag.md"
+    ],
+    [
+      "pages/sdk/overview.md",
+      "pages/sdk/realtime.md"
+    ],
+    [
+      "pages/sdk/overview.md",
+      "pages/sdk/responses.md"
+    ],
+    [
+      "pages/sdk/overview.md",
+      "pages/sdk/streaming.md"
+    ],
+    [
+      "pages/sdk/overview.md",
+      "pages/sdk/structured-output.md"
+    ],
+    [
+      "pages/sdk/overview.md",
+      "pages/sdk/templates.md"
+    ],
+    [
+      "pages/sdk/overview.md",
+      "pages/sdk/video.md"
+    ],
+    [
+      "pages/sdk/resilience.md",
+      "pages/docs/platform/retry-and-fallback.md"
+    ],
+    [
+      "pages/sdk/resilience.md",
+      "pages/home.md"
+    ],
+    [
+      "pages/sdk/templates.md",
+      "pages/sdk/chat.md"
     ]
   ],
   "last_sync": {
-    "synced_at": "2026-08-03T09:56:31.634871+00:00",
-    "added": 11,
-    "changed": 67,
-    "removed": 0,
-    "pages": 127
+    "synced_at": "2026-08-10T07:50:31.364794+00:00",
+    "added": 61,
+    "changed": 16,
+    "removed": 111,
+    "pages": 77
   }
 }

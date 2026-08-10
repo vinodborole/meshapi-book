@@ -1,3 +1,3 @@
 # /pages/agent — directory listing
 
-- [mcp/](/pages/agent/mcp/index.md)
+- [MCP Server - Mesh API](/pages/agent/mcp.md)

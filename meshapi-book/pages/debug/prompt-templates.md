@@ -1,24 +1,21 @@
 ---
 type: Web Page
-title: Prompt Templates | Mesh API Docs
-description: Variable substitution, 422s, lookup scope, and parameter precedence.
+title: Prompt Templates - Mesh API
+description: Fix templates that don't render, don't resolve, or don't apply the model
+  you expected.
 resource: https://developers.meshapi.ai/debug/prompt-templates
-timestamp: '2026-08-03T09:56:31.586687+00:00'
+timestamp: '2026-08-10T07:50:31.317333+00:00'
 ---
 
-# Prompt Templates
-
-Variable substitution, 422s, lookup scope, and parameter precedence.
-
-Prompt Templates inject `{{variable}}` values into a stored system prompt and
-base messages. See [Prompt Templates](/templates) for the full guide.
+`{{variable}}` values into a stored system prompt and
+base messages. See [Prompt Templates](/docs/capabilities/prompt-templates)for the full guide.
 
 ## 422 — missing variables at inference time
 
-Every `{{variable}}` slot the template renders must be supplied in the
-`variables` object at inference time. A missing one returns a **`422`**. Extra
-variables you send are silently ignored.
+Every`{{variable}}` slot the template renders must be supplied in the
+`variables` object at inference time. A missing one returns a **. Extra variables you send are silently ignored.**
 
+`422`
 ## Variables aren’t being substituted
 
 - Syntax is double-brace: `{{ variable_name }}` (whitespace inside is trimmed, so`{{company}}` ==`{{ company }}` ).
@@ -33,14 +30,15 @@ variables you send are silently ignored.
 
 ## My per-request params aren’t taking effect
 
-Parameters resolve highest-wins: **request body > key defaults > template
-defaults**. If a value isn’t changing, something higher in that order is
-overriding it — e.g. a key default beating your template value.
+Parameters resolve highest-wins:
+**request body > key defaults > template defaults**. If a value isn’t changing, something higher in that order is overriding it — e.g. a key default beating your template value.
 
 ## Still stuck?
 
-See the [Mesh API error reference](/debug/mesh-api#error-code-reference)
-or email **[contact@meshapi.ai](mailto:contact@meshapi.ai)**.
+See the
+[Mesh API error reference](/debug/mesh-api#error-code-reference)or email
+
+**.**
 
 # Citations
 
