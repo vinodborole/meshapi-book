@@ -4,7 +4,7 @@ title: Webhooks - Mesh API
 description: Subscribe to account events and receive signed, retried HTTP callbacks
   in real time.
 resource: https://developers.meshapi.ai/docs/capabilities/webhooks
-timestamp: '2026-08-10T07:50:31.317333+00:00'
+timestamp: '2026-08-17T07:05:01.394536+00:00'
 ---
 
 `POST` the moment they happen, instead of polling the API or the dashboard.
@@ -37,9 +37,11 @@ Once subscribed, matching events start arriving at your endpoint as signed
 Every delivery body is a JSON envelope:
 
 `data` for each event:
-A threshold event’s 
+### Which limit fired: `scope`
 
-`data` carries the values it crossed with (e.g. `spent_usd`/`cap_usd`), not the specific `threshold_pct`/`threshold_usd` you subscribed with — the same event is fanned out to every matching subscription on your endpoint, and each subscription can have its own threshold, so the envelope can’t name “the” one that fired. If you have multiple subscriptions to the same event type at different thresholds, use `data` to compute which of yours applied.
+Spend caps and rate limits are enforced at five scopes, not just per key. `spend_cap.*` and `rate_limit.threshold` therefore carry a `scope` discriminator and a `scope_id` naming the thing the limit is attached to:
+`key_id` is always present and is `null` for every scope except `key`, so a receiver that filters on it keeps working and gets an explicit “this is not about one key” rather than a missing field.
+`spend_cap.approaching` is emitted for the `key` scope only. It is computed from the per-key running total, which is the one counter with a before/after delta available at the moment the total changes; the hierarchy counters have no equivalent. `spend_cap.hit` covers all five scopes.`data` carries the values it crossed with (e.g. `spent_usd`/`cap_usd`), not the specific `threshold_pct`/`threshold_usd` you subscribed with — the same event is fanned out to every matching subscription on your endpoint, and each subscription can have its own threshold, so the envelope can’t name “the” one that fired. If you have multiple subscriptions to the same event type at different thresholds, use `data` to compute which of yours applied. Each subscribed threshold is debounced on its own, so a ladder (say 50%, 80% and 95% on one key) delivers every rung it crosses rather than only the first.
 `data` only ever contains fields your org already has access to — never a plaintext API key or a provider credential.
 ## Verifying webhook signatures
 

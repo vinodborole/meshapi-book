@@ -4,7 +4,7 @@ title: Mesh API - Mesh API
 description: Map a Mesh API symptom to its cause and fix — auth, limits, bad requests,
   and upstream errors.
 resource: https://developers.meshapi.ai/debug/mesh-api
-timestamp: '2026-08-10T07:50:31.317333+00:00'
+timestamp: '2026-08-17T07:05:01.394536+00:00'
 ---
 
 [first-response checklist](#first-response-checklist), then jump to the section that matches your error.
@@ -105,6 +105,25 @@ Common culprits:
 - Wrong type — e.g. `temperature` as a string instead of a number.
 - Out-of-range value — e.g. `max_tokens` above the model’s context window.
 - `response_format` / structured-output schema is malformed. See[Structured Output](/docs/capabilities/structured-output) .
+
+### 400 invalid_api_version — every request fails at once
+
+Distinctive symptom:
+**all**requests fail identically, including ones that worked yesterday, and the body names a version rather than a field.
+
+`error.supported_versions`
+lists what is actually served.
+- **The header is being sent empty.** A client that builds`X-Mesh-Version` conditionally
+and ends up with`X-Mesh-Version:` and no value gets rejected — an empty value is read as
+a malformed pin, not as “no pin”. Omit the header entirely instead.
+- **A typo in the label.** It must be exactly`YYYY-MM` .`2026-8` ,`2026-08-01` , and`v2026-08` are all rejected.
+- **The version is computed rather than fixed.** A label built from the current date will be
+wrong in almost every month; there is no version for most months. Hold it as a constant.
+- **An SDK pinned to a retired version.** Upgrade the SDK, or pass the current label
+explicitly to override its built-in one.
+
+`400` even if the key is wrong too. See
+[API versioning](/docs/reference/api-versioning).
 
 ### Sampling params rejected — temperature / top_p (upstream_error or 422)
 

@@ -5,6 +5,7 @@
 - [Batch API - Mesh API](/pages/docs/capabilities/batch-api.md)
 - [Bring Your Own Keys (BYOK) - Mesh API](/pages/docs/capabilities/byok.md)
 - [Caching - Mesh API](/pages/docs/capabilities/caching.md)
+- [Claude Code - Mesh API](/pages/docs/capabilities/claude-code.md)
 - [Embeddings - Mesh API](/pages/docs/capabilities/embeddings.md)
 - [Image Generation - Mesh API](/pages/docs/capabilities/image-generation.md)
 - [Images & Vision - Mesh API](/pages/docs/capabilities/images-vision.md)

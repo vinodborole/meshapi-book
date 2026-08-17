@@ -4,7 +4,7 @@ title: Video Generation - Mesh API
 description: Generate videos from text, images, video clips, and audio using async
   video generation models.
 resource: https://developers.meshapi.ai/docs/capabilities/video-generation
-timestamp: '2026-08-10T07:50:31.317333+00:00'
+timestamp: '2026-08-17T07:05:01.394536+00:00'
 ---
 
 `POST` endpoint creates a task and returns a task ID immediately. You then poll `GET /v1/video/generations/{id}` until the task reaches a terminal state, or receive the result passively via a webhook callback.
@@ -57,6 +57,18 @@ These limits apply to BytePlus Seedance models. Other providers may differ.
 page rather than a Mesh error envelope. See [Rate Limits & Spend Caps](/docs/getting-started/rate-limits#request-body-size). For public URLs, the file must be reachable by the provider’s servers without authentication. For Base64 input, the data URI must include the MIME type prefix (e.g.
 
 `data:video/mp4;base64,...`).
+### Character consistency on Seedance 2.x
+
+Seedance 2.0 and 2.5 screen reference material for likeness and copyright risk, and will decline a reference that looks like a real person. That screening is the reason a reference which “should” work sometimes produces a video ignoring it. For these models, Mesh registers your reference with the provider’s trusted asset library before generating, so a consistent character survives across shots. This is automatic — send the reference exactly as you would otherwise, as a public URL or a data URI, and Mesh handles registration. Three consequences worth knowing:
+**The first request using a new reference can return**Registration is asynchronous on the provider’s side and has no guaranteed completion time. Retry the same request; the reference is recognised by content, so the retry reuses the in-flight registration rather than starting another one. Subsequent requests with the same image are immediate.
+
+`422` with “still being
+prepared”.
+**References are matched on content, not URL.**The same image behind two different URLs — a re-signed link, a CDN variant — is one reference. Changing the URL of an image you have already used costs nothing.
+
+**If you have seen provider asset IDs elsewhere, they cannot be passed to Mesh; supply the reference as a URL and Mesh registers it under your organisation. Sending one returns**
+
+`asset://` references are not accepted.`422`.
 ### Seedance input support matrix
 
 ### Response

@@ -4,7 +4,7 @@ title: Messages API (Anthropic-compatible) - Mesh API
 description: Point an Anthropic SDK at Mesh and reach every model in the catalog through
   /v1/messages.
 resource: https://developers.meshapi.ai/docs/capabilities/messages-api
-timestamp: '2026-08-10T07:50:31.317333+00:00'
+timestamp: '2026-08-17T07:05:01.394536+00:00'
 ---
 
 `POST /v1/messages` implements Anthropic’s Messages API shape. If your code already
@@ -26,12 +26,25 @@ client works once the base URL is pointed at Mesh.
 - Python (Anthropic SDK)
 - Node.js (Anthropic SDK)
 
+## Streaming
+
+Set`stream: true` for Anthropic’s SSE event sequence — `message_start`,
+`content_block_start`, `content_block_delta`, `content_block_stop`,
+`message_delta`, `message_stop`. Anthropic’s SDKs consume it unchanged.
+Token counts arrive on 
+
+`message_delta`, not `message_start`. Anthropic reports
+input tokens on the first frame; Mesh only knows them once the upstream response
+completes, so `message_start.usage` carries zeros and `message_delta.usage` carries
+the real figures. SDKs that accumulate usage across the stream end up with the
+correct totals.
 ## Request fields
 
 ## Which endpoint should I use?
 
 ## Related
 
+- [Claude Code](/docs/capabilities/claude-code) — point the CLI at Mesh
 - [Tool Calling](/docs/capabilities/tool-calling) — the function-calling cycle
 - [Responses API](/docs/capabilities/responses-api) — reasoning effort and hosted tools
 - [Available Models](/docs/reference/models-list) — every model this endpoint can reach

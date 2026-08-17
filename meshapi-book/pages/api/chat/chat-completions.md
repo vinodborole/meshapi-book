@@ -6,7 +6,7 @@ description: 'OpenAI-compatible chat completions endpoint. Auth: Authorization: 
   variables={...} Rate limits: RPM and RPD enforced per key via Redis fixed-window
   counters Spend cap: enforced if key.spend_cap_usd is set (soft cap)'
 resource: https://developers.meshapi.ai/api/chat/chat-completions
-timestamp: '2026-08-10T07:50:31.317333+00:00'
+timestamp: '2026-08-17T07:05:01.394536+00:00'
 ---
 
 Chat Completions
@@ -30,7 +30,13 @@ Chat Completions
 
 Enter your MeshAPI key (`rsk_...`) — sent as `Authorization: Bearer <key>`.
 
-#### Body
+#### Headers
+
+Dated version of the API contract to pin this request to. Omit it and the request is served under `2026-08` — the oldest supported version, so an existing integration is never moved by a release. A malformed or unsupported value is rejected with `400 invalid_api_version` rather than falling back silently. The version actually served is echoed as `X-Mesh-Version` on every response, including errors.
+
+Available options: 
+
+`2026-08` #### Body
 
 application/json
 

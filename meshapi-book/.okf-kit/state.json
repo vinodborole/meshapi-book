@@ -2,7 +2,7 @@
   "generator": "okf-kit",
   "okf_version": "0.1",
   "root_url": "https://developers.meshapi.ai/",
-  "updated_at": "2026-08-10T07:50:31.381032+00:00",
+  "updated_at": "2026-08-17T07:05:01.424098+00:00",
   "config": {
     "max_depth": 3,
     "max_pages": 200,
@@ -10,7 +10,7 @@
     "respect_robots": true,
     "path_prefix": "/"
   },
-  "page_count": 77,
+  "page_count": 81,
   "pages": [
     {
       "path": "pages/agent/mcp.md",
@@ -22,13 +22,19 @@
       "path": "pages/api/chat/chat-compare.md",
       "url": "https://developers.meshapi.ai/api/chat/chat-compare",
       "title": "Chat Compare - Mesh API",
-      "hash": "3ac6693570a843d05d50a8d5845b735adc6457be312a8cad616dee125369a3ed"
+      "hash": "d2760c7f67f4ec6353d6ba83767b353884f4d28469001fecbf589f8d9f8fe97d"
     },
     {
       "path": "pages/api/chat/chat-completions.md",
       "url": "https://developers.meshapi.ai/api/chat/chat-completions",
       "title": "Chat Completions - Mesh API",
-      "hash": "48b899c99eea4881c07c61274b2a572208c954751931b4ad8e6e62f6f7988f3f"
+      "hash": "6dd4338905d66c56a116963d72b030a17adda23306c016bf526deb4d94253f74"
+    },
+    {
+      "path": "pages/changelog.md",
+      "url": "https://developers.meshapi.ai/changelog",
+      "title": "Changelog - Mesh API",
+      "hash": "ab905831c03f3a359143dcad41789088c6288ec10cc55be878018004f0b3f8fa"
     },
     {
       "path": "pages/debug/auto-routing.md",
@@ -76,7 +82,7 @@
       "path": "pages/debug/mesh-api.md",
       "url": "https://developers.meshapi.ai/debug/mesh-api",
       "title": "Mesh API - Mesh API",
-      "hash": "6178dc91ba9b42912d76dc379bed4ef83fec10c8ddf32c038882f247d7226db4"
+      "hash": "3eed9d73eaa3e6db4c22087722b3c3bedaa629a8f0fb10d781fbe19f352560d5"
     },
     {
       "path": "pages/debug/mesh-cli.md",
@@ -157,6 +163,12 @@
       "hash": "73b81aa3678258a6cbe3cdb0d9f0595d91b003b8f284bf076cad977f84fe03ba"
     },
     {
+      "path": "pages/docs/capabilities/claude-code.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/claude-code",
+      "title": "Claude Code - Mesh API",
+      "hash": "82ee349626f7d054f8037df58cca144a094440f7e55ef29a5002d1df2e208319"
+    },
+    {
       "path": "pages/docs/capabilities/embeddings.md",
       "url": "https://developers.meshapi.ai/docs/capabilities/embeddings",
       "title": "Embeddings - Mesh API",
@@ -184,7 +196,7 @@
       "path": "pages/docs/capabilities/messages-api.md",
       "url": "https://developers.meshapi.ai/docs/capabilities/messages-api",
       "title": "Messages API (Anthropic-compatible) - Mesh API",
-      "hash": "6dcc9fbaee7c6ed8981982fba05c284bebce01218c652ff8be034e472b990d83"
+      "hash": "ece682a7cace571a5a2f8bc4cb856954c8ba5d4b090d831451f42e50b0790480"
     },
     {
       "path": "pages/docs/capabilities/model-compare.md",
@@ -244,7 +256,7 @@
       "path": "pages/docs/capabilities/video-generation.md",
       "url": "https://developers.meshapi.ai/docs/capabilities/video-generation",
       "title": "Video Generation - Mesh API",
-      "hash": "08d8029e79485e1d6ac560ed249c64333fafe386f82c7fe4a6b82ee90848a32e"
+      "hash": "557bd1c9d5d96653b6248938562569ea00633512a0f3c74ad6a421e4c48c6632"
     },
     {
       "path": "pages/docs/capabilities/web-search.md",
@@ -256,7 +268,7 @@
       "path": "pages/docs/capabilities/webhooks.md",
       "url": "https://developers.meshapi.ai/docs/capabilities/webhooks",
       "title": "Webhooks - Mesh API",
-      "hash": "7f1c574a368d0944502f375fdcad5453bf03e4234d4b047a0da14ae994f31a14"
+      "hash": "181bdcc17cc0e6326f70e9c6afc86ba991314ea37b32cf99b10fa7dbd6b9932f"
     },
     {
       "path": "pages/docs/cli/commands.md",
@@ -286,7 +298,7 @@
       "path": "pages/docs/getting-started/api-keys.md",
       "url": "https://developers.meshapi.ai/docs/getting-started/api-keys",
       "title": "API Keys - Mesh API",
-      "hash": "312e47799f5f97420483c16e83b08f79bc90e875875ef470acddcfb5c7af9fb8"
+      "hash": "68473f682721d63c31df46a84427360bed79e0d726b8c1805b32b83cf1c556ed"
     },
     {
       "path": "pages/docs/getting-started/authentication.md",
@@ -325,6 +337,12 @@
       "hash": "d6fd56f39cf3732a8b6a3f955d74b07fb81546c3173ccb007b4fc0bdb1245193"
     },
     {
+      "path": "pages/docs/platform/apigee.md",
+      "url": "https://developers.meshapi.ai/docs/platform/apigee",
+      "title": "Apigee - Mesh API",
+      "hash": "3fc61193658a6a7d36f87296374ba772104487fdb867aac82c523e1c9da9f580"
+    },
+    {
       "path": "pages/docs/platform/architecture.md",
       "url": "https://developers.meshapi.ai/docs/platform/architecture",
       "title": "Architecture - Mesh API",
@@ -340,7 +358,13 @@
       "path": "pages/docs/reference/api-overview.md",
       "url": "https://developers.meshapi.ai/docs/reference/api-overview",
       "title": "API reference - Mesh API",
-      "hash": "5671ee00763d11d70d942fd30f4668c882f3cb398ee87f41748e7424171f68b6"
+      "hash": "6bf246d3e95ca640b1ca54ed3fb20c0a121693df245b2ba9befa4a9943a3a9fe"
+    },
+    {
+      "path": "pages/docs/reference/api-versioning.md",
+      "url": "https://developers.meshapi.ai/docs/reference/api-versioning",
+      "title": "API versioning - Mesh API",
+      "hash": "d93cf33c609490d8eefc429793adae4bed0542b4c05a635518b24229ed68cb8b"
     },
     {
       "path": "pages/docs/reference/models-list.md",
@@ -485,6 +509,10 @@
       "pages/home.md"
     ],
     [
+      "pages/changelog.md",
+      "pages/docs/reference/api-versioning.md"
+    ],
+    [
       "pages/debug/auto-routing.md",
       "pages/debug/mesh-api.md"
     ],
@@ -579,6 +607,10 @@
     [
       "pages/debug/mesh-api.md",
       "pages/docs/getting-started/authentication.md"
+    ],
+    [
+      "pages/debug/mesh-api.md",
+      "pages/docs/reference/api-versioning.md"
     ],
     [
       "pages/debug/mesh-api.md",
@@ -709,6 +741,22 @@
       "pages/docs/reference/usage-api.md"
     ],
     [
+      "pages/docs/capabilities/claude-code.md",
+      "pages/docs/capabilities/messages-api.md"
+    ],
+    [
+      "pages/docs/capabilities/claude-code.md",
+      "pages/docs/getting-started/rate-limits.md"
+    ],
+    [
+      "pages/docs/capabilities/claude-code.md",
+      "pages/docs/platform/retry-and-fallback.md"
+    ],
+    [
+      "pages/docs/capabilities/claude-code.md",
+      "pages/docs/reference/models-list.md"
+    ],
+    [
       "pages/docs/capabilities/embeddings.md",
       "pages/docs/capabilities/rag.md"
     ],
@@ -727,6 +775,10 @@
     [
       "pages/docs/capabilities/memory.md",
       "pages/docs/reference/usage-api.md"
+    ],
+    [
+      "pages/docs/capabilities/messages-api.md",
+      "pages/docs/capabilities/claude-code.md"
     ],
     [
       "pages/docs/capabilities/messages-api.md",
@@ -897,6 +949,10 @@
       "pages/docs/getting-started/rate-limits.md"
     ],
     [
+      "pages/docs/getting-started/api-keys.md",
+      "pages/docs/reference/api-versioning.md"
+    ],
+    [
       "pages/docs/getting-started/authentication.md",
       "pages/docs/capabilities/byok.md"
     ],
@@ -985,6 +1041,42 @@
       "pages/docs/reference/usage-api.md"
     ],
     [
+      "pages/docs/platform/apigee.md",
+      "pages/debug/mesh-api.md"
+    ],
+    [
+      "pages/docs/platform/apigee.md",
+      "pages/docs/capabilities/rag.md"
+    ],
+    [
+      "pages/docs/platform/apigee.md",
+      "pages/docs/capabilities/realtime-audio.md"
+    ],
+    [
+      "pages/docs/platform/apigee.md",
+      "pages/docs/capabilities/video-generation.md"
+    ],
+    [
+      "pages/docs/platform/apigee.md",
+      "pages/docs/reference/api-overview.md"
+    ],
+    [
+      "pages/docs/platform/apigee.md",
+      "pages/docs/reference/models.md"
+    ],
+    [
+      "pages/docs/platform/apigee.md",
+      "pages/docs/reference/support.md"
+    ],
+    [
+      "pages/docs/platform/apigee.md",
+      "pages/docs/reference/usage-api.md"
+    ],
+    [
+      "pages/docs/platform/apigee.md",
+      "pages/sdk/overview.md"
+    ],
+    [
       "pages/docs/platform/retry-and-fallback.md",
       "pages/docs/capabilities/byok.md"
     ],
@@ -995,6 +1087,22 @@
     [
       "pages/docs/platform/retry-and-fallback.md",
       "pages/sdk/resilience.md"
+    ],
+    [
+      "pages/docs/reference/api-overview.md",
+      "pages/docs/reference/api-versioning.md"
+    ],
+    [
+      "pages/docs/reference/api-versioning.md",
+      "pages/docs/getting-started/rate-limits.md"
+    ],
+    [
+      "pages/docs/reference/api-versioning.md",
+      "pages/docs/reference/models.md"
+    ],
+    [
+      "pages/docs/reference/api-versioning.md",
+      "pages/docs/reference/support.md"
     ],
     [
       "pages/docs/reference/models.md",
@@ -1134,10 +1242,10 @@
     ]
   ],
   "last_sync": {
-    "synced_at": "2026-08-10T07:50:31.364794+00:00",
-    "added": 61,
-    "changed": 16,
-    "removed": 111,
-    "pages": 77
+    "synced_at": "2026-08-17T07:05:01.405583+00:00",
+    "added": 4,
+    "changed": 8,
+    "removed": 0,
+    "pages": 81
   }
 }
