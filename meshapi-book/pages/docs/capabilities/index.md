@@ -12,6 +12,7 @@
 - [Memory - Mesh API](/pages/docs/capabilities/memory.md)
 - [Messages API (Anthropic-compatible) - Mesh API](/pages/docs/capabilities/messages-api.md)
 - [Model Compare - Mesh API](/pages/docs/capabilities/model-compare.md)
+- [Notifications - Mesh API](/pages/docs/capabilities/notifications.md)
 - [Prompt Templates - Mesh API](/pages/docs/capabilities/prompt-templates.md)
 - [Files & RAG - Mesh API](/pages/docs/capabilities/rag.md)
 - [Realtime Audio - Mesh API](/pages/docs/capabilities/realtime-audio.md)
@@ -22,4 +23,3 @@
 - [Tool Calling - Mesh API](/pages/docs/capabilities/tool-calling.md)
 - [Video Generation - Mesh API](/pages/docs/capabilities/video-generation.md)
 - [Web Search - Mesh API](/pages/docs/capabilities/web-search.md)
-- [Webhooks - Mesh API](/pages/docs/capabilities/webhooks.md)

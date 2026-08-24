@@ -1,14 +1,18 @@
 ---
 type: Web Page
-title: Webhooks - Mesh API
-description: Subscribe to account events and receive signed, retried HTTP callbacks
-  in real time.
-resource: https://developers.meshapi.ai/docs/capabilities/webhooks
-timestamp: '2026-08-17T07:05:01.394536+00:00'
+title: Notifications - Mesh API
+description: Subscribe to account events and receive them as signed HTTP callbacks
+  or as email, in real time.
+resource: https://developers.meshapi.ai/docs/capabilities/notifications
+timestamp: '2026-08-24T07:07:57.677646+00:00'
 ---
 
-`POST` the moment they happen, instead of polling the API or the dashboard.
-Every delivery is signed with an HMAC so you can verify it came from Mesh, retried on failure with exponential backoff, and logged so you can inspect or manually redeliver any attempt.
+**destinations**. A destination is either a
+
+**webhook endpoint**— a URL of yours, which receives a signed HTTP
+
+`POST` — or an **email recipient**, an address that receives a readable message. Both are configured through the same API and share one delivery log. Webhook deliveries are signed with an HMAC so you can verify they came from Mesh, retried on failure with exponential backoff, and logged so you can inspect or manually redeliver any attempt.
+
 ## Setting up a webhook endpoint
 
 1
@@ -32,6 +36,37 @@ Verify deliveries
 Once subscribed, matching events start arriving at your endpoint as signed 
 
 `POST` requests. See [Verifying webhook signatures](#verifying-webhook-signatures)below before you trust any payload.
+## Sending events to an email address
+
+A destination does not have to be a service. An
+**email recipient**receives the same events as a readable message — no receiver to build, no signature to verify.
+
+1
+
+Add the address
+
+2
+
+Ask us to send the confirmation
+
+**single-use and expires in 24 hours**; re-requesting mints a new one and voids the previous.The token is never returned to you — only the recipient can confirm. That is the point: it means nobody can sign a colleague up for mail they did not agree to.
+
+3
+
+The recipient confirms
+
+They follow the link. Until they do, 
+
+`verified_at` on the channel stays
+`null` and **no events from this catalogue are delivered to that address.**Changing a channel’s`destination` clears the confirmation — consent belongs
+to the address, not to the record — so a re-pointed channel must confirm
+again.`GET /alerts`, which lists every channel:
+**Email recipients cannot take threshold events yet**—
+
+`balance.low`,
+`spend_cap.approaching` and `rate_limit.threshold` each need a value you choose,
+and that is configured per webhook endpoint. Every other event in the catalogue
+can go to an address.
 ## Available events
 
 Every delivery body is a JSON envelope:
@@ -63,9 +98,10 @@ To verify a request:
 
 - **At-least-once, never exactly-once.** The same event can arrive more than once — a retried attempt after a slow-but-successful response, or a manual redelivery.`Mesh-Event-Id` is your idempotency key: dedupe on it before acting on an event a second time.
 - **No ordering guarantee.** Deliveries for different events can arrive out of order. Order on the payload’s`created_at` , not on arrival time.
-- **Success is 2xx only.** Any other response — including a redirect — counts as a failed attempt. Redirects are not followed.
+- **Success is 2xx only** (webhook endpoints). Any other response — including a redirect — counts as a failed attempt. Redirects are not followed.
 - **Retries with backoff.** The first attempt fires immediately. On failure, up to 5 more attempts follow — roughly`30s, 2m, 10m, 1h, 6h` after the previous one (jittered ±20%) — for 6 attempts total. After the last one fails, the delivery is marked`dead` : it stays visible in your delivery log and can be redelivered manually, but is not retried automatically again.
 - **Timeout.** Each attempt waits up to 10 seconds for your endpoint to respond.
+- **For email recipients** , at-least-once, ordering and the retry schedule are the same. A`succeeded` email delivery means the message was**accepted for sending** — it is not a receipt. A message accepted and then bounced by the receiving server is not currently reflected in the log, so treat the log as “we sent it”, not “they got it”.
 
 ## Inspecting deliveries
 
@@ -76,6 +112,13 @@ Redelivering creates a
 **new**delivery row with the same
 
 `event_id` and payload — the original attempt’s history is never modified, so both remain in your log.
+### Sending a test event
+
+**real delivery**: it is signed, retried, dead-lettered and logged exactly like a live event, because a test that took a different code path would not tell you whether your real events will arrive. Your receiver can tell it apart by
+
+`test` on the payload:
+`409`, and an email recipient
+answers `422` — test events go to webhook endpoints.
 ## Rotating your signing secret
 
 **Response:**
@@ -86,4 +129,4 @@ Redelivering creates a
 
 # Citations
 
-1. Source page: https://developers.meshapi.ai/docs/capabilities/webhooks
+1. Source page: https://developers.meshapi.ai/docs/capabilities/notifications

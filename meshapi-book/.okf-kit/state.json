@@ -2,7 +2,7 @@
   "generator": "okf-kit",
   "okf_version": "0.1",
   "root_url": "https://developers.meshapi.ai/",
-  "updated_at": "2026-08-17T07:05:01.424098+00:00",
+  "updated_at": "2026-08-24T07:07:57.698131+00:00",
   "config": {
     "max_depth": 3,
     "max_pages": 200,
@@ -205,6 +205,12 @@
       "hash": "a4227055237312980efafc887414738d03979bc98b7a11e724d234c2d63d2d07"
     },
     {
+      "path": "pages/docs/capabilities/notifications.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/notifications",
+      "title": "Notifications - Mesh API",
+      "hash": "2ca32cb49e7fa51a80f558968504aa7c9422a98a562bb1b54dc36b2c8aa448ad"
+    },
+    {
       "path": "pages/docs/capabilities/prompt-templates.md",
       "url": "https://developers.meshapi.ai/docs/capabilities/prompt-templates",
       "title": "Prompt Templates - Mesh API",
@@ -263,12 +269,6 @@
       "url": "https://developers.meshapi.ai/docs/capabilities/web-search",
       "title": "Web Search - Mesh API",
       "hash": "e23e6e933e286c0f5c5713f515b86eb2bbaed56a67e3e01c8d7b81a6644b013f"
-    },
-    {
-      "path": "pages/docs/capabilities/webhooks.md",
-      "url": "https://developers.meshapi.ai/docs/capabilities/webhooks",
-      "title": "Webhooks - Mesh API",
-      "hash": "181bdcc17cc0e6326f70e9c6afc86ba991314ea37b32cf99b10fa7dbd6b9932f"
     },
     {
       "path": "pages/docs/cli/commands.md",
@@ -1242,10 +1242,10 @@
     ]
   ],
   "last_sync": {
-    "synced_at": "2026-08-17T07:05:01.405583+00:00",
-    "added": 4,
-    "changed": 8,
-    "removed": 0,
+    "synced_at": "2026-08-24T07:07:57.681499+00:00",
+    "added": 1,
+    "changed": 0,
+    "removed": 1,
     "pages": 81
   }
 }
