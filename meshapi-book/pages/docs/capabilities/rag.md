@@ -4,7 +4,7 @@ title: Files & RAG - Mesh API
 description: Upload your documents, search them semantically, and ground AI answers
   in your own content — all through the Mesh API.
 resource: https://developers.meshapi.ai/docs/capabilities/rag
-timestamp: '2026-08-10T07:50:31.317333+00:00'
+timestamp: '2026-08-31T13:14:57.224524+00:00'
 ---
 
 1. **Upload** a file and get a`file_id`
@@ -61,6 +61,25 @@ If`embed` was set to `false` at upload time, or if embedding failed, you can kic
 ## List your files
 
 `files` (array of file status objects), `total`, `limit`, and `offset`.
+## Delete a file
+
+Call`DELETE /v1/files/{file_id}` to remove a file. Its chunks are dropped from
+the search index and the stored file is deleted, so the document stops appearing
+in `POST /v1/files/search` results.
+- curl
+- Python
+- Node.js
+
+**with an empty body — there is no JSON response to parse.**
+
+`204 No Content`
+Deleting is idempotent, so retrying is always safe and converges on a full
+delete. Treat a file as deleted only once you have received a 
+
+`204` — if a call
+fails, repeat it until it succeeds rather than assuming it partly applied.
+Usage records that reference the file stay available afterwards, so your billing
+history and [usage queries](/docs/reference/usage-api)remain complete.
 
 # Citations
 

@@ -3,7 +3,7 @@ type: Web Page
 title: Organizations & Access Control - Mesh API
 description: Manage teams, roles, and usage limits across your organization.
 resource: https://developers.meshapi.ai/docs/getting-started/organizations
-timestamp: '2026-08-10T07:50:31.317333+00:00'
+timestamp: '2026-08-31T13:14:57.224524+00:00'
 ---
 
 [Dashboard](https://app.meshapi.ai).
@@ -60,21 +60,23 @@ Rate-limit responses include a
 `Retry-After` header indicating how long to wait before retrying. If a member or organization spend cap is reached, contact your organization admin to raise it.
 ## Managing orgs through the API
 
-Org management uses a 
+Org governance — invites, roles, teams, ownership — is a 
 
-**user JWT**— your dashboard session token — not an`rsk_` key.
+**dashboard**surface. Those endpoints authenticate a signed-in person and accept neither an`rsk_` key nor a `mak_` admin key, so there is no scripted equivalent. What automation *can*do: manage keys and limits with an[admin key](/docs/getting-started/api-keys), and read usage, spend, and audit logs with an`rsk_` key.
 ### The `/current` model
 
-Every org endpoint is scoped to `/current` — the org identified by your session token. There is **no**:
+Every org endpoint is scoped to `/current` — the org the caller is signed in to. There is **no**:
 
 `{org_id}` path parameter anywhere in the API
 ### Inviting people
 
-Creating a member
+Invite from
+**Dashboard → Members**. Creating a member
+
 *is*creating an invitation —
 
-`POST /v1/orgs/current/members` returns an invitation record, and the person joins when they accept it.
-`/v1/invitations` — they can validate a token, list invitations addressed to them, and accept one.
+`POST /v1/orgs/current/members`, what that screen calls, returns an invitation record, and the person joins when they accept it.
+The invitee accepts through `/v1/invitations` — they can validate a token, list invitations addressed to them, and accept one.
 You cannot assign 
 
 `owner` through an invitation, and you cannot change someone into an owner with a role update — ownership moves only through `POST /v1/orgs/current/transfer-ownership`. Attempting either returns `422`.
@@ -90,7 +92,8 @@ Limits set at org, team, and member level combine with the key’s own limits, a
 
 ## Audit log
 
-Every governance action in your org — key created, member invited, role changed, limit updated — is recorded in an append-only audit trail.`GET /v1/audit-logs.csv` returns the same filtered trail as a CSV download for compliance reviews.
+Every governance action in your org — key created, member invited, role changed, limit updated — is recorded in an append-only audit trail.`rsk_` key inherits the role of whoever owns it.
+`GET /v1/audit-logs.csv` returns the same filtered trail as a CSV download for compliance reviews.
 ## Related
 
 - [API Keys](/docs/getting-started/api-keys) — attaching keys to an org or team

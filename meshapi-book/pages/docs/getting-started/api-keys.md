@@ -4,14 +4,20 @@ title: API Keys - Mesh API
 description: Create and manage inference keys programmatically — labels, limits, spend
   caps, model allow-lists, and org/team assignment.
 resource: https://developers.meshapi.ai/docs/getting-started/api-keys
-timestamp: '2026-08-17T07:05:01.394536+00:00'
+timestamp: '2026-08-31T13:14:57.224524+00:00'
 ---
 
 `rsk_...`) is how your applications authenticate to MeshAPI. It is also the unit that carries **limits, spend caps, model access, and usage attribution**— so managing keys is how you control what each application is allowed to do. This page covers the key-management API. For
 
 *using*a key to authenticate a request, see
 
-[Authentication](/docs/getting-started/authentication).
+[Authentication](/docs/getting-started/authentication). Create an admin key in
+
+**Dashboard → Admin Keys**— it is shown once, carries an explicit permission set, and always expires. See
+
+[Admin Keys](/docs/getting-started/admin-keys)for permissions, scopes, rotation, and revocation. Everything on this page is also available in
+
+**Dashboard → API Keys**without any credential; the API is for automating it.
 
 ## Creating a key
 
@@ -44,7 +50,8 @@ See [Organizations & Teams](/docs/getting-started/organizations)for the surround
 
 ## Related
 
-- [Authentication](/docs/getting-started/authentication) — using a key to make requests
+- [Authentication](/docs/getting-started/authentication) —`rsk_` vs`mak_` , and using a key to make requests
+- [Admin Keys](/docs/getting-started/admin-keys) — the`mak_` credential this page’s API takes
 - [Rate Limits & Spend Caps](/docs/getting-started/rate-limits) — how limits resolve across tiers
 - [API Versioning](/docs/reference/api-versioning) — pinning a key to a dated contract
 - [Organizations & Teams](/docs/getting-started/organizations) — shared billing and pooled limits

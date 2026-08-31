@@ -3,7 +3,7 @@ type: Web Page
 title: Pricing - Mesh API
 description: Understand how usage is measured and charged.
 resource: https://developers.meshapi.ai/docs/getting-started/pricing
-timestamp: '2026-08-10T07:50:31.317333+00:00'
+timestamp: '2026-08-31T13:14:57.224524+00:00'
 ---
 
 **pre-paid credit**model. You load funds into your account balance and we deduct fractions of a cent per token processed. There are no subscriptions or monthly minimums.
@@ -63,9 +63,7 @@ Every API key can have an independent
 
 ## Checking your balance
 
-`GET /v1/balance` accepts **either**a dashboard session token (JWT) or an
-
-`rsk_` API key.
+`GET /v1/balance` is read with your `rsk_` API key.
 `reserved_usd` is the portion held by in-flight operations — realtime sessions, background jobs, video generation — and `available_usd` is `max(0, balance_usd − reserved_usd)`, the amount you can actually spend. `reserved_breakdown` lists only the categories currently holding funds and sums to `reserved_usd`. `message` is non-null only when an error condition is reported.
 With an org context the **org owner’s**balance is returned — all members draw from one billing pool. See the
 

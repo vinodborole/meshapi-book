@@ -4,30 +4,32 @@ title: Usage & Monitoring API - Mesh API
 description: Pull your usage, spend, rate-limit, and balance data programmatically
   — the same numbers the dashboard shows.
 resource: https://developers.meshapi.ai/docs/reference/usage-api
-timestamp: '2026-08-10T07:50:31.317333+00:00'
+timestamp: '2026-08-31T13:14:57.224524+00:00'
 ---
 
-**usage, spend, rate-limit, and balance data programmatically**. Each accepts either a dashboard session token (JWT)
+**usage, spend, rate-limit, and balance data programmatically**. Each authenticates with an
 
-**or**an
-
-`rsk_` API key, so anything you can see in the console you can also pull
-from your own code.
+`rsk_` API key, so anything you
+can see in the console you can also pull from your own code.
 Full request/response schemas and an interactive explorer are in the
 the 
 
 **API Reference**tab. This page is the guide.
 
-Spend-trend and CSV export are part of the dashboard (session-token)
-surface — they take an 
+CSV export (
 
-`org_id` and are not callable with an API key.
-Forecasting / usage prediction is not part of this API yet.
+`GET /v1/usage/events/export`) is dashboard-only — it authenticates
+the signed-in session and is not callable with an API key. Forecasting / usage
+prediction is not part of this API yet.
 ## Authentication & scoping
 
 An API key can only ever read the usage of the key it authenticated with — the
-scope is derived server-side and cannot be widened by request parameters.
+scope is derived server-side and cannot be widened by request parameters. The
+dashboard’s own views are org-scoped instead, which is why 
 
+`org_id` and the
+`org` / `team` / `member` scopes appear in these schemas; from your own code
+they do not apply.
 ## Usage summary — `POST /v1/usage`
 
 Aggregate requests, tokens, and spend, plus a per-model breakdown. Filters are a
@@ -57,8 +59,8 @@ cached). For an API-key caller only the `key` scope is populated.
 `resets_in_seconds`. A limit the key does not explicitly set is shown as the
 system default with `is_default_limit: true` (the TPM default is display-only
 — keys with no explicit `tpm_limit` are not TPM-throttled today). Use `pct` to
-draw a usage bar and warn as it nears 100. Session-token callers instead get the
-`org` / `team` / `member` scopes (and must pass `org_id`).
+draw a usage bar and warn as it nears 100. The dashboard sees the
+`org` / `team` / `member` scopes instead of the single `key` scope.
 ## Balance — `GET /v1/balance`
 
 Current credit balance, plus how much is **reserved**by in-flight operations (realtime sessions, async background jobs, video generation) and therefore not spendable.
@@ -70,12 +72,11 @@ lists only the categories currently holding funds and sums to `reserved_usd`.
 ## Notes
 
 - **Money** is always a decimal string (never a float).
-- **Caching:** summary/events are cached ~60s for session-token callers
-(`?refresh=true` bypasses); API-key reads are computed fresh. Rate-limits and
-balance are never cached.
+- **Caching:** API-key reads are computed fresh; the dashboard’s org-scoped
+summary/events reads are cached ~60s (`?refresh=true` bypasses). Rate-limits
+and balance are never cached.
 - **Errors** use the standard envelope —`401` (bad credential),`403` (not an
-org member, session token),`422` (missing/invalid`org_id` for a session
-token),`429` (rate limited).
+org member),`429` (rate limited).
 
 # Citations
 

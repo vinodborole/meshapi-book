@@ -3,7 +3,7 @@ type: Web Page
 title: Authentication - Mesh API
 description: Securely authenticate your requests to the Mesh API.
 resource: https://developers.meshapi.ai/docs/getting-started/authentication
-timestamp: '2026-08-10T07:50:31.317333+00:00'
+timestamp: '2026-08-31T13:14:57.224524+00:00'
 ---
 
 `Authorization` headers with a **Router Service Key (RSK)**. All requests must be made over HTTPS.
@@ -20,6 +20,19 @@ Your primary method of interacting with the API. These are the keys you create i
 - Per-key **rate limits** — configurable Requests Per Minute (RPM), Requests Per Day (RPD), and Tokens Per Minute (TPM)
 - Optional **default model** — a fallback model used when none is specified in the request
 
+### Admin Keys (`mak_...`)
+
+The credential for **managing**your organisation from a script — creating and updating API keys, reading resolved limits, configuring alerts. Create one in
+
+**Dashboard → Admin Keys**; the plaintext is shown once.
+
+An admin key carries an explicit permission set (
+
+`keys:read`, `keys:write`, `org:read`, `limits:read`, `limits:write`, `alerts:read`, `alerts:write`) and a scope (`self`, `team`, or `org`) — you can grant only what you hold yourself. Rotating one mints a successor and leaves the predecessor valid for a short grace window; revoking takes effect immediately, with no grace. See [Admin Keys](/docs/getting-started/admin-keys)for the full reference.
+
+Inviting members, changing roles, and transferring ownership are 
+
+**not**on the admin-key surface. Those are dashboard actions performed by a signed-in person, by design.
 ### Provider Keys (BYOK)
 
 If you supply your own API keys for upstream providers (OpenAI, Anthropic, AWS Bedrock, Google Vertex AI), Mesh securely stores and uses them on your behalf. You never reference these directly in your API calls — Mesh handles routing transparently. See

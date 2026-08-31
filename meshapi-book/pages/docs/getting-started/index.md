@@ -1,6 +1,7 @@
 # /pages/docs/getting-started — directory listing
 
 - [Account Configuration Checklist - Mesh API](/pages/docs/getting-started/account-checklist.md)
+- [Admin Keys - Mesh API](/pages/docs/getting-started/admin-keys.md)
 - [API Keys - Mesh API](/pages/docs/getting-started/api-keys.md)
 - [Authentication - Mesh API](/pages/docs/getting-started/authentication.md)
 - [Dashboard - Mesh API](/pages/docs/getting-started/dashboard.md)

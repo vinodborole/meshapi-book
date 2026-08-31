@@ -4,7 +4,7 @@ title: Auto Routing - Mesh API
 description: Why the auto router picked the model it did, and what to do when routing
   fails.
 resource: https://developers.meshapi.ai/debug/auto-routing
-timestamp: '2026-08-10T07:50:31.317333+00:00'
+timestamp: '2026-08-31T13:14:57.224524+00:00'
 ---
 
 `model: "auto"`) classifies each request and picks a model for
@@ -31,12 +31,17 @@ Mesh injects the resolved model into the response, but
 - **Non-streaming** — in the body:`x_resolved_model_id` and`x_auto_routed` .
 - **Streaming** (`stream: true` ) — as**HTTP response headers***before* the SSE stream:`X-Auto-Routed` and`X-Resolved-Model-Id` . They are**not** in the body, which is why people miss them on streams.
 
-## It keeps picking a cheap/default model (e.g. gpt-4o-mini)
+## It keeps picking a cheap/default model (e.g. qwen3.5-27b)
 
 The router never blocks a request on its own failure. If the internal classifier times out or returns an unknown model, it
-**falls back to a reliable default**(e.g.
+**falls back to a reliable default**— currently
 
-`openai/gpt-4o-mini`).
+`qwen/qwen3.5-27b`.
+Note this is *not*the classifier model.
+
+`openai/gpt-4o-mini` is what does the
+classifying; the default is what serves the request when classification fails.
+Landing on one is a very different signal from landing on the other.
 Check the response for:
 ## Costs are higher than the resolved model alone
 

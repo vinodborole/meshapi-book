@@ -4,7 +4,7 @@ title: Rate Limits & Spend Caps - Mesh API
 description: How request, token, and spend limits are set across keys, teams, and
   orgs — and how MeshAPI resolves them when several apply at once.
 resource: https://developers.meshapi.ai/docs/getting-started/rate-limits
-timestamp: '2026-08-10T07:50:31.317333+00:00'
+timestamp: '2026-08-31T13:14:57.224524+00:00'
 ---
 
 Exceeding a rate limit returns 
@@ -38,9 +38,9 @@ When more than one scope applies,
 
 Rather than working it out by hand, ask the API:`effective_*` values after the minimum-wins resolution, along with the org, team, and member context that produced them — so you can see *which*tier is binding.
 
-This endpoint takes a 
+This endpoint takes an 
 
-**user JWT**, not an`rsk_` key. See [API Keys](/docs/getting-started/api-keys).
+**admin key**(`mak_...`), not an `rsk_` key — key management and inference are separate credentials. Create one in **Dashboard → Admin Keys**; see[API Keys](/docs/getting-started/api-keys). The same resolved limits are shown on the key’s page in the dashboard.
 ## Request body size
 
 Every endpoint has a hard ceiling of

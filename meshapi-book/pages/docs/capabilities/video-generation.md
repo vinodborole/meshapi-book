@@ -4,7 +4,7 @@ title: Video Generation - Mesh API
 description: Generate videos from text, images, video clips, and audio using async
   video generation models.
 resource: https://developers.meshapi.ai/docs/capabilities/video-generation
-timestamp: '2026-08-17T07:05:01.394536+00:00'
+timestamp: '2026-08-31T13:14:57.224524+00:00'
 ---
 
 `POST` endpoint creates a task and returns a task ID immediately. You then poll `GET /v1/video/generations/{id}` until the task reaches a terminal state, or receive the result passively via a webhook callback.
@@ -32,12 +32,10 @@ The`content` array lets you combine different input modalities. Each item has a 
 Pass a publicly accessible URL or a Base64-encoded image.
 #### Video input (reference video)
 
-**Seedance 2.0 series only.**Pass a publicly accessible URL or a Base64-encoded video.
-
+Pass a publicly accessible URL or a Base64-encoded video.
 #### Audio input
 
-**Seedance 2.0 series only.**Pass a publicly accessible URL or a Base64-encoded audio file.
-
+Pass a publicly accessible URL or a Base64-encoded audio file.
 ### Input size limits
 
 These limits apply to BytePlus Seedance models. Other providers may differ.
@@ -69,6 +67,16 @@ prepared”.
 **If you have seen provider asset IDs elsewhere, they cannot be passed to Mesh; supply the reference as a URL and Mesh registers it under your organisation. Sending one returns**
 
 `asset://` references are not accepted.`422`.
+### Video upscaling
+
+Upscalers take an existing video and return a higher-resolution one. They are a different shape of request: the source video is the
+**only**input, and a text prompt,
+
+`ratio`, `duration` or `frames` are not accepted.
+`GET /v1/video/generations/{id}` for the result exactly as with any other task.
+A 
+
+`video_url` item is **required**. A request carrying only a text prompt returns`400`, because there is nothing to upscale.`resolution` is informational for an upscaler and does not change the output.
 ### Seedance input support matrix
 
 ### Response

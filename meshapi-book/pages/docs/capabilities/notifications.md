@@ -4,7 +4,7 @@ title: Notifications - Mesh API
 description: Subscribe to account events and receive them as signed HTTP callbacks
   or as email, in real time.
 resource: https://developers.meshapi.ai/docs/capabilities/notifications
-timestamp: '2026-08-24T07:07:57.677646+00:00'
+timestamp: '2026-08-31T13:14:57.224524+00:00'
 ---
 
 **destinations**. A destination is either a
@@ -13,6 +13,10 @@ timestamp: '2026-08-24T07:07:57.677646+00:00'
 
 `POST` — or an **email recipient**, an address that receives a readable message. Both are configured through the same API and share one delivery log. Webhook deliveries are signed with an HMAC so you can verify they came from Mesh, retried on failure with exponential backoff, and logged so you can inspect or manually redeliver any attempt.
 
+Alert configuration and the delivery log are management endpoints: they take an
+
+[admin key](/docs/getting-started/admin-keys)(`mak_...`) granted `alerts:read` /
+`alerts:write`, not your `rsk_` inference key. `$MESH_ADMIN_KEY` below is that key.
 ## Setting up a webhook endpoint
 
 1

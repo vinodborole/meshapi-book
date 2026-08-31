@@ -2,7 +2,7 @@
   "generator": "okf-kit",
   "okf_version": "0.1",
   "root_url": "https://developers.meshapi.ai/",
-  "updated_at": "2026-08-24T07:07:57.698131+00:00",
+  "updated_at": "2026-08-31T13:14:57.254827+00:00",
   "config": {
     "max_depth": 3,
     "max_pages": 200,
@@ -10,7 +10,7 @@
     "respect_robots": true,
     "path_prefix": "/"
   },
-  "page_count": 81,
+  "page_count": 83,
   "pages": [
     {
       "path": "pages/agent/mcp.md",
@@ -40,7 +40,7 @@
       "path": "pages/debug/auto-routing.md",
       "url": "https://developers.meshapi.ai/debug/auto-routing",
       "title": "Auto Routing - Mesh API",
-      "hash": "eb65a0d0c8ef6efc82ee5359f6a42d6636ddf774b07fbe6f632e990b9d1c0210"
+      "hash": "c4cb1690e23fded22c82e4970b7e9ddb4db1d103372cf59f6f1e72c0adfdb21f"
     },
     {
       "path": "pages/debug/batch.md",
@@ -142,7 +142,7 @@
       "path": "pages/docs/capabilities/auto-routing.md",
       "url": "https://developers.meshapi.ai/docs/capabilities/auto-routing",
       "title": "Auto Routing - Mesh API",
-      "hash": "dc5476302b0846643d74c3b1d3299855b63dd4841f00c7cf4649125dcf67a11c"
+      "hash": "0b97149362ef566d59a3e7e568318d3108eec1c3b533284932d6389aad41e318"
     },
     {
       "path": "pages/docs/capabilities/batch-api.md",
@@ -208,7 +208,7 @@
       "path": "pages/docs/capabilities/notifications.md",
       "url": "https://developers.meshapi.ai/docs/capabilities/notifications",
       "title": "Notifications - Mesh API",
-      "hash": "2ca32cb49e7fa51a80f558968504aa7c9422a98a562bb1b54dc36b2c8aa448ad"
+      "hash": "534191bb10b2c2ed7b55288b60074a34de832b379e0f174b28bdf0e51192d930"
     },
     {
       "path": "pages/docs/capabilities/prompt-templates.md",
@@ -220,7 +220,7 @@
       "path": "pages/docs/capabilities/rag.md",
       "url": "https://developers.meshapi.ai/docs/capabilities/rag",
       "title": "Files & RAG - Mesh API",
-      "hash": "961be6d75ea55924acc5a4e9369c8cc8047b4733054cb23c5fc2210e4349e10a"
+      "hash": "58d838fd0baff4790dc9f4afb8382290c470f859ee14d060b07205b4814db69c"
     },
     {
       "path": "pages/docs/capabilities/realtime-audio.md",
@@ -262,7 +262,7 @@
       "path": "pages/docs/capabilities/video-generation.md",
       "url": "https://developers.meshapi.ai/docs/capabilities/video-generation",
       "title": "Video Generation - Mesh API",
-      "hash": "557bd1c9d5d96653b6248938562569ea00633512a0f3c74ad6a421e4c48c6632"
+      "hash": "61f7b085ea0c08486e475d12dd0b5995b69a355a3576325a429ebd2d37b09644"
     },
     {
       "path": "pages/docs/capabilities/web-search.md",
@@ -295,16 +295,22 @@
       "hash": "e5552b5e140fdb551e094327555c4c80f1939d0adbd9b676868756e84716cdf8"
     },
     {
+      "path": "pages/docs/getting-started/admin-keys.md",
+      "url": "https://developers.meshapi.ai/docs/getting-started/admin-keys",
+      "title": "Admin Keys - Mesh API",
+      "hash": "51ac006d92b53bbefb49f145b2752e37f998b4caea6174052fd5a8e7423445fd"
+    },
+    {
       "path": "pages/docs/getting-started/api-keys.md",
       "url": "https://developers.meshapi.ai/docs/getting-started/api-keys",
       "title": "API Keys - Mesh API",
-      "hash": "68473f682721d63c31df46a84427360bed79e0d726b8c1805b32b83cf1c556ed"
+      "hash": "367d036143ac61d9821c2c5b57f9588220bd4fcd23e1dccb8793f18eb0c03bd3"
     },
     {
       "path": "pages/docs/getting-started/authentication.md",
       "url": "https://developers.meshapi.ai/docs/getting-started/authentication",
       "title": "Authentication - Mesh API",
-      "hash": "2b961a43211d6f808cf5d001b769a6a818afb036d41175453e2014bb51bfcf4b"
+      "hash": "401c199cfcf7b268ec7a45461ee42a14e42687b2700e093eac29d6082fd40d8d"
     },
     {
       "path": "pages/docs/getting-started/dashboard.md",
@@ -316,13 +322,13 @@
       "path": "pages/docs/getting-started/organizations.md",
       "url": "https://developers.meshapi.ai/docs/getting-started/organizations",
       "title": "Organizations & Access Control - Mesh API",
-      "hash": "b07a98cd45e0c479e744f04348ca03658042dc4597cbcc8a0606f5e17aa892a7"
+      "hash": "e6153e2e0ffb61ce82f27d5cb1b4f8406664fa8f1a4bad1334494acc38788381"
     },
     {
       "path": "pages/docs/getting-started/pricing.md",
       "url": "https://developers.meshapi.ai/docs/getting-started/pricing",
       "title": "Pricing - Mesh API",
-      "hash": "7cf3a2f7afc212b573ce7ae4e20f2b067976dcbbd7d8d4c10cc5fb088886ae97"
+      "hash": "55fc2d94a058b51cf6983fdfff10c17c0300c0f6b3bc96857bcfa6e957704e06"
     },
     {
       "path": "pages/docs/getting-started/quickstart.md",
@@ -334,7 +340,7 @@
       "path": "pages/docs/getting-started/rate-limits.md",
       "url": "https://developers.meshapi.ai/docs/getting-started/rate-limits",
       "title": "Rate Limits & Spend Caps - Mesh API",
-      "hash": "d6fd56f39cf3732a8b6a3f955d74b07fb81546c3173ccb007b4fc0bdb1245193"
+      "hash": "f08f36fb0c22ff678c1be73b9ad99a8b71eb8564ac2226093cabb198eea6a08f"
     },
     {
       "path": "pages/docs/platform/apigee.md",
@@ -352,7 +358,7 @@
       "path": "pages/docs/platform/retry-and-fallback.md",
       "url": "https://developers.meshapi.ai/docs/platform/retry-and-fallback",
       "title": "Retry & Fallback - Mesh API",
-      "hash": "d085998b78185967261e8a9d8c7a3bc135f1b4a11687dc33264c562d1cbe545f"
+      "hash": "030a5eaad3d7f21463c4d37320cd8bf3aa2a39ce96f256c4013101e476b85c75"
     },
     {
       "path": "pages/docs/reference/api-overview.md",
@@ -364,7 +370,13 @@
       "path": "pages/docs/reference/api-versioning.md",
       "url": "https://developers.meshapi.ai/docs/reference/api-versioning",
       "title": "API versioning - Mesh API",
-      "hash": "d93cf33c609490d8eefc429793adae4bed0542b4c05a635518b24229ed68cb8b"
+      "hash": "485960a14847535db626dcb07dc73e7e1959d5a141091b5578b0cc713acec296"
+    },
+    {
+      "path": "pages/docs/reference/errors.md",
+      "url": "https://developers.meshapi.ai/docs/reference/errors",
+      "title": "Error Reference - Mesh API",
+      "hash": "ada5f705beba5265719869d92a77b6aa4fbc7a373fd9ff1f2464c41555465db2"
     },
     {
       "path": "pages/docs/reference/models-list.md",
@@ -388,7 +400,7 @@
       "path": "pages/docs/reference/usage-api.md",
       "url": "https://developers.meshapi.ai/docs/reference/usage-api",
       "title": "Usage & Monitoring API - Mesh API",
-      "hash": "bcfcdd826bf71fd92d5f9aa46299ddf5da7b56515d0b1c992fa556ecd50b9713"
+      "hash": "91917cc339c890c4c99edbf06ee2e3f9aec3165be6f485505da48db7a76eab07"
     },
     {
       "path": "pages/home.md",
@@ -797,8 +809,16 @@
       "pages/docs/reference/models-list.md"
     ],
     [
+      "pages/docs/capabilities/notifications.md",
+      "pages/docs/getting-started/admin-keys.md"
+    ],
+    [
       "pages/docs/capabilities/prompt-templates.md",
       "pages/docs/getting-started/authentication.md"
+    ],
+    [
+      "pages/docs/capabilities/rag.md",
+      "pages/docs/reference/usage-api.md"
     ],
     [
       "pages/docs/capabilities/realtime-audio.md",
@@ -933,8 +953,28 @@
       "pages/docs/getting-started/quickstart.md"
     ],
     [
+      "pages/docs/getting-started/admin-keys.md",
+      "pages/docs/getting-started/api-keys.md"
+    ],
+    [
+      "pages/docs/getting-started/admin-keys.md",
+      "pages/docs/getting-started/authentication.md"
+    ],
+    [
+      "pages/docs/getting-started/admin-keys.md",
+      "pages/docs/getting-started/organizations.md"
+    ],
+    [
+      "pages/docs/getting-started/admin-keys.md",
+      "pages/docs/getting-started/rate-limits.md"
+    ],
+    [
       "pages/docs/getting-started/api-keys.md",
       "pages/docs/getting-started/account-checklist.md"
+    ],
+    [
+      "pages/docs/getting-started/api-keys.md",
+      "pages/docs/getting-started/admin-keys.md"
     ],
     [
       "pages/docs/getting-started/api-keys.md",
@@ -955,6 +995,10 @@
     [
       "pages/docs/getting-started/authentication.md",
       "pages/docs/capabilities/byok.md"
+    ],
+    [
+      "pages/docs/getting-started/authentication.md",
+      "pages/docs/getting-started/admin-keys.md"
     ],
     [
       "pages/docs/getting-started/dashboard.md",
@@ -1078,6 +1122,10 @@
     ],
     [
       "pages/docs/platform/retry-and-fallback.md",
+      "pages/docs/capabilities/auto-routing.md"
+    ],
+    [
+      "pages/docs/platform/retry-and-fallback.md",
       "pages/docs/capabilities/byok.md"
     ],
     [
@@ -1091,6 +1139,10 @@
     [
       "pages/docs/reference/api-overview.md",
       "pages/docs/reference/api-versioning.md"
+    ],
+    [
+      "pages/docs/reference/api-versioning.md",
+      "pages/docs/getting-started/api-keys.md"
     ],
     [
       "pages/docs/reference/api-versioning.md",
@@ -1242,10 +1294,10 @@
     ]
   ],
   "last_sync": {
-    "synced_at": "2026-08-24T07:07:57.681499+00:00",
-    "added": 1,
-    "changed": 0,
-    "removed": 1,
-    "pages": 81
+    "synced_at": "2026-08-31T13:14:57.236838+00:00",
+    "added": 2,
+    "changed": 13,
+    "removed": 0,
+    "pages": 83
   }
 }

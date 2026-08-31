@@ -4,7 +4,7 @@ title: API versioning - Mesh API
 description: Mesh versions its contract by date. Pin a version with X-Mesh-Version
   so a future change to a response shape cannot change it underneath your code.
 resource: https://developers.meshapi.ai/docs/reference/api-versioning
-timestamp: '2026-08-17T07:05:01.394536+00:00'
+timestamp: '2026-08-31T13:14:57.224524+00:00'
 ---
 
 **by date**, not by a number in the URL. The current version is
@@ -36,15 +36,18 @@ new version yourself.
 
 ## Which versions are served
 
-`GET /v1/api-versions` lists them, oldest first. It takes either a dashboard session token
-or an `rsk_` API key.
+`GET /v1/api-versions` lists them, oldest first. It takes your `rsk_` API key.
 `baseline` marks what an unpinned request gets; `latest` marks the newest. They are the same
 entry today and will diverge the moment a second version ships — `latest` is deliberately
 **not**the default.
 
 ## Pinning a whole API key
 
-Rather than sending the header on every request, you can pin the key itself — useful when the calling code is not yours to change, or when a whole integration should sit on one version. Set it when creating a key, or on an existing one:`"api_version": null` to clear it. In the dashboard the same setting is on the key’s
+Rather than sending the header on every request, you can pin the key itself — useful when the calling code is not yours to change, or when a whole integration should sit on one version. Set it when creating a key, or on an existing one — key management takes an
+[admin key](/docs/getting-started/api-keys)(
+
+`mak_...`), not the `rsk_` key being pinned:
+`"api_version": null` to clear it. In the dashboard the same setting is on the key’s
 **API Version**field under
 
 **API Keys**. Resolution order, highest first:

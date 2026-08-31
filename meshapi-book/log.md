@@ -39,3 +39,7 @@
 ## 2026-08-24
 
 - Sync: +1 added, ~0 changed, -1 removed.
+
+## 2026-08-31
+
+- Sync: +2 added, ~13 changed, -0 removed.
