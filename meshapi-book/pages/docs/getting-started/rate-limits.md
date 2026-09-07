@@ -4,7 +4,7 @@ title: Rate Limits & Spend Caps - Mesh API
 description: How request, token, and spend limits are set across keys, teams, and
   orgs — and how MeshAPI resolves them when several apply at once.
 resource: https://developers.meshapi.ai/docs/getting-started/rate-limits
-timestamp: '2026-08-31T13:14:57.224524+00:00'
+timestamp: '2026-09-07T12:05:08.101958+00:00'
 ---
 
 Exceeding a rate limit returns 
@@ -29,6 +29,18 @@ Limits exist at five scopes:
 4. **Team**
 5. **Organization**
 
+**every request the key has ever made**. The scopes above it count only the
+
+**last 30 days**, so spend there ages out on a rolling basis and there is no monthly reset date.
+
+### Which person a member limit applies to
+
+A member limit is attributed to
+**whoever created the key**, not whoever sends the request. An inference request carries a key and nothing else, so the API cannot tell two people apart. The key is the identity. If several people share one key, all of their usage counts against the creator’s member limit, and the other people’s own limits do nothing at all. When that one limit runs out, the key returns
+
+`402` for everyone holding it.
+A key also keeps counting against its creator’s limit after that person leaves
+your organization, until someone revokes the key.
 ### Minimum wins
 
 When more than one scope applies,

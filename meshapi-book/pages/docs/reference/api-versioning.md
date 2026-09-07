@@ -4,12 +4,12 @@ title: API versioning - Mesh API
 description: Mesh versions its contract by date. Pin a version with X-Mesh-Version
   so a future change to a response shape cannot change it underneath your code.
 resource: https://developers.meshapi.ai/docs/reference/api-versioning
-timestamp: '2026-08-31T13:14:57.224524+00:00'
+timestamp: '2026-09-07T12:05:08.101958+00:00'
 ---
 
-**by date**, not by a number in the URL. The current version is
+**by date**, not by a number in the URL. The newest version is
 
-`2026-08`, and you select one by sending a header:
+`2026-09`; if you send nothing you get `2026-08`. You select one with a header:
 `/v1` in the path is **not**a version. It is a stable namespace and it is not going to change —
 
 `/v2` is not planned. Everything about the shape of a request or response is
@@ -37,9 +37,14 @@ new version yourself.
 ## Which versions are served
 
 `GET /v1/api-versions` lists them, oldest first. It takes your `rsk_` API key.
-`baseline` marks what an unpinned request gets; `latest` marks the newest. They are the same
-entry today and will diverge the moment a second version ships — `latest` is deliberately
-**not**the default.
+`baseline` marks what an unpinned request gets; `latest` marks the newest. They are now two
+different entries — `latest` is deliberately **not**the default, so shipping
+
+`2026-09` did
+not move anyone.
+`capabilities` lists behaviour a version *adds*, and it is cumulative: everything introduced at or before that label. Unlike a change to a response shape, a capability is something you can only use once you pin for it — see
+
+[What each version added](#what-each-version-added).
 
 ## Pinning a whole API key
 
@@ -109,14 +114,29 @@ logs.
 Nothing is deprecated today, so nothing currently emits them.
 If you read these from browser JavaScript, note they are already in the CORS
 `Access-Control-Expose-Headers` allowlist along with `X-Mesh-Version`.
+## What each version added
+
+Poll a video task by your request id
+
+A video generation task can be fetched with the 
+
+`request_id` Mesh returned for the request
+that created it, as well as with the provider task id. Video task bodies also carry a
+`request_id` field. Capability: `video.poll_by_request_id`. See
+[Video generation](/docs/capabilities/video-generation#poll-for-the-result).
+The baseline contract
+
+The contract as it stood when dated versions were introduced. This is what you are served
+if you send no header and have set no pin.
+
 ## Support window
 
-Every version`GET /v1/api-versions` lists is served. `2026-08` is currently the only one, so
-nothing is scheduled for retirement and no pin can go stale today.
-A version is never withdrawn without notice. The retirement policy — how long a version is
-served after a newer one ships, and how much notice a sunset gets — is published before there
-is a second version to move between. If you need those numbers to commit to a pin now,
-[contact support](/docs/reference/support).
+Every version`GET /v1/api-versions` lists is served. Both `2026-08` and `2026-09` are `ga`,
+nothing is scheduled for retirement, and no pin can go stale today.
+A version is never withdrawn without notice. When one is scheduled for retirement it starts
+returning `Deprecation` and `Sunset` response headers, so your client can detect it without
+reading this page. If you need the retirement policy’s exact numbers before committing to a
+pin, [contact support](/docs/reference/support).
 
 # Citations
 

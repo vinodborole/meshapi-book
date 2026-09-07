@@ -2,7 +2,7 @@
   "generator": "okf-kit",
   "okf_version": "0.1",
   "root_url": "https://developers.meshapi.ai/",
-  "updated_at": "2026-08-31T13:14:57.254827+00:00",
+  "updated_at": "2026-09-07T12:05:08.122597+00:00",
   "config": {
     "max_depth": 3,
     "max_pages": 200,
@@ -22,19 +22,19 @@
       "path": "pages/api/chat/chat-compare.md",
       "url": "https://developers.meshapi.ai/api/chat/chat-compare",
       "title": "Chat Compare - Mesh API",
-      "hash": "d2760c7f67f4ec6353d6ba83767b353884f4d28469001fecbf589f8d9f8fe97d"
+      "hash": "7d750b028982c939606c013a52aeacb06f7b7e3fd7390986eff32630ae51c946"
     },
     {
       "path": "pages/api/chat/chat-completions.md",
       "url": "https://developers.meshapi.ai/api/chat/chat-completions",
       "title": "Chat Completions - Mesh API",
-      "hash": "6dd4338905d66c56a116963d72b030a17adda23306c016bf526deb4d94253f74"
+      "hash": "ddfe6e44d2a7c411418ce9523a2a775eef0fc8136d30b52d0aa52eab3379b2be"
     },
     {
       "path": "pages/changelog.md",
       "url": "https://developers.meshapi.ai/changelog",
       "title": "Changelog - Mesh API",
-      "hash": "ab905831c03f3a359143dcad41789088c6288ec10cc55be878018004f0b3f8fa"
+      "hash": "3ca6ba7916f6e2436e8396c136d8cc48ed0afcd611cfe3a920af80c56c656ba4"
     },
     {
       "path": "pages/debug/auto-routing.md",
@@ -130,7 +130,7 @@
       "path": "pages/debug/video-generation.md",
       "url": "https://developers.meshapi.ai/debug/video-generation",
       "title": "Video Generation - Mesh API",
-      "hash": "473f29ddc448c4c9d764b26529a478515cf4dde73958fe79d66c50afffbfefe4"
+      "hash": "75e9af15e9ff18127f3b179b8ef614653213c667052b8d7c1b204502d67e12d3"
     },
     {
       "path": "pages/docs/capabilities/audio.md",
@@ -262,7 +262,7 @@
       "path": "pages/docs/capabilities/video-generation.md",
       "url": "https://developers.meshapi.ai/docs/capabilities/video-generation",
       "title": "Video Generation - Mesh API",
-      "hash": "61f7b085ea0c08486e475d12dd0b5995b69a355a3576325a429ebd2d37b09644"
+      "hash": "0c5cbb348c1b0942f2b341dc410faefc25b935a3115693aadded5b5e68eefd45"
     },
     {
       "path": "pages/docs/capabilities/web-search.md",
@@ -340,7 +340,7 @@
       "path": "pages/docs/getting-started/rate-limits.md",
       "url": "https://developers.meshapi.ai/docs/getting-started/rate-limits",
       "title": "Rate Limits & Spend Caps - Mesh API",
-      "hash": "f08f36fb0c22ff678c1be73b9ad99a8b71eb8564ac2226093cabb198eea6a08f"
+      "hash": "29b8cce2e5afa7cd989f510921e7eba0cd4552518e37243157f5b3a04f8092dd"
     },
     {
       "path": "pages/docs/platform/apigee.md",
@@ -370,19 +370,19 @@
       "path": "pages/docs/reference/api-versioning.md",
       "url": "https://developers.meshapi.ai/docs/reference/api-versioning",
       "title": "API versioning - Mesh API",
-      "hash": "485960a14847535db626dcb07dc73e7e1959d5a141091b5578b0cc713acec296"
+      "hash": "89b1e5f3548c6e67811c37eda9dbac66f29e26a7fd7e94e96688e2a64def2ba0"
     },
     {
       "path": "pages/docs/reference/errors.md",
       "url": "https://developers.meshapi.ai/docs/reference/errors",
       "title": "Error Reference - Mesh API",
-      "hash": "ada5f705beba5265719869d92a77b6aa4fbc7a373fd9ff1f2464c41555465db2"
+      "hash": "668eaf03d85a200021410df516d2c8fc93d6e24afbd94cf523a55d6a65670f2a"
     },
     {
       "path": "pages/docs/reference/models-list.md",
       "url": "https://developers.meshapi.ai/docs/reference/models-list",
       "title": "Every model, one transparent price list. - Mesh API",
-      "hash": "5a66b5351402d4063e6c22752ff782d6f541bc24dae21dc44cfadffc76b0bd2f"
+      "hash": "2da593fff98a336e50d00060c2d78727d52fc0e5da1b7f5bf4b4c93065ffa079"
     },
     {
       "path": "pages/docs/reference/models.md",
@@ -460,7 +460,7 @@
       "path": "pages/sdk/overview.md",
       "url": "https://developers.meshapi.ai/sdk/overview",
       "title": "SDK Reference - Mesh API",
-      "hash": "a928e3f6cd673505421278df0cac0b29cac68d5302a5a5a853324a757a3e1455"
+      "hash": "9984d88ed7df4c8de2e612e6f00e80e814f238cc63047a77988ee46a3da8863c"
     },
     {
       "path": "pages/sdk/rag.md",
@@ -519,6 +519,10 @@
     [
       "pages/agent/mcp.md",
       "pages/home.md"
+    ],
+    [
+      "pages/changelog.md",
+      "pages/docs/capabilities/video-generation.md"
     ],
     [
       "pages/changelog.md",
@@ -866,11 +870,35 @@
     ],
     [
       "pages/docs/capabilities/video-generation.md",
+      "pages/debug/video-generation.md"
+    ],
+    [
+      "pages/docs/capabilities/video-generation.md",
+      "pages/docs/getting-started/authentication.md"
+    ],
+    [
+      "pages/docs/capabilities/video-generation.md",
       "pages/docs/getting-started/pricing.md"
     ],
     [
       "pages/docs/capabilities/video-generation.md",
       "pages/docs/getting-started/rate-limits.md"
+    ],
+    [
+      "pages/docs/capabilities/video-generation.md",
+      "pages/docs/reference/api-versioning.md"
+    ],
+    [
+      "pages/docs/capabilities/video-generation.md",
+      "pages/docs/reference/errors.md"
+    ],
+    [
+      "pages/docs/capabilities/video-generation.md",
+      "pages/docs/reference/models-list.md"
+    ],
+    [
+      "pages/docs/capabilities/video-generation.md",
+      "pages/docs/reference/models.md"
     ],
     [
       "pages/docs/capabilities/web-search.md",
@@ -1142,6 +1170,10 @@
     ],
     [
       "pages/docs/reference/api-versioning.md",
+      "pages/docs/capabilities/video-generation.md"
+    ],
+    [
+      "pages/docs/reference/api-versioning.md",
       "pages/docs/getting-started/api-keys.md"
     ],
     [
@@ -1159,6 +1191,10 @@
     [
       "pages/docs/reference/models.md",
       "pages/docs/capabilities/auto-routing.md"
+    ],
+    [
+      "pages/docs/reference/models.md",
+      "pages/docs/capabilities/video-generation.md"
     ],
     [
       "pages/docs/reference/models.md",
@@ -1294,9 +1330,9 @@
     ]
   ],
   "last_sync": {
-    "synced_at": "2026-08-31T13:14:57.236838+00:00",
-    "added": 2,
-    "changed": 13,
+    "synced_at": "2026-09-07T12:05:08.109811+00:00",
+    "added": 0,
+    "changed": 10,
     "removed": 0,
     "pages": 83
   }

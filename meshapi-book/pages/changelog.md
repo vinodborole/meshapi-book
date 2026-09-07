@@ -3,12 +3,42 @@ type: Web Page
 title: Changelog - Mesh API
 description: New endpoints, breaking changes, deprecations, and SDK releases.
 resource: https://developers.meshapi.ai/changelog
-timestamp: '2026-08-17T07:05:01.394536+00:00'
+timestamp: '2026-09-07T12:05:08.101958+00:00'
 ---
 
 Subscribe at 
 
 [to hear about deprecations and breaking changes without checking back. Every entry that removes or changes an existing shape is tagged](/changelog/rss.xml)`/changelog/rss.xml`**Deprecated**or**Changed**— see[API versioning](/docs/reference/api-versioning)for what those mean and how to pin a version so a change cannot reach your code unannounced.
+## Poll a video task with the id you already have
+
+Version`2026-09` is out. Pin it and `GET /v1/video/generations/{id}` accepts the
+`request_id` Mesh returned when you created the task, as well as the provider task id:`request_id`
+field.Two things worth knowing before you switch:
+- Tasks created before 20 August 2026 predate the recorded request id and stay reachable by task id only.
+- `2026-08` is still the baseline, so an unpinned request is unaffected. Send the header
+(or[pin it on your key](/docs/reference/api-versioning#pinning-a-whole-api-key) ) to use
+this.
+
+`GET /v1/api-versions` now reports a `capabilities` list per version, so you can check
+what a version gives you without reading the changelog. See
+[API versioning](/docs/reference/api-versioning).
+
+## A video input a model cannot take is now a `422`
+
+Send a `content` item whose role the serving model does not accept — a closing frame to
+a model with no concept of one, a reference video to a model that takes only images —
+and the submit is now rejected with `422` naming the item — by its position in
+`content` on most models, by role alone on the rest.It used to be dropped. The generation ran without it and you were billed for a video
+built from inputs you did not send.
+**Top-level parameters are unchanged.**A tunable the model does not implement is still accepted and reported in
+
+`unsupported_params` — a dropped parameter still gives you the
+video you asked for, tuned differently, while a dropped asset changes what was generated.
+**This applies on every API version.**It is a refusal, not a response shape, so pinning
+
+`X-Mesh-Version` does not hold the old behaviour.Check `supports_video_first_frame` and its five siblings on `GET /v1/models` before you
+send, and `GET /v1/models/{model_id}/providers` to see whether any route takes the input.Full detail: [Finding out what a model accepts](/docs/capabilities/video-generation#finding-out-what-a-model-accepts).
+
 ## Pin the API contract to a date
 
 Mesh now versions its public contract

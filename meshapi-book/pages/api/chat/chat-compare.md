@@ -12,7 +12,7 @@ description: Send one conversation to several models at once and get their answe
   so a comparison across five models costs five completions plus the judge, and one
   model failing does not fail the request — that result reports its own error.
 resource: https://developers.meshapi.ai/api/chat/chat-compare
-timestamp: '2026-08-17T07:05:01.394536+00:00'
+timestamp: '2026-09-07T12:05:08.101958+00:00'
 ---
 
 # Chat Compare
@@ -34,13 +34,13 @@ request — that result reports its own error.
 
 #### Authorizations
 
-Enter your MeshAPI key (`rsk_...`) — sent as `Authorization: Bearer <key>`.
+Enter your MeshAPI key (`rsk_...`) or, for the admin-keys endpoints, a dashboard session token — sent as `Authorization: Bearer <token>`.
 
 #### Headers
 
 Dated version of the API contract to pin this request to. Omit it and the request is served under `2026-08` — the oldest supported version, so an existing integration is never moved by a release. A malformed or unsupported value is rejected with `400 invalid_api_version` rather than falling back silently. The version actually served is echoed as `X-Mesh-Version` on every response, including errors.
 
-`2026-08` #### Body
+`2026-08`, `2026-09` #### Body
 
 `1 - 10` elements`0 <= x <= 2``x >= 1`
 #### Response
