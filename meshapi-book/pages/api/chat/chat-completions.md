@@ -6,7 +6,7 @@ description: 'OpenAI-compatible chat completions endpoint. Auth: Authorization: 
   variables={...} Rate limits: RPM and RPD enforced per key via Redis fixed-window
   counters Spend cap: enforced if key.spend_cap_usd is set (soft cap)'
 resource: https://developers.meshapi.ai/api/chat/chat-completions
-timestamp: '2026-09-07T12:05:08.101958+00:00'
+timestamp: '2026-09-14T12:21:17.301704+00:00'
 ---
 
 # Chat Completions
@@ -21,7 +21,7 @@ Dated version of the API contract to pin this request to. Omit it and the reques
 
 `2026-08`, `2026-09` #### Body
 
-`0 <= x <= 2``x >= 1``0 <= x <= 1``-2 <= x <= 2``-2 <= x <= 2``high`, `medium`, `low`, `none` OpenRouter-compatible `reasoning` object (supersedes `reasoning_effort`).
+`0 <= x <= 2``x >= 1``0 <= x <= 1``-2 <= x <= 2``-2 <= x <= 2``high`, `medium`, `low`, `none` Structured `reasoning` object (supersedes `reasoning_effort`).
 
 `effort` and `max_tokens` are mutually exclusive: effort is the
 OpenAI/Grok dial, max_tokens the Anthropic/Gemini/Qwen thinking budget.
@@ -29,7 +29,10 @@ OpenAI/Grok dial, max_tokens the Anthropic/Gemini/Qwen thinking budget.
 `enabled: true` alone means "reason at defaults"; `false` disables.
 `context`/`mode` are gpt-5.x-only passthroughs.
 
-`256``text`, `image` `text`, `audio`, `image` `x > 0`
+A stable, anonymised identifier for the end user making this request, recorded on the usage row and available as a filter and a group-by dimension in the usage API. Supersedes the deprecated `user` field. Use an opaque id, not an email address or a name.
+
+`256``256``text`, `image` `text`, `audio`, `image` `x > 0`
+Your own labels for this request, echoed back on the usage row and available as a filter and a group-by dimension in the usage API. String keys to string values. Never put personal or sensitive data here — tags are stored with the usage record and are not redacted.
 
 # Citations
 

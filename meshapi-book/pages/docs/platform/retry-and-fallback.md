@@ -5,7 +5,7 @@ description: How Mesh API automatically retries and reroutes requests when an up
   provider returns a transient error — which status codes trigger it, and how same-provider
   retries, cross-provider fallback, and model fallback fit together.
 resource: https://developers.meshapi.ai/docs/platform/retry-and-fallback
-timestamp: '2026-08-31T13:14:57.224524+00:00'
+timestamp: '2026-09-14T12:21:17.301704+00:00'
 ---
 
 `503`, an overloaded region, a brief rate-limit
@@ -23,10 +23,21 @@ A typical setup: let the
 
 **gateway**absorb provider-level blips for a model transparently, with no code change, and use the
 
-**SDK fallback chain**to switch to an entirely different model if the primary is degraded everywhere. Neither layer retries streaming responses. See
+**SDK fallback chain**to switch to an entirely different model if the primary is degraded everywhere. The SDK never retries a stream; the gateway protects one only until its first token is sent, as described below. See
 
 [SDK Resilience](/sdk/resilience).
 
+**Every other endpoint runs this policy.**Chat completions,
+
+`/v1/responses`,
+embeddings, and image, video and audio generation all resolve your key’s
+routing policy, retry, plan cross-provider and cross-model fallback targets,
+and share the same circuit breaker.One consequence is worth knowing before it appears on an invoice: because
+cross-
+**model**fallback applies to these endpoints too, an image, video or embeddings request can be served by a different model than the one you asked for, and is billed at the rate of the model that actually served it. It is not silent — the response carries
+
+`X-Mesh-Routing-Model` naming the substitute, and
+the response body’s own `model` field always reports what served the request.
 ## What happens when a request fails
 
 When an upstream returns an error, the gateway responds in escalating steps. It only moves to the next step if the previous one couldn’t recover:

@@ -12,7 +12,7 @@ description: Send one conversation to several models at once and get their answe
   so a comparison across five models costs five completions plus the judge, and one
   model failing does not fail the request — that result reports its own error.
 resource: https://developers.meshapi.ai/api/chat/chat-compare
-timestamp: '2026-09-07T12:05:08.101958+00:00'
+timestamp: '2026-09-14T12:21:17.301704+00:00'
 ---
 
 # Chat Compare
@@ -43,6 +43,11 @@ Dated version of the API contract to pin this request to. Omit it and the reques
 `2026-08`, `2026-09` #### Body
 
 `1 - 10` elements`0 <= x <= 2``x >= 1`
+Your own labels for this request, echoed back on the usage row and available as a filter and a group-by dimension in the usage API. String keys to string values. Never put personal or sensitive data here — tags are stored with the usage record and are not redacted.
+
+A stable, anonymised identifier for the end user making this request, recorded on the usage row and available as a filter and a group-by dimension in the usage API. Supersedes the deprecated `user` field. Use an opaque id, not an email address or a name.
+
+`256`
 #### Response
 
 Per-model results plus an optional synthesized comparison (JSON), or an SSE stream when stream=true

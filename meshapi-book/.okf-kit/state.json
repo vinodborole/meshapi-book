@@ -2,7 +2,7 @@
   "generator": "okf-kit",
   "okf_version": "0.1",
   "root_url": "https://developers.meshapi.ai/",
-  "updated_at": "2026-09-07T12:05:08.122597+00:00",
+  "updated_at": "2026-09-14T12:21:17.325923+00:00",
   "config": {
     "max_depth": 3,
     "max_pages": 200,
@@ -22,19 +22,19 @@
       "path": "pages/api/chat/chat-compare.md",
       "url": "https://developers.meshapi.ai/api/chat/chat-compare",
       "title": "Chat Compare - Mesh API",
-      "hash": "7d750b028982c939606c013a52aeacb06f7b7e3fd7390986eff32630ae51c946"
+      "hash": "4ae9d27c13b2ddaf77fd0f37e43beab5326ec39b4f1d5cddd7235da6f7949adc"
     },
     {
       "path": "pages/api/chat/chat-completions.md",
       "url": "https://developers.meshapi.ai/api/chat/chat-completions",
       "title": "Chat Completions - Mesh API",
-      "hash": "ddfe6e44d2a7c411418ce9523a2a775eef0fc8136d30b52d0aa52eab3379b2be"
+      "hash": "69ad8c1d506ff508d3aa8e6217d0bebd8bb1cc5ac5ff23faf0790abe1abfaaed"
     },
     {
       "path": "pages/changelog.md",
       "url": "https://developers.meshapi.ai/changelog",
       "title": "Changelog - Mesh API",
-      "hash": "3ca6ba7916f6e2436e8396c136d8cc48ed0afcd611cfe3a920af80c56c656ba4"
+      "hash": "5f60a39104e23bd95d53aca6a1c1a4f91e5c015d0d56b13e3db1caf8e28d1b74"
     },
     {
       "path": "pages/debug/auto-routing.md",
@@ -160,7 +160,7 @@
       "path": "pages/docs/capabilities/caching.md",
       "url": "https://developers.meshapi.ai/docs/capabilities/caching",
       "title": "Caching - Mesh API",
-      "hash": "73b81aa3678258a6cbe3cdb0d9f0595d91b003b8f284bf076cad977f84fe03ba"
+      "hash": "7e7276aa4ef85b859961f3e087774cba58796b77e79332daf56eb079e6e19471"
     },
     {
       "path": "pages/docs/capabilities/claude-code.md",
@@ -358,7 +358,7 @@
       "path": "pages/docs/platform/retry-and-fallback.md",
       "url": "https://developers.meshapi.ai/docs/platform/retry-and-fallback",
       "title": "Retry & Fallback - Mesh API",
-      "hash": "030a5eaad3d7f21463c4d37320cd8bf3aa2a39ce96f256c4013101e476b85c75"
+      "hash": "73e945bf26260a12355b1d9b9224d8b0b9b7f135496135d67eb829dddb5443d0"
     },
     {
       "path": "pages/docs/reference/api-overview.md",
@@ -522,11 +522,35 @@
     ],
     [
       "pages/changelog.md",
+      "pages/docs/capabilities/audio.md"
+    ],
+    [
+      "pages/changelog.md",
       "pages/docs/capabilities/video-generation.md"
     ],
     [
       "pages/changelog.md",
       "pages/docs/reference/api-versioning.md"
+    ],
+    [
+      "pages/changelog.md",
+      "pages/sdk/error-handling.md"
+    ],
+    [
+      "pages/changelog.md",
+      "pages/sdk/overview.md"
+    ],
+    [
+      "pages/changelog.md",
+      "pages/sdk/realtime.md"
+    ],
+    [
+      "pages/changelog.md",
+      "pages/sdk/streaming.md"
+    ],
+    [
+      "pages/changelog.md",
+      "pages/sdk/structured-output.md"
     ],
     [
       "pages/debug/auto-routing.md",
@@ -1330,9 +1354,9 @@
     ]
   ],
   "last_sync": {
-    "synced_at": "2026-09-07T12:05:08.109811+00:00",
+    "synced_at": "2026-09-14T12:21:17.308700+00:00",
     "added": 0,
-    "changed": 10,
+    "changed": 5,
     "removed": 0,
     "pages": 83
   }
