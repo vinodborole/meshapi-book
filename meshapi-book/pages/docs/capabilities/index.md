@@ -17,6 +17,8 @@
 - [Files & RAG - Mesh API](/pages/docs/capabilities/rag.md)
 - [Realtime Audio - Mesh API](/pages/docs/capabilities/realtime-audio.md)
 - [Responses API - Mesh API](/pages/docs/capabilities/responses-api.md)
+- [Routing Algorithms - Mesh API](/pages/docs/capabilities/routing-algorithms.md)
+- [Service Tiers - Mesh API](/pages/docs/capabilities/service-tiers.md)
 - [Speech to Text - Mesh API](/pages/docs/capabilities/speech-to-text.md)
 - [Structured Output - Mesh API](/pages/docs/capabilities/structured-output.md)
 - [Text to Speech - Mesh API](/pages/docs/capabilities/text-to-speech.md)

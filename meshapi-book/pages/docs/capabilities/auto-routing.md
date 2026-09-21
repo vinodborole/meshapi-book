@@ -3,11 +3,15 @@ type: Web Page
 title: Auto Routing - Mesh API
 description: Dynamically route requests to the best model.
 resource: https://developers.meshapi.ai/docs/capabilities/auto-routing
-timestamp: '2026-08-31T13:14:57.224524+00:00'
+timestamp: '2026-09-21T12:28:28.555532+00:00'
 ---
 
-`model: "auto"` on any inference request. The gateway will classify the request using an internal LLM and select the most appropriate model from the live registry, forwarding the request transparently.
+`model: "auto"` on any inference request. The gateway classifies the request, selects the most appropriate model from the live registry, and forwards the request transparently.
 This requires no client-side logic beyond setting the `model` field to `"auto"`.
+For how the pick is actually made — the four algorithms, the quality/cost/latency
+scoring formula, and the `weight_profile` knob that shifts it — see
+[Routing Algorithms](/docs/capabilities/routing-algorithms).
+
 ## Supported endpoints
 
 Auto Routing is supported across the following inference endpoints:
@@ -20,6 +24,18 @@ Just replace your specific model ID with`"auto"`:
 - Go SDK
 - Java SDK
 
+## Steering the choice
+
+By default the router balances quality, cost and latency. Send`weight_profile` to
+lean it one way for a single request:
+`quality_first`, `balanced` (default), `cost_first` and `latency_first` are the four
+profiles. You can also set a default on the API key, or on your team or organization,
+and still override it per request — see
+[Routing Algorithms](/docs/capabilities/routing-algorithms#choosing-a-profile)for the weights behind each profile and the full precedence order.
+
+`weight_profile` applies to `POST /v1/chat/completions`. An unrecognised name falls
+back to `balanced` rather than erroring, so check the spelling if a profile doesn’t
+seem to be taking effect.
 ## Response metadata
 
 When a request is automatically routed, Mesh API injects metadata into the response so you know which model was actually used.

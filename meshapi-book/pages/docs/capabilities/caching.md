@@ -4,7 +4,7 @@ title: Caching - Mesh API
 description: Cut cost and latency with the gateway response cache and provider-side
   prompt caching — how each one works, what it costs, and when it pays off.
 resource: https://developers.meshapi.ai/docs/capabilities/caching
-timestamp: '2026-09-14T12:21:17.301704+00:00'
+timestamp: '2026-09-21T12:28:28.555532+00:00'
 ---
 
 **two independent caching layers**. They solve different problems and can be used together:
@@ -25,6 +25,7 @@ The cache key is a SHA-256 hash over exactly these fields:
 - `temperature`
 - `stop`
 - `response_format`
+- `service_tier` , when the request selected one — see[Service Tiers](/docs/capabilities/service-tiers)
 
 **not**affect the cache key. Two things follow that surprise people:
 

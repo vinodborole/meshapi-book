@@ -2,7 +2,7 @@
   "generator": "okf-kit",
   "okf_version": "0.1",
   "root_url": "https://developers.meshapi.ai/",
-  "updated_at": "2026-09-14T12:21:17.325923+00:00",
+  "updated_at": "2026-09-21T12:28:28.580073+00:00",
   "config": {
     "max_depth": 3,
     "max_pages": 200,
@@ -10,7 +10,7 @@
     "respect_robots": true,
     "path_prefix": "/"
   },
-  "page_count": 83,
+  "page_count": 85,
   "pages": [
     {
       "path": "pages/agent/mcp.md",
@@ -28,7 +28,7 @@
       "path": "pages/api/chat/chat-completions.md",
       "url": "https://developers.meshapi.ai/api/chat/chat-completions",
       "title": "Chat Completions - Mesh API",
-      "hash": "69ad8c1d506ff508d3aa8e6217d0bebd8bb1cc5ac5ff23faf0790abe1abfaaed"
+      "hash": "44426ff773133290fba955c4e8b2cf57b81b4c6432b34cc447f8cd6fc197ece8"
     },
     {
       "path": "pages/changelog.md",
@@ -142,7 +142,7 @@
       "path": "pages/docs/capabilities/auto-routing.md",
       "url": "https://developers.meshapi.ai/docs/capabilities/auto-routing",
       "title": "Auto Routing - Mesh API",
-      "hash": "0b97149362ef566d59a3e7e568318d3108eec1c3b533284932d6389aad41e318"
+      "hash": "3053d7166da3f64b33820b16573beb0db7418d7e174dcbec415b192691af51fa"
     },
     {
       "path": "pages/docs/capabilities/batch-api.md",
@@ -160,7 +160,7 @@
       "path": "pages/docs/capabilities/caching.md",
       "url": "https://developers.meshapi.ai/docs/capabilities/caching",
       "title": "Caching - Mesh API",
-      "hash": "7e7276aa4ef85b859961f3e087774cba58796b77e79332daf56eb079e6e19471"
+      "hash": "06aca5ad5e8b74c8ea8006f1c77aacedfd44410f22c6aa092bd9aa7b809985b9"
     },
     {
       "path": "pages/docs/capabilities/claude-code.md",
@@ -233,6 +233,18 @@
       "url": "https://developers.meshapi.ai/docs/capabilities/responses-api",
       "title": "Responses API - Mesh API",
       "hash": "e1fafec26afcd24a288b7745c85e0e590e75fba61daafd4b235238e141f22008"
+    },
+    {
+      "path": "pages/docs/capabilities/routing-algorithms.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/routing-algorithms",
+      "title": "Routing Algorithms - Mesh API",
+      "hash": "94b39d14a184da1af854f03ec4a57082a033bcecda430f963349fec56cac1530"
+    },
+    {
+      "path": "pages/docs/capabilities/service-tiers.md",
+      "url": "https://developers.meshapi.ai/docs/capabilities/service-tiers",
+      "title": "Service Tiers - Mesh API",
+      "hash": "12b87727628c0c868985cd6e13119537ca1018e7ff9791e3e399632aaf393bac"
     },
     {
       "path": "pages/docs/capabilities/speech-to-text.md",
@@ -376,7 +388,7 @@
       "path": "pages/docs/reference/errors.md",
       "url": "https://developers.meshapi.ai/docs/reference/errors",
       "title": "Error Reference - Mesh API",
-      "hash": "668eaf03d85a200021410df516d2c8fc93d6e24afbd94cf523a55d6a65670f2a"
+      "hash": "f57e18acf84e822b6cce1acb8eea55664f92595a24f51bfe8f6c8e8550fed413"
     },
     {
       "path": "pages/docs/reference/models-list.md",
@@ -753,6 +765,10 @@
       "pages/docs/getting-started/rate-limits.md"
     ],
     [
+      "pages/docs/capabilities/auto-routing.md",
+      "pages/docs/capabilities/routing-algorithms.md"
+    ],
+    [
       "pages/docs/capabilities/byok.md",
       "pages/debug/byok.md"
     ],
@@ -767,6 +783,10 @@
     [
       "pages/docs/capabilities/caching.md",
       "pages/docs/capabilities/memory.md"
+    ],
+    [
+      "pages/docs/capabilities/caching.md",
+      "pages/docs/capabilities/service-tiers.md"
     ],
     [
       "pages/docs/capabilities/caching.md",
@@ -875,6 +895,42 @@
     [
       "pages/docs/capabilities/responses-api.md",
       "pages/docs/capabilities/web-search.md"
+    ],
+    [
+      "pages/docs/capabilities/routing-algorithms.md",
+      "pages/debug/auto-routing.md"
+    ],
+    [
+      "pages/docs/capabilities/routing-algorithms.md",
+      "pages/docs/capabilities/auto-routing.md"
+    ],
+    [
+      "pages/docs/capabilities/service-tiers.md",
+      "pages/docs/capabilities/batch-api.md"
+    ],
+    [
+      "pages/docs/capabilities/service-tiers.md",
+      "pages/docs/capabilities/caching.md"
+    ],
+    [
+      "pages/docs/capabilities/service-tiers.md",
+      "pages/docs/capabilities/realtime-audio.md"
+    ],
+    [
+      "pages/docs/capabilities/service-tiers.md",
+      "pages/docs/capabilities/video-generation.md"
+    ],
+    [
+      "pages/docs/capabilities/service-tiers.md",
+      "pages/docs/platform/retry-and-fallback.md"
+    ],
+    [
+      "pages/docs/capabilities/service-tiers.md",
+      "pages/docs/reference/errors.md"
+    ],
+    [
+      "pages/docs/capabilities/service-tiers.md",
+      "pages/docs/reference/usage-api.md"
     ],
     [
       "pages/docs/capabilities/structured-output.md",
@@ -1213,6 +1269,10 @@
       "pages/docs/reference/support.md"
     ],
     [
+      "pages/docs/reference/errors.md",
+      "pages/docs/capabilities/service-tiers.md"
+    ],
+    [
       "pages/docs/reference/models.md",
       "pages/docs/capabilities/auto-routing.md"
     ],
@@ -1354,10 +1414,10 @@
     ]
   ],
   "last_sync": {
-    "synced_at": "2026-09-14T12:21:17.308700+00:00",
-    "added": 0,
-    "changed": 5,
+    "synced_at": "2026-09-21T12:28:28.562574+00:00",
+    "added": 2,
+    "changed": 4,
     "removed": 0,
-    "pages": 83
+    "pages": 85
   }
 }

@@ -6,7 +6,7 @@ description: 'OpenAI-compatible chat completions endpoint. Auth: Authorization: 
   variables={...} Rate limits: RPM and RPD enforced per key via Redis fixed-window
   counters Spend cap: enforced if key.spend_cap_usd is set (soft cap)'
 resource: https://developers.meshapi.ai/api/chat/chat-completions
-timestamp: '2026-09-14T12:21:17.301704+00:00'
+timestamp: '2026-09-21T12:28:28.555532+00:00'
 ---
 
 # Chat Completions
@@ -29,10 +29,12 @@ OpenAI/Grok dial, max_tokens the Anthropic/Gemini/Qwen thinking budget.
 `enabled: true` alone means "reason at defaults"; `false` disables.
 `context`/`mode` are gpt-5.x-only passthroughs.
 
+- Tool
+- ServerTool
+
 A stable, anonymised identifier for the end user making this request, recorded on the usage row and available as a filter and a group-by dimension in the usage API. Supersedes the deprecated `user` field. Use an opaque id, not an email address or a name.
 
-`256``256``text`, `image` `text`, `audio`, `image` `x > 0`
-Your own labels for this request, echoed back on the usage row and available as a filter and a group-by dimension in the usage API. String keys to string values. Never put personal or sensitive data here — tags are stored with the usage record and are not redacted.
+`256``256``text`, `image` `text`, `audio`, `image` `x > 0``auto`, `default`, `flex` Your own labels for this request, echoed back on the usage row and available as a filter and a group-by dimension in the usage API. String keys to string values. Never put personal or sensitive data here — tags are stored with the usage record and are not redacted.
 
 # Citations
 
